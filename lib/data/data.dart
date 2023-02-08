@@ -18,7 +18,7 @@ final _satriaMuda = Golongan(
     'Sabuk Biru Belati 2',
     'Sabuk Biru Belati 3',
     'Sabuk Biru Belati 4',
-    'Sabuk Biru Belati 5',
+    'Sabuk Biru Belati 5', //sajdbsajdbsajkbdask
   ],
 );
 
