@@ -23,3 +23,13 @@ final List<Golongan> golonganList = [
   _calonSatria,
   _satriaMuda,
 ];
+
+final _gundar = Golongan(
+  imageUrl: '/assets/image/logo.jpg',
+  name: 'Golongan Satria Muda',
+  tingkat: [
+    'Sabuk Biru',
+    'Sabuk Biru Belati 1',
+    'Sabuk Biru Belati 2',
+  ],
+);
