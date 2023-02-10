@@ -11,6 +11,7 @@ class MateriScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Color(0xff362FD9),
         title: const Text('TINGKATAN SABUK'),
         centerTitle: true,
         elevation: 0,
