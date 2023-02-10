@@ -253,6 +253,7 @@ class _BerandaState extends State<Beranda> {
                         ),
                       ),
                       //Maka dari itu
+                      Container(),
                       Container()
                     ],
                   ),
