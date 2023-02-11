@@ -13,7 +13,10 @@ class Golongan {
 
 class Tingkat {
   final String name;
+  final String subImageUrl;
+
   Tingkat({
     required this.name,
+    required this.subImageUrl,
   });
 }

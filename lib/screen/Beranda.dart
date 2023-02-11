@@ -17,10 +17,11 @@ class _BerandaState extends State<Beranda> {
         Container(
           width: double.infinity,
           height: 150,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
               color: Color(0xff362FD9),
-              borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20), bottomRight: Radius.circular(20))
-          ),
+              borderRadius: BorderRadius.only(
+                  bottomLeft: Radius.circular(20),
+                  bottomRight: Radius.circular(20))),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
@@ -37,56 +38,46 @@ class _BerandaState extends State<Beranda> {
             ],
           ),
         ),
-
-        SizedBox(
+        const SizedBox(
           height: 30,
         ),
-
         Container(
             width: double.infinity,
             height: 3,
-            decoration: BoxDecoration(
-                color: Color(0xff362FD9),
-            )
-        ),
-
+            decoration: const BoxDecoration(
+              color: Color(0xff362FD9),
+            )),
         Expanded(
           child: Container(
             width: double.infinity,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Color(0xff5B8FB9),
             ),
-            child:
-            ListView(
+            child: ListView(
               children: [
-
                 Container(
-                  margin: EdgeInsets.only(top: 10, left: 30, right: 30, bottom: 20),
+                  margin: const EdgeInsets.only(
+                      top: 10, left: 30, right: 30, bottom: 20),
                   width: double.infinity,
                   height: 180,
                   decoration: BoxDecoration(
-                    color: Colors.white,
-                    border: Border.all(
-                      color: Colors.black
-                    )
-                  ),
-                  child:
-                  Center(child: Text('Gambar Berjalan')),
+                      color: Colors.white,
+                      border: Border.all(color: Colors.black)),
+                  child: const Center(child: Text('Gambar Berjalan')),
                 ),
 
                 //Sambutan
                 Container(
-                  margin: EdgeInsets.only(top: 25, left: 15, right: 15, bottom: 20),
+                  margin: const EdgeInsets.only(
+                      top: 25, left: 15, right: 15, bottom: 20),
                   width: double.infinity,
                   height: 900,
-                  decoration: BoxDecoration(
-                    color: Colors.white
-                  ),
+                  decoration: const BoxDecoration(color: Colors.white),
                   child: Column(
                     children: [
                       //head Sambutan
                       Container(
-                        padding: EdgeInsets.only(top: 15, bottom: 15),
+                        padding: const EdgeInsets.only(top: 15, bottom: 15),
                         width: double.infinity,
                         height: 80,
                         color: Colors.black,
@@ -95,29 +86,26 @@ class _BerandaState extends State<Beranda> {
                             Text(
                               Sambutan.head_Sambutan1,
                               textAlign: TextAlign.center,
-                              style: TextStyle(
+                              style: const TextStyle(
                                   fontSize: 18,
                                   fontWeight: FontWeight.w600,
-                                  color: Colors.white
-                              ),
+                                  color: Colors.white),
                             ),
                             Text(
                               Sambutan.head_Sambutan2,
                               textAlign: TextAlign.center,
-                              style: TextStyle(
+                              style: const TextStyle(
                                   fontSize: 18,
                                   fontWeight: FontWeight.w600,
-                                  color: Colors.white
-                              ),
+                                  color: Colors.white),
                             ),
                           ],
                         ),
                       ),
                       //Gambar Sambutan
                       Container(
-                        margin: EdgeInsets.only(top: 30, bottom: 20),
-                        child:
-                        Image.asset(
+                        margin: const EdgeInsets.only(top: 30, bottom: 20),
+                        child: Image.asset(
                           Sambutan.fileGambarSambutan,
                           height: 300,
                           width: 300,
@@ -125,36 +113,32 @@ class _BerandaState extends State<Beranda> {
                       ),
                       //isi Paragraf 1
                       Container(
-                        margin: EdgeInsets.only(top: 10, left: 10, right: 10),
-                        child:
-                        Text(
-                          Sambutan.isi_Sambutan1,
-                          textAlign: TextAlign.justify
-                        ),
+                        margin:
+                            const EdgeInsets.only(top: 10, left: 10, right: 10),
+                        child: Text(Sambutan.isi_Sambutan1,
+                            textAlign: TextAlign.justify),
                       ),
                       //isi Paragraf 2
                       Container(
-                        margin: EdgeInsets.only(top: 10, left: 10, right: 10),
-                        child:
-                        Text(
-                          Sambutan.isi_Sambutan2,
-                          textAlign: TextAlign.justify
-                        ),
+                        margin:
+                            const EdgeInsets.only(top: 10, left: 10, right: 10),
+                        child: Text(Sambutan.isi_Sambutan2,
+                            textAlign: TextAlign.justify),
                       ),
                       //isi Paragraf 3
                       Container(
-                        margin: EdgeInsets.only(top: 10, left: 10, right: 10),
-                        child:
-                        Text(
+                        margin:
+                            const EdgeInsets.only(top: 10, left: 10, right: 10),
+                        child: Text(
                           Sambutan.isi_Sambutan3,
                           textAlign: TextAlign.justify,
                         ),
                       ),
                       //isi paragraf 4
                       Container(
-                        margin: EdgeInsets.only(top: 10, left: 10, right: 10),
-                        child:
-                        Text(
+                        margin:
+                            const EdgeInsets.only(top: 10, left: 10, right: 10),
+                        child: Text(
                           Sambutan.isi_Sambutan4,
                           textAlign: TextAlign.justify,
                         ),
@@ -165,53 +149,49 @@ class _BerandaState extends State<Beranda> {
 
                 //Sejarah Singkat
                 Container(
-                  margin: EdgeInsets.only(top: 25, left: 15, right: 15, bottom: 20),
+                  margin: const EdgeInsets.only(
+                      top: 25, left: 15, right: 15, bottom: 20),
                   width: double.infinity,
                   height: 900,
-                  decoration: BoxDecoration(
-                      color: Colors.white
-                  ),
-                  child:
-                  Column(
+                  decoration: const BoxDecoration(color: Colors.white),
+                  child: Column(
                     children: [
                       //head
                       Container(
-                        padding: EdgeInsets.only(top: 15, bottom: 15),
+                        padding: const EdgeInsets.only(top: 15, bottom: 15),
                         width: double.infinity,
                         height: 80,
                         color: Colors.black,
-                        child:
-                        Column(
+                        child: Column(
                           children: [
                             Text(
                               Sejarah_Singkat.headSejarah,
-                              style:
-                              TextStyle(
+                              style: const TextStyle(
                                   fontSize: 18,
                                   fontWeight: FontWeight.w600,
                                   color: Colors.white),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 5,
                             ),
-                            Text(
-                                Sejarah_Singkat.headNomor,
-                                style:
-                                TextStyle(
-                                    fontSize: 16,
-                                    color: Colors.white)
-                            ),
+                            Text(Sejarah_Singkat.headNomor,
+                                style: const TextStyle(
+                                    fontSize: 16, color: Colors.white)),
                           ],
                         ),
                       ),
                       //Pendiri
                       Container(
-                        margin: EdgeInsets.only(top: 15, left: 10, right: 10,),
-                        child:
-                        Text('Perguruan ini didirikan Pada Tanggal 28 Juli 1968 di Jakarta oleh Tiga orang pendiri yaitu :'),
+                        margin: const EdgeInsets.only(
+                          top: 15,
+                          left: 10,
+                          right: 10,
+                        ),
+                        child: const Text(
+                            'Perguruan ini didirikan Pada Tanggal 28 Juli 1968 di Jakarta oleh Tiga orang pendiri yaitu :'),
                       ),
                       Padding(
-                        padding: const EdgeInsets.only( left: 10, right: 10),
+                        padding: const EdgeInsets.only(left: 10, right: 10),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
@@ -226,9 +206,12 @@ class _BerandaState extends State<Beranda> {
                       ),
                       //Sebelumnya
                       Container(
-                        margin: EdgeInsets.only(top: 20, left: 20, right: 20,),
-                        child:
-                        Column(
+                        margin: const EdgeInsets.only(
+                          top: 20,
+                          left: 20,
+                          right: 20,
+                        ),
+                        child: Column(
                           children: [
                             Text(
                               Sejarah_Singkat.Dahulu,
@@ -258,7 +241,6 @@ class _BerandaState extends State<Beranda> {
                     ],
                   ),
                 )
-
               ],
             ),
           ),
