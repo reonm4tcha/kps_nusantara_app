@@ -64,6 +64,7 @@ flutter:
     - assets/image/Perguruan.png
     - assets/image/sebelumnya2.png
     - assets/image/Yayasan.png
+    - assets/image/KPN.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

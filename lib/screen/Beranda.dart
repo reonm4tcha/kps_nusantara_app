@@ -54,12 +54,12 @@ class _BerandaState extends State<Beranda> {
           child: Container(
             width: double.infinity,
             decoration: BoxDecoration(
-              color: Color(0xff5B8FB9),
+              // color: Color(0xff5B8FB9),
             ),
             child:
             ListView(
               children: [
-
+                //gambar berjalan
                 Container(
                   margin: EdgeInsets.only(top: 10, left: 30, right: 30, bottom: 20),
                   width: double.infinity,
@@ -253,8 +253,22 @@ class _BerandaState extends State<Beranda> {
                         ),
                       ),
                       //Maka dari itu
-                      Container(),
-                      Container()
+                      Container(
+                        margin: EdgeInsets.only(top: 20, left: 20, right: 20),
+                        child:
+                        Text(Sejarah_Singkat.maka_dari_itu, textAlign: TextAlign.justify,),
+                      ),
+                      //Gambar KPN dan Pelatih Utama
+                      Container(
+                        margin: EdgeInsets.only(top: 20),
+                        child:
+                        Row(
+                          children: [
+                            //gambar KPN
+                            //gambar Pelatih Utama
+                          ],
+                        ),
+                      )
                     ],
                   ),
                 )
