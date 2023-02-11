@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:ksp_nusantara_app/screen/Beranda.dart';
 import 'package:ksp_nusantara_app/screen/materi_screen.dart';
+import 'package:ksp_nusantara_app/screen/Panduan.dart';
+import 'package:ksp_nusantara_app/screen/Lainnya.dart';
+import 'package:ksp_nusantara_app/screen/Pelantikan.dart';
 
 void main() {
   runApp(Kesatria_PS_Nusantara());
@@ -31,9 +34,9 @@ class _HomeState extends State<Home> {
   final Pages = [
     Beranda(),
     MateriScreen(),
-    // Panduan(),
-    // Lainnya(),
-    // Pelantikan()
+    Panduan(),
+    Lainnya(),
+    Pelantikan()
   ];
 
   int selectPage = 0;
