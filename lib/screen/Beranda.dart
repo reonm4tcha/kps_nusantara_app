@@ -294,6 +294,8 @@ class _BerandaState extends State<Beranda> {
                                 )
                               ],
                             ),
+                            //Seiring dengan telah Wafatnya Para Pendiri 3 Serangkai
+                            Container()
                           ],
                         ),
                       )
