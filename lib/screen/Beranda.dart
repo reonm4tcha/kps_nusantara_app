@@ -260,12 +260,40 @@ class _BerandaState extends State<Beranda> {
                       ),
                       //Gambar KPN dan Pelatih Utama
                       Container(
-                        margin: EdgeInsets.only(top: 20),
+                        margin: EdgeInsets.only(top: 20, bottom: 10),
                         child:
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
                             //gambar KPN
+                            Column(
+                              children: [
+                                Image.asset(
+                                  Sejarah_Singkat.KPN_image,
+                                  height: 100,
+                                  width: 100,
+                                ),
+                                Text('')
+                              ],
+                            ),
                             //gambar Pelatih Utama
+                            Column(
+                              children: [
+                                Image.asset(
+                                  Sejarah_Singkat.pelatih_utama_image,
+                                  height: 100,
+                                  width: 100,
+                                ),
+                                Text(
+                                  'PELATIH UTAMA KPSN',
+                                  style:
+                                  TextStyle(
+                                      fontWeight: FontWeight.w500,
+                                      color: Color(0xff002060)
+                                  ),
+                                )
+                              ],
+                            ),
                           ],
                         ),
                       )
