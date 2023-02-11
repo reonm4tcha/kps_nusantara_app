@@ -260,7 +260,7 @@ class _BerandaState extends State<Beranda> {
                       ),
                       //Gambar KPN dan Pelatih Utama
                       Container(
-                        margin: EdgeInsets.only(top: 20, bottom: 10),
+                        margin: EdgeInsets.only(top: 20, left: 20, right: 20, bottom: 10),
                         child:
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -273,7 +273,14 @@ class _BerandaState extends State<Beranda> {
                                   height: 100,
                                   width: 100,
                                 ),
-                                Text('')
+                                Text(
+                                  'PELATIH UTAMA KPSN',
+                                  style:
+                                  TextStyle(
+                                      fontWeight: FontWeight.w500,
+                                      color: Colors.white
+                                  ),
+                                )
                               ],
                             ),
                             //gambar Pelatih Utama
