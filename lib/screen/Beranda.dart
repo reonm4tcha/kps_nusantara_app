@@ -166,9 +166,9 @@ class _BerandaState extends State<Beranda> {
 
                 //Sejarah Singkat
                 Container(
-                  margin: EdgeInsets.only(top: 25, left: 15, right: 15, bottom: 20),
+                  margin: EdgeInsets.only(top: 25, left: 15, right: 15, bottom: 30),
                   width: double.infinity,
-                  height: 900,
+                  height: 1200,
                   decoration: BoxDecoration(
                       color: Colors.white
                   ),
@@ -322,6 +322,36 @@ class _BerandaState extends State<Beranda> {
                           textAlign: TextAlign.justify,
                         ),
                       ),
+                      //gambar kpsn dan pelatih utama
+                      Container(
+                        margin: EdgeInsets.only(top: 30, left: 45, right: 15),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Image.asset(
+                              'assets/image/Perguruan.png',
+                              height: 100,
+                            ),
+                            SizedBox(
+                              height: 30,
+                            ),
+                            Image.asset(
+                              Sejarah_Singkat.pelatih_utama2_image,
+                              height: 100,
+                            ),
+                            SizedBox(
+                              height: 10,
+                            ),
+                            Text(
+                              'PELATIH UTAMA KESATRIA PSN',
+                              style: TextStyle(
+                                fontWeight: FontWeight.w500,
+                                color: Color(0xff362FD9),
+                              ),
+                            )
+                          ],
+                        ),
+                      )
 
                     ],
                   ),
