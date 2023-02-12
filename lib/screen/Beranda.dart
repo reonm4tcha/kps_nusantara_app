@@ -352,11 +352,9 @@ class _BerandaState extends State<Beranda> {
                           ],
                         ),
                       )
-
                     ],
                   ),
                 )
-
               ],
             ),
           ),
