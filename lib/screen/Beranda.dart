@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ksp_nusantara_app/data/Sambutan.dart';
 import 'package:ksp_nusantara_app/data/Sejarah_Singkat.dart';
+import 'package:ksp_nusantara_app/data/font_style.dart';
 
 class Beranda extends StatefulWidget {
   const Beranda({Key? key}) : super(key: key);
@@ -78,7 +79,7 @@ class _BerandaState extends State<Beranda> {
                 Container(
                   margin: EdgeInsets.only(top: 25, left: 15, right: 15, bottom: 20),
                   width: double.infinity,
-                  height: 900,
+                  height: 940,
                   decoration: BoxDecoration(
                     color: Colors.white
                   ),
@@ -125,7 +126,7 @@ class _BerandaState extends State<Beranda> {
                       ),
                       //isi Paragraf 1
                       Container(
-                        margin: EdgeInsets.only(top: 10, left: 10, right: 10),
+                        margin: EdgeInsets.only(top: 10, left: 15, right: 15),
                         child:
                         Text(
                           Sambutan.isi_Sambutan1,
@@ -134,7 +135,7 @@ class _BerandaState extends State<Beranda> {
                       ),
                       //isi Paragraf 2
                       Container(
-                        margin: EdgeInsets.only(top: 10, left: 10, right: 10),
+                        margin: EdgeInsets.only(top: 20, left: 15, right: 15),
                         child:
                         Text(
                           Sambutan.isi_Sambutan2,
@@ -143,7 +144,7 @@ class _BerandaState extends State<Beranda> {
                       ),
                       //isi Paragraf 3
                       Container(
-                        margin: EdgeInsets.only(top: 10, left: 10, right: 10),
+                        margin: EdgeInsets.only(top: 20, left: 15, right: 15),
                         child:
                         Text(
                           Sambutan.isi_Sambutan3,
@@ -152,7 +153,7 @@ class _BerandaState extends State<Beranda> {
                       ),
                       //isi paragraf 4
                       Container(
-                        margin: EdgeInsets.only(top: 10, left: 10, right: 10),
+                        margin: EdgeInsets.only(top: 20, left: 15, right: 15),
                         child:
                         Text(
                           Sambutan.isi_Sambutan4,
@@ -301,11 +302,27 @@ class _BerandaState extends State<Beranda> {
                                 )
                               ],
                             ),
-                            //Seiring dengan telah Wafatnya Para Pendiri 3 Serangkai
-                            Container()
                           ],
                         ),
-                      )
+                      ),
+                      //Seiring dengan telah Wafatnya Para Pendiri 3 Serangkai
+                      //p1
+                      Container(
+                        margin: EdgeInsets.only(top: 20, left: 15, right: 15),
+                        child: Text(
+                          Sejarah_Singkat.p1_seiring_waktu,
+                          textAlign: TextAlign.justify,
+                        ),
+                      ),
+                      //p2
+                      Container(
+                        margin: EdgeInsets.only(top: 20, left: 15, right: 15),
+                        child: Text(
+                          Sejarah_Singkat.p2_seiring_waktu,
+                          textAlign: TextAlign.justify,
+                        ),
+                      ),
+
                     ],
                   ),
                 )
