@@ -168,7 +168,7 @@ class _BerandaState extends State<Beranda> {
                 Container(
                   margin: EdgeInsets.only(top: 25, left: 15, right: 15, bottom: 30),
                   width: double.infinity,
-                  height: 1200,
+                  height: 1250,
                   decoration: BoxDecoration(
                       color: Colors.white
                   ),
@@ -231,22 +231,25 @@ class _BerandaState extends State<Beranda> {
                         child:
                         Column(
                           children: [
-                            Text(
-                              Sejarah_Singkat.Dahulu,
-                              textAlign: TextAlign.justify,
+                            Container(
+                              margin: EdgeInsets.only(bottom: 20),
+                              child: Text(
+                                Sejarah_Singkat.Dahulu,
+                                textAlign: TextAlign.justify,
+                              ),
                             ),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
                                 Image.asset(
                                   Sejarah_Singkat.Sebelumnya1,
-                                  height: 70,
-                                  width: 70,
+                                  height: 100,
+                                  width: 100,
                                 ),
                                 Image.asset(
                                   Sejarah_Singkat.Sebelumnya2,
-                                  height: 70,
-                                  width: 70,
+                                  height: 100,
+                                  width: 100,
                                 )
                               ],
                             ),

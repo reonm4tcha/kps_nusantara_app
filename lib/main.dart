@@ -3,7 +3,7 @@ import 'package:ksp_nusantara_app/screen/Beranda.dart';
 import 'package:ksp_nusantara_app/screen/materi_screen.dart';
 import 'package:ksp_nusantara_app/screen/Panduan.dart';
 import 'package:ksp_nusantara_app/screen/Lainnya.dart';
-import 'package:ksp_nusantara_app/screen/Pelantikan.dart';
+import 'package:ksp_nusantara_app/widgets/Pelantikan.dart';
 
 void main() {
   runApp(Kesatria_PS_Nusantara());
@@ -36,7 +36,7 @@ class _HomeState extends State<Home> {
     MateriScreen(),
     Panduan(),
     Lainnya(),
-    Pelantikan()
+    Pelantikan(),
   ];
 
   int selectPage = 0;
