@@ -167,7 +167,7 @@ class _BerandaState extends State<Beranda> {
                 Container(
                   margin: EdgeInsets.only(top: 25, left: 15, right: 15, bottom: 30),
                   width: double.infinity,
-                  height: 1250,
+                  height: 1180,
                   decoration: BoxDecoration(
                       color: Colors.white
                   ),
