@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ksp_nusantara_app/data/Sambutan.dart';
 import 'package:ksp_nusantara_app/data/Sejarah_Singkat.dart';
-import 'package:ksp_nusantara_app/data/font_style.dart';
 
 class Beranda extends StatefulWidget {
   const Beranda({Key? key}) : super(key: key);
@@ -327,31 +326,41 @@ class _BerandaState extends State<Beranda> {
                       ),
                       //gambar kpsn dan pelatih utama
                       Container(
-                        margin: EdgeInsets.only(top: 30, left: 45, right: 15),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        margin: EdgeInsets.only(top: 30, left: 15, right: 15),
+                        child:
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
-                            Image.asset(
-                              'assets/image/Perguruan.png',
-                              height: 100,
+                            Column(
+                              children: [
+                                Image.asset(
+                                  'assets/image/Perguruan.png',
+                                  height: 100,
+                                ),
+                                SizedBox(
+                                  height: 50,
+                                ),
+                              ],
                             ),
-                            SizedBox(
-                              height: 30,
+                            Column(
+                              children: [
+                                Image.asset(
+                                  Sejarah_Singkat.pelatih_utama2_image,
+                                  height: 100,
+                                ),
+                                SizedBox(
+                                  height: 10,
+                                ),
+                                Text(
+                                  'PELATIH UTAMA\nKESATRIA PSN',
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.w500,
+                                    color: Color(0xff362FD9),
+                                  ),
+                                )
+                              ],
                             ),
-                            Image.asset(
-                              Sejarah_Singkat.pelatih_utama2_image,
-                              height: 100,
-                            ),
-                            SizedBox(
-                              height: 10,
-                            ),
-                            Text(
-                              'PELATIH UTAMA KESATRIA PSN',
-                              style: TextStyle(
-                                fontWeight: FontWeight.w500,
-                                color: Color(0xff362FD9),
-                              ),
-                            )
                           ],
                         ),
                       )
