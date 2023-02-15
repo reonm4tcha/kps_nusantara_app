@@ -3,7 +3,7 @@ import 'package:ksp_nusantara_app/screen/Beranda.dart';
 import 'package:ksp_nusantara_app/screen/materi_screen.dart';
 import 'package:ksp_nusantara_app/screen/Panduan.dart';
 import 'package:ksp_nusantara_app/screen/Lainnya.dart';
-import 'package:ksp_nusantara_app/screen/Pelantikan.dart';
+
 
 void main() {
   runApp(Kesatria_PS_Nusantara());
@@ -36,7 +36,7 @@ class _HomeState extends State<Home> {
     MateriScreen(),
     Panduan(),
     Lainnya(),
-    Pelantikan(),
+
   ];
 
   int selectPage = 0;
@@ -75,12 +75,6 @@ class _HomeState extends State<Home> {
           BottomNavigationBarItem(
               label: 'Lainnya',
               icon: Icon(Icons.menu,),
-              backgroundColor: Color(0xff362FD9)
-          ),
-
-          BottomNavigationBarItem(
-              label: 'Pelantikan',
-              icon: Icon(Icons.menu_open,),
               backgroundColor: Color(0xff362FD9)
           ),
 
