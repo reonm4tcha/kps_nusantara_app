@@ -163,6 +163,28 @@ class _BerandaState extends State<Beranda> {
                   ),
                 ),
 
+                //Ikrar Pelatih
+                Container(
+                  margin: EdgeInsets.only(top: 25, left: 15, right: 15, bottom: 20),
+                  width: double.infinity,
+                  height: 300,
+                  decoration: BoxDecoration(
+                    color: Colors.white
+                  ),
+                  child:
+                  Column(
+                    children: [
+                      Container(
+                        padding: EdgeInsets.only(top: 15, bottom: 15),
+                        height: 80,
+                        decoration: BoxDecoration(
+                          color: Colors.black
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+
                 //Sejarah Singkat
                 Container(
                   margin: EdgeInsets.only(top: 25, left: 15, right: 15, bottom: 30),
