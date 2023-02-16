@@ -168,7 +168,7 @@ class _BerandaState extends State<Beranda> {
                 Container(
                   margin: EdgeInsets.only(top: 25, left: 15, right: 15, bottom: 20),
                   width: double.infinity,
-                  height: 300,
+                  height: 330,
                   decoration: BoxDecoration(
                     color: Colors.white
                   ),
@@ -195,91 +195,131 @@ class _BerandaState extends State<Beranda> {
                           ),
                         ),
                       ),
-                      Container(
-                        margin: EdgeInsets.only(top: 20, left: 20, right: 20),
-                        width: double.infinity,
-                        child: Column(
-                          children: [
-
-                            Row(
-                              children: [
-                                Text('1. '),
-                                Row(
-                                  children: [
-                                    Text(
-                                      Ikrar_Pelatih.no_1,
-                                      softWrap: true,
-                                    )
-                                  ],
-                                )
-                              ],
-                            ),
-                            Row(
-                              children: [
-                                Text('2. '),
-                                Row(
-                                  children: [
-                                    Text(
-                                      Ikrar_Pelatih.no_2,
-                                      softWrap: true,
-                                      maxLines: 3,
-                                    )
-                                  ],
-                                )
-                              ],
-                            ),
-                            Row(
-                              children: [
-                                Text('3. '),
-                                Row(
-                                  children: [
-                                    Text(
-                                      Ikrar_Pelatih.no_3,
-                                      softWrap: true,
-                                    )
-                                  ],
-                                )
-                              ],
-                            ),
-                            Row(
-                              children: [
-                                Text('4. '),
-                                Row(
-                                  children: [
-                                    Text(
-                                      Ikrar_Pelatih.no_4,
-                                      softWrap: true,
-                                    )
-                                  ],
-                                )
-                              ],
-                            ),
-                            Row(
-                              children: [
-                                Text('5. '),
-                                Row(
-                                  children: [
-                                    Text(
-                                      Ikrar_Pelatih.no_5,
-                                      softWrap: true,
-                                    )
-                                  ],
-                                )
-                              ],
-                            ),
-                            // Column(
-                            //   crossAxisAlignment: CrossAxisAlignment.start,
-                            //   children: [
-                            //     Text(Ikrar_Pelatih.no_1),
-                            //     Text(Ikrar_Pelatih.no_2),
-                            //     Text(Ikrar_Pelatih.no_3),
-                            //     Text(Ikrar_Pelatih.no_4),
-                            //     Text(Ikrar_Pelatih.no_5),
-                            //   ],
+                      //no 1
+                      Row(
+                        children: [
+                          Container(
+                            margin: EdgeInsets.only(top: 20, left: 20,),
+                            width: 30,
+                            height: 25,
+                            // decoration: BoxDecoration(
+                            //   color: Colors.cyan
                             // ),
-                          ],
-                        ),
-                      )
+                            child: Text('1.'),
+                          ),
+                          Expanded(
+                            child: Container(
+                              margin: EdgeInsets.only(top: 20, right: 20),
+                              // width: double.infinity,
+                              height: 25,
+                              // decoration: BoxDecoration(
+                              //     color: Colors.cyanAccent
+                              // ),
+                              child: Text(Ikrar_Pelatih.no_1),
+                            ),
+                          ),
+                        ],
+                      ),
+                      //no 2
+                      Row(
+                        children: [
+                          Container(
+                            margin: EdgeInsets.only(left: 20,),
+                            width: 30,
+                            height: 40,
+                            // decoration: BoxDecoration(
+                            //     color: Colors.cyan
+                            // ),
+                            child: Text('2.'),
+                          ),
+                          Expanded(
+                            child: Container(
+                              margin: EdgeInsets.only(right: 20),
+                              // width: double.infinity,
+                              height: 40,
+                              // decoration: BoxDecoration(
+                              //     color: Colors.cyanAccent
+                              // ),
+                              child: Text(Ikrar_Pelatih.no_2),
+                            ),
+                          ),
+                        ],
+                      ),
+                      //no 3
+                      Row(
+                        children: [
+                          Container(
+                            margin: EdgeInsets.only(left: 20,),
+                            width: 30,
+                            height: 40,
+                            // decoration: BoxDecoration(
+                            //     color: Colors.cyan
+                            // ),
+                            child: Text('3.'),
+                          ),
+                          Expanded(
+                            child: Container(
+                              margin: EdgeInsets.only(right: 20),
+                              // width: double.infinity,
+                              height: 40,
+                              // decoration: BoxDecoration(
+                              //     color: Colors.cyanAccent
+                              // ),
+                              child: Text(Ikrar_Pelatih.no_3),
+                            ),
+                          ),
+                        ],
+                      ),
+                      //no 4
+                      Row(
+                        children: [
+                          Container(
+                            margin: EdgeInsets.only(left: 20,),
+                            width: 30,
+                            height: 60,
+                            // decoration: BoxDecoration(
+                            //     color: Colors.cyan
+                            // ),
+                            child: Text('4.'),
+                          ),
+                          Expanded(
+                            child: Container(
+                              margin: EdgeInsets.only(right: 20),
+                              // width: double.infinity,
+                              height: 60,
+                              // decoration: BoxDecoration(
+                              //     color: Colors.cyanAccent
+                              // ),
+                              child: Text(Ikrar_Pelatih.no_4),
+                            ),
+                          ),
+                        ],
+                      ),
+                      //no 5
+                      Row(
+                        children: [
+                          Container(
+                            margin: EdgeInsets.only(left: 20,),
+                            width: 30,
+                            height: 40,
+                            // decoration: BoxDecoration(
+                            //     color: Colors.cyan
+                            // ),
+                            child: Text('5.'),
+                          ),
+                          Expanded(
+                            child: Container(
+                              margin: EdgeInsets.only(right: 20),
+                              // width: double.infinity,
+                              height: 40,
+                              // decoration: BoxDecoration(
+                              //     color: Colors.cyanAccent
+                              // ),
+                              child: Text(Ikrar_Pelatih.no_5),
+                            ),
+                          ),
+                        ],
+                      ),
                     ],
                   ),
                 ),
