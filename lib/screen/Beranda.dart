@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ksp_nusantara_app/data/Ikrar_Pelatih.dart';
 import 'package:ksp_nusantara_app/data/Sambutan.dart';
 import 'package:ksp_nusantara_app/data/Sejarah_Singkat.dart';
 
@@ -176,9 +177,107 @@ class _BerandaState extends State<Beranda> {
                     children: [
                       Container(
                         padding: EdgeInsets.only(top: 15, bottom: 15),
+                        width: double.infinity,
                         height: 80,
                         decoration: BoxDecoration(
                           color: Colors.black
+                        ),
+                        child:
+                        Center(
+                          child: Text(
+                            Ikrar_Pelatih.head,
+                            style:
+                            TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.w600,
+                                color: Colors.white
+                            ),
+                          ),
+                        ),
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(top: 20, left: 20, right: 20),
+                        width: double.infinity,
+                        child: Column(
+                          children: [
+
+                            Row(
+                              children: [
+                                Text('1. '),
+                                Row(
+                                  children: [
+                                    Text(
+                                      Ikrar_Pelatih.no_1,
+                                      softWrap: true,
+                                    )
+                                  ],
+                                )
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Text('2. '),
+                                Row(
+                                  children: [
+                                    Text(
+                                      Ikrar_Pelatih.no_2,
+                                      softWrap: true,
+                                      maxLines: 3,
+                                    )
+                                  ],
+                                )
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Text('3. '),
+                                Row(
+                                  children: [
+                                    Text(
+                                      Ikrar_Pelatih.no_3,
+                                      softWrap: true,
+                                    )
+                                  ],
+                                )
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Text('4. '),
+                                Row(
+                                  children: [
+                                    Text(
+                                      Ikrar_Pelatih.no_4,
+                                      softWrap: true,
+                                    )
+                                  ],
+                                )
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Text('5. '),
+                                Row(
+                                  children: [
+                                    Text(
+                                      Ikrar_Pelatih.no_5,
+                                      softWrap: true,
+                                    )
+                                  ],
+                                )
+                              ],
+                            ),
+                            // Column(
+                            //   crossAxisAlignment: CrossAxisAlignment.start,
+                            //   children: [
+                            //     Text(Ikrar_Pelatih.no_1),
+                            //     Text(Ikrar_Pelatih.no_2),
+                            //     Text(Ikrar_Pelatih.no_3),
+                            //     Text(Ikrar_Pelatih.no_4),
+                            //     Text(Ikrar_Pelatih.no_5),
+                            //   ],
+                            // ),
+                          ],
                         ),
                       )
                     ],
