@@ -63,7 +63,7 @@ class _BerandaState extends State<Beranda> {
               children: [
                 //gambar berjalan
                 Container(
-                  margin: EdgeInsets.only(top: 10, left: 30, right: 30, bottom: 20),
+                  margin: EdgeInsets.only(top: 10,bottom: 20),
                   width: double.infinity,
                   height: 180,
                   decoration: BoxDecoration(
