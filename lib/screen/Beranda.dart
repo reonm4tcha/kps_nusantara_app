@@ -200,12 +200,18 @@ class _BerandaState extends State<Beranda> {
                         children: [
                           Container(
                             margin: EdgeInsets.only(top: 20, left: 20,),
-                            width: 30,
+                            width: 20,
                             height: 25,
                             // decoration: BoxDecoration(
                             //   color: Colors.cyan
                             // ),
-                            child: Text('1.'),
+                            child:
+                            Text(
+                              '1.',
+                              style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w600),
+                            ),
                           ),
                           Expanded(
                             child: Container(
@@ -215,7 +221,13 @@ class _BerandaState extends State<Beranda> {
                               // decoration: BoxDecoration(
                               //     color: Colors.cyanAccent
                               // ),
-                              child: Text(Ikrar_Pelatih.no_1),
+                              child:
+                              Text(
+                                Ikrar_Pelatih.no_1,
+                                style: TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w600),
+                              ),
                             ),
                           ),
                         ],
@@ -225,12 +237,18 @@ class _BerandaState extends State<Beranda> {
                         children: [
                           Container(
                             margin: EdgeInsets.only(left: 20,),
-                            width: 30,
+                            width: 20,
                             height: 40,
                             // decoration: BoxDecoration(
                             //     color: Colors.cyan
                             // ),
-                            child: Text('2.'),
+                            child:
+                            Text(
+                              '2.',
+                              style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w600),
+                            ),
                           ),
                           Expanded(
                             child: Container(
@@ -240,7 +258,13 @@ class _BerandaState extends State<Beranda> {
                               // decoration: BoxDecoration(
                               //     color: Colors.cyanAccent
                               // ),
-                              child: Text(Ikrar_Pelatih.no_2),
+                              child:
+                              Text(
+                                Ikrar_Pelatih.no_2,
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w600,),
+                              ),
                             ),
                           ),
                         ],
@@ -250,12 +274,18 @@ class _BerandaState extends State<Beranda> {
                         children: [
                           Container(
                             margin: EdgeInsets.only(left: 20,),
-                            width: 30,
+                            width: 20,
                             height: 40,
                             // decoration: BoxDecoration(
                             //     color: Colors.cyan
                             // ),
-                            child: Text('3.'),
+                            child:
+                            Text(
+                              '3.',
+                              style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w600),
+                            ),
                           ),
                           Expanded(
                             child: Container(
@@ -265,7 +295,13 @@ class _BerandaState extends State<Beranda> {
                               // decoration: BoxDecoration(
                               //     color: Colors.cyanAccent
                               // ),
-                              child: Text(Ikrar_Pelatih.no_3),
+                              child:
+                              Text(
+                                Ikrar_Pelatih.no_3,
+                                style: TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w600),
+                              ),
                             ),
                           ),
                         ],
@@ -275,12 +311,18 @@ class _BerandaState extends State<Beranda> {
                         children: [
                           Container(
                             margin: EdgeInsets.only(left: 20,),
-                            width: 30,
+                            width: 20,
                             height: 60,
                             // decoration: BoxDecoration(
                             //     color: Colors.cyan
                             // ),
-                            child: Text('4.'),
+                            child:
+                            Text(
+                              '4.',
+                              style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w600),
+                            ),
                           ),
                           Expanded(
                             child: Container(
@@ -290,7 +332,13 @@ class _BerandaState extends State<Beranda> {
                               // decoration: BoxDecoration(
                               //     color: Colors.cyanAccent
                               // ),
-                              child: Text(Ikrar_Pelatih.no_4),
+                              child:
+                              Text(
+                                Ikrar_Pelatih.no_4,
+                                style: TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w600),
+                              ),
                             ),
                           ),
                         ],
@@ -300,12 +348,18 @@ class _BerandaState extends State<Beranda> {
                         children: [
                           Container(
                             margin: EdgeInsets.only(left: 20,),
-                            width: 30,
+                            width: 20,
                             height: 40,
                             // decoration: BoxDecoration(
                             //     color: Colors.cyan
                             // ),
-                            child: Text('5.'),
+                            child:
+                            Text(
+                              '5.',
+                              style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w600),
+                            ),
                           ),
                           Expanded(
                             child: Container(
@@ -315,7 +369,13 @@ class _BerandaState extends State<Beranda> {
                               // decoration: BoxDecoration(
                               //     color: Colors.cyanAccent
                               // ),
-                              child: Text(Ikrar_Pelatih.no_5),
+                              child:
+                              Text(
+                                Ikrar_Pelatih.no_5,
+                                style: TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w600),
+                              ),
                             ),
                           ),
                         ],
