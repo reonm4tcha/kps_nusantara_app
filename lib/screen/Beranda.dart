@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ksp_nusantara_app/data/Ikrar_Pelatih.dart';
 import 'package:ksp_nusantara_app/data/Sambutan.dart';
 import 'package:ksp_nusantara_app/data/Sejarah_Singkat.dart';
+import 'package:ksp_nusantara_app/data/Moto_Pelatih.dart';
 
 class Beranda extends StatefulWidget {
   const Beranda({Key? key}) : super(key: key);
@@ -176,7 +177,6 @@ class _BerandaState extends State<Beranda> {
                   Column(
                     children: [
                       Container(
-                        padding: EdgeInsets.only(top: 15, bottom: 15),
                         width: double.infinity,
                         height: 80,
                         decoration: BoxDecoration(
@@ -385,6 +385,48 @@ class _BerandaState extends State<Beranda> {
                           ),
                         ],
                       ),
+                    ],
+                  ),
+                ),
+
+                //Moto Pelatih
+                Container(
+                  margin: EdgeInsets.only(top: 25, left: 15, right: 15, bottom: 20),
+                  width: double.infinity,
+                  height: 210,
+                  decoration: BoxDecoration(
+                    color: Colors.white
+                  ),
+                  child:
+                  Column(
+                    children: [
+                      Container(
+                        height: 80,
+                        color: Colors.black,
+                        child:
+                        Center(
+                          child: Text(
+                            Moto_Pelatih.head,
+                            style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.w600,
+                                color: Colors.white
+                            ),
+                          ),
+                        ),
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(top: 20, left: 15, right: 15),
+                        child:
+                        Text(
+                          Moto_Pelatih.isi,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w600
+                          ),
+                        ),
+                      )
                     ],
                   ),
                 ),
