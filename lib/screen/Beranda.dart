@@ -168,7 +168,7 @@ class _BerandaState extends State<Beranda> {
                 Container(
                   margin: EdgeInsets.only(top: 25, left: 15, right: 15, bottom: 20),
                   width: double.infinity,
-                  height: 330,
+                  height: 420,
                   decoration: BoxDecoration(
                     color: Colors.white
                   ),
@@ -201,7 +201,7 @@ class _BerandaState extends State<Beranda> {
                           Container(
                             margin: EdgeInsets.only(top: 20, left: 20,),
                             width: 20,
-                            height: 25,
+                            height: 50,
                             // decoration: BoxDecoration(
                             //   color: Colors.cyan
                             // ),
@@ -217,7 +217,7 @@ class _BerandaState extends State<Beranda> {
                             child: Container(
                               margin: EdgeInsets.only(top: 20, right: 20),
                               // width: double.infinity,
-                              height: 25,
+                              height: 50,
                               // decoration: BoxDecoration(
                               //     color: Colors.cyanAccent
                               // ),
@@ -238,7 +238,7 @@ class _BerandaState extends State<Beranda> {
                           Container(
                             margin: EdgeInsets.only(left: 20,),
                             width: 20,
-                            height: 40,
+                            height: 50,
                             // decoration: BoxDecoration(
                             //     color: Colors.cyan
                             // ),
@@ -254,7 +254,7 @@ class _BerandaState extends State<Beranda> {
                             child: Container(
                               margin: EdgeInsets.only(right: 20),
                               // width: double.infinity,
-                              height: 40,
+                              height: 50,
                               // decoration: BoxDecoration(
                               //     color: Colors.cyanAccent
                               // ),
@@ -275,7 +275,7 @@ class _BerandaState extends State<Beranda> {
                           Container(
                             margin: EdgeInsets.only(left: 20,),
                             width: 20,
-                            height: 40,
+                            height: 50,
                             // decoration: BoxDecoration(
                             //     color: Colors.cyan
                             // ),
@@ -291,7 +291,7 @@ class _BerandaState extends State<Beranda> {
                             child: Container(
                               margin: EdgeInsets.only(right: 20),
                               // width: double.infinity,
-                              height: 40,
+                              height: 50,
                               // decoration: BoxDecoration(
                               //     color: Colors.cyanAccent
                               // ),
@@ -312,7 +312,7 @@ class _BerandaState extends State<Beranda> {
                           Container(
                             margin: EdgeInsets.only(left: 20,),
                             width: 20,
-                            height: 60,
+                            height: 90,
                             // decoration: BoxDecoration(
                             //     color: Colors.cyan
                             // ),
@@ -328,7 +328,7 @@ class _BerandaState extends State<Beranda> {
                             child: Container(
                               margin: EdgeInsets.only(right: 20),
                               // width: double.infinity,
-                              height: 60,
+                              height: 90,
                               // decoration: BoxDecoration(
                               //     color: Colors.cyanAccent
                               // ),
@@ -349,7 +349,7 @@ class _BerandaState extends State<Beranda> {
                           Container(
                             margin: EdgeInsets.only(left: 20,),
                             width: 20,
-                            height: 40,
+                            height: 50,
                             // decoration: BoxDecoration(
                             //     color: Colors.cyan
                             // ),
@@ -365,7 +365,7 @@ class _BerandaState extends State<Beranda> {
                             child: Container(
                               margin: EdgeInsets.only(right: 20),
                               // width: double.infinity,
-                              height: 40,
+                              height: 50,
                               // decoration: BoxDecoration(
                               //     color: Colors.cyanAccent
                               // ),
