@@ -168,7 +168,7 @@ class _BerandaState extends State<Beranda> {
                 Container(
                   margin: EdgeInsets.only(top: 25, left: 15, right: 15, bottom: 20),
                   width: double.infinity,
-                  height: 420,
+                  height: 410,
                   decoration: BoxDecoration(
                     color: Colors.white
                   ),
@@ -224,6 +224,7 @@ class _BerandaState extends State<Beranda> {
                               child:
                               Text(
                                 Ikrar_Pelatih.no_1,
+                                textAlign: TextAlign.justify,
                                 style: TextStyle(
                                     fontSize: 16,
                                     fontWeight: FontWeight.w600),
@@ -261,6 +262,7 @@ class _BerandaState extends State<Beranda> {
                               child:
                               Text(
                                 Ikrar_Pelatih.no_2,
+                                textAlign: TextAlign.justify,
                                 style: TextStyle(
                                   fontSize: 16,
                                   fontWeight: FontWeight.w600,),
@@ -298,6 +300,7 @@ class _BerandaState extends State<Beranda> {
                               child:
                               Text(
                                 Ikrar_Pelatih.no_3,
+                                textAlign: TextAlign.justify,
                                 style: TextStyle(
                                     fontSize: 16,
                                     fontWeight: FontWeight.w600),
@@ -335,6 +338,7 @@ class _BerandaState extends State<Beranda> {
                               child:
                               Text(
                                 Ikrar_Pelatih.no_4,
+                                textAlign: TextAlign.justify,
                                 style: TextStyle(
                                     fontSize: 16,
                                     fontWeight: FontWeight.w600),
@@ -372,6 +376,7 @@ class _BerandaState extends State<Beranda> {
                               child:
                               Text(
                                 Ikrar_Pelatih.no_5,
+                                textAlign: TextAlign.justify,
                                 style: TextStyle(
                                     fontSize: 16,
                                     fontWeight: FontWeight.w600),
