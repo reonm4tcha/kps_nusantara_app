@@ -23,7 +23,7 @@ class _LainnyaState extends State<Lainnya> {
         children: [
           Container(
             width: double.infinity,
-            height: 550,
+            height: 500,
             child:
             ListView.builder(
               itemCount: Lainnya_data.length,
