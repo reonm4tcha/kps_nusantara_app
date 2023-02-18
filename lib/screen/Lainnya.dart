@@ -18,58 +18,38 @@ class _LainnyaState extends State<Lainnya> {
         centerTitle: true,
         backgroundColor: Color(0xff362FD9),
       ),
-      body: Material(
-        child: ListView(
-          children : [
-            Column(
-              children: [
-                // buildListLainnya()
+      body:
+      ListView(
+        children : [
+          Column(
+            children: [
+              Container(
+                width: double.infinity,
+                height: 550,
+                color: Colors.black,
+                child:
                 ListView.builder(
-                    itemCount: Lainnya_data.length,
-                    itemBuilder: (context, index){
-                      final data = Lainnya_data[index];
-                      Container(
-                        width: double.infinity,
-                        height: 90,
-                        decoration: BoxDecoration(
-                            color: Colors.black12
-                        ),
-                        child:
-                        Row(
-                          children: [
-                            Text(data.name)
-                          ],
-                        ),
-                      );
-                    }
-                    )
-              ],
-            ),
-          ]
+                  itemCount: 20,
+                  itemBuilder: (context, index){
+                    return Container(
+                      margin: EdgeInsets.only(top: 5),
+                      width: double.infinity,
+                      height: 30,
+                      color: Colors.white,
+                    );
+                    },
+                ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+
+          ],
         ),
+        ]
       ),
     );
   }
 
-//   Widget buildListLainnya(){
-//     return ListView.builder(
-//         itemCount: Lainnya_data.length,
-//         itemBuilder: (context, index){
-//           final data = Lainnya_data[index];
-//           Container(
-//             width: double.infinity,
-//             height: 90,
-//             decoration: BoxDecoration(
-//               color: Colors.black12
-//             ),
-//             child:
-//             Row(
-//               children: [
-//                 Text(data.name)
-//               ],
-//             ),
-//           );
-//         }
-//     );
-//   }
+
 }
