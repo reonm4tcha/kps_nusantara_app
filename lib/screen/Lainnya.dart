@@ -19,37 +19,40 @@ class _LainnyaState extends State<Lainnya> {
         backgroundColor: Color(0xff362FD9),
       ),
       body:
-      ListView(
-        children : [
-          Column(
-            children: [
-              Container(
-                width: double.infinity,
-                height: 550,
-                color: Colors.black,
-                child:
-                ListView.builder(
-                  itemCount: Lainnya_data.length,
-                  itemBuilder: (context, index){
-                    return Container(
-                      margin: EdgeInsets.only(top: 10),
-                      width: double.infinity,
-                      height: 50,
+      Column(
+        children: [
+          Container(
+            width: double.infinity,
+            height: 550,
+            // decoration: BoxDecoration(
+            //   border: Border(
+            //     bottom: BorderSide(
+            //       color: Colors.black,
+            //       width: 3
+            //     )
+            //   )
+            // ),
+            child:
+            ListView.builder(
+              itemCount: Lainnya_data.length,
+              itemBuilder: (context, index){
+                return Container(
+                  margin: EdgeInsets.only(top: 10, bottom: 5),
+                  width: double.infinity,
+                  height: 80,
+                  decoration: BoxDecoration(
                       color: Colors.white,
-                    );
-                    },
-                ),
-              ),
-              SizedBox(
-                height: 20,
-              ),
-
-          ],
-        ),
-        ]
+                      borderRadius: BorderRadius.circular(10),
+                      border: Border.all(
+                          color: Colors.black,
+                          width: 2
+                      )
+                  ),
+                );},
+            ),
+          ),
+        ],
       ),
     );
   }
-
-
 }
