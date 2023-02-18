@@ -15,7 +15,8 @@ class isi1State extends State<isi1> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return
+      Scaffold(
       appBar: AppBar(
         title: Text(lainnya_req.name,),
         backgroundColor: Color(0xff362FD9),
