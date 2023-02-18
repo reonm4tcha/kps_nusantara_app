@@ -28,23 +28,45 @@ class _LainnyaState extends State<Lainnya> {
             ListView.builder(
               itemCount: Lainnya_data.length,
               itemBuilder: (context, index){
+                final data = Lainnya_data[index];
                 return Column(
                   children: [
                     Container(
                       width: double.infinity,
                       height: 90,
                       decoration: BoxDecoration(
-                          color: Colors.black,
+                          color: Colors.white,
                       ),
+                      child: Center(
+                        child: ListTile(
+                          leading: Icon(Icons.square, size: 60,),
+                          title: Text(
+                            data.name,
+                            style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.w600
+                            ),
+                          ),
+                        ),
+                      )
                     ),
                     Divider(
-                      color: Colors.white,
-                      height: 3,
+                      color: Colors.black,
+                      height: 5,
                     )
                   ],
                 );},
             ),
           ),
+          Expanded(
+            child: Container(
+              alignment: Alignment.bottomCenter,
+              child: Padding(
+                padding: const EdgeInsets.only(bottom: 10),
+                child: Text(version),
+              ),
+            ),
+          )
         ],
       ),
     );

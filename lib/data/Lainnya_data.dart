@@ -8,3 +8,5 @@ List<Lainnya_req> Lainnya_data = [
   Lainnya_req(name: 'Arsip'),
   Lainnya_req(name: 'Tentang')
 ];
+
+String version = 'Version 1.0';
