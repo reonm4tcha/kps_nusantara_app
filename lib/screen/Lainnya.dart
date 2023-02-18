@@ -24,30 +24,24 @@ class _LainnyaState extends State<Lainnya> {
           Container(
             width: double.infinity,
             height: 550,
-            // decoration: BoxDecoration(
-            //   border: Border(
-            //     bottom: BorderSide(
-            //       color: Colors.black,
-            //       width: 3
-            //     )
-            //   )
-            // ),
             child:
             ListView.builder(
               itemCount: Lainnya_data.length,
               itemBuilder: (context, index){
-                return Container(
-                  margin: EdgeInsets.only(top: 10, bottom: 5),
-                  width: double.infinity,
-                  height: 80,
-                  decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(10),
-                      border: Border.all(
+                return Column(
+                  children: [
+                    Container(
+                      width: double.infinity,
+                      height: 90,
+                      decoration: BoxDecoration(
                           color: Colors.black,
-                          width: 2
-                      )
-                  ),
+                      ),
+                    ),
+                    Divider(
+                      color: Colors.white,
+                      height: 3,
+                    )
+                  ],
                 );},
             ),
           ),
