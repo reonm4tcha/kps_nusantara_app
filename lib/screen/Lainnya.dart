@@ -29,12 +29,12 @@ class _LainnyaState extends State<Lainnya> {
                 color: Colors.black,
                 child:
                 ListView.builder(
-                  itemCount: 20,
+                  itemCount: Lainnya_data.length,
                   itemBuilder: (context, index){
                     return Container(
-                      margin: EdgeInsets.only(top: 5),
+                      margin: EdgeInsets.only(top: 10),
                       width: double.infinity,
-                      height: 30,
+                      height: 50,
                       color: Colors.white,
                     );
                     },
