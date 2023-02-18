@@ -3,11 +3,11 @@ import 'package:ksp_nusantara_app/widgets/profilPage.dart';
 
 List<Lainnya_req> Lainnya_data = [
   Lainnya_req(name: 'Profil', isi1: profilPage()),
-  Lainnya_req(name: 'AD/ART'),
-  Lainnya_req(name: 'Ranting'),
-  Lainnya_req(name: 'Dokumentasi'),
-  Lainnya_req(name: 'Arsip'),
-  Lainnya_req(name: 'Tentang')
+  Lainnya_req(name: 'AD/ART', isi1: profilPage()),
+  Lainnya_req(name: 'Ranting', isi1: profilPage()),
+  Lainnya_req(name: 'Dokumentasi', isi1: profilPage()),
+  Lainnya_req(name: 'Arsip', isi1: profilPage()),
+  Lainnya_req(name: 'Tentang', isi1: profilPage()),
 ];
 
 String version = 'Version 1.0';
