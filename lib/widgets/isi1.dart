@@ -21,12 +21,9 @@ class isi1State extends State<isi1> {
         title: Text(lainnya_req.name,),
         backgroundColor: Color(0xff362FD9),
       ),
-      body: Container(
-        width: double.infinity,
-        height: 90,
-        color: Colors.black,
-        child: Center(child: Text('Masih Tes', style: TextStyle(color: Colors.white),)),
-      ),
+      body:
+          lainnya_req.isi1
     );
   }
 }
+
