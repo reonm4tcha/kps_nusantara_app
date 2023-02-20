@@ -13,10 +13,22 @@ class Golongan {
 
 class Tingkat {
   final String name;
-  final String subImageUrl;
+  final String form;
+  final List<String> header;
+  final List<SubTingkat> subTingkat;
 
   Tingkat({
     required this.name,
-    required this.subImageUrl,
+    required this.form,
+    required this.header,
+    required this.subTingkat,
+  });
+}
+
+class SubTingkat {
+  final List<String> subTingkatList;
+
+  SubTingkat({
+    required this.subTingkatList,
   });
 }
