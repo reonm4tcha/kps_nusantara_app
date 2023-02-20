@@ -35,7 +35,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  final Pages = [
+  final pages = [
     const Beranda(),
     const MateriScreen(),
     const Panduan(),
