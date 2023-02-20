@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-Widget profilPage(){
+Widget RantingPage(){
   return ListView(
     children: [
       Center(
-        child: Text('Profilpage'),
+        child: Text('Ranting Page'),
       )
     ],
   );
