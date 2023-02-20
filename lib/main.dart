@@ -4,9 +4,8 @@ import 'package:ksp_nusantara_app/screen/materi_screen.dart';
 import 'package:ksp_nusantara_app/screen/Panduan.dart';
 import 'package:ksp_nusantara_app/screen/Lainnya.dart';
 
-
 void main() {
-  runApp(Kesatria_PS_Nusantara());
+  runApp(const Kesatria_PS_Nusantara());
 }
 
 class Kesatria_PS_Nusantara extends StatelessWidget {
@@ -17,7 +16,13 @@ class Kesatria_PS_Nusantara extends StatelessWidget {
     return MaterialApp(
       title: 'Kesatria PS Nusantara',
       debugShowCheckedModeBanner: false,
-      home: Home(),
+      theme: ThemeData(
+          primaryColor: const Color(0xff362FD9),
+          appBarTheme: const AppBarTheme(
+            color: Color(0xff362FD9),
+            elevation: 0,
+          )),
+      home: const Home(),
     );
   }
 }
@@ -30,18 +35,16 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-
-  final Pages = [
-    Beranda(),
-    MateriScreen(),
-    Panduan(),
-    Lainnya(),
-
+  final pages = [
+    const Beranda(),
+    const MateriScreen(),
+    const Panduan(),
+    const Lainnya(),
   ];
 
   int selectPage = 0;
 
-  void onTapNavBar(int index){
+  void onTapNavBar(int index) {
     setState(() {
       selectPage = index;
     });
@@ -50,41 +53,34 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Pages.elementAt(selectPage),
+      body: pages.elementAt(selectPage),
       bottomNavigationBar: BottomNavigationBar(
-        items: <BottomNavigationBarItem>[
-
+        items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
               label: 'Beranda',
               icon: Icon(Icons.home),
-              backgroundColor: Color(0xff362FD9)
-          ),
-
+              backgroundColor: Color(0xff362FD9)),
           BottomNavigationBarItem(
               label: 'Materi',
               icon: Icon(Icons.menu_book),
-              backgroundColor: Color(0xff362FD9)
-          ),
-
+              backgroundColor: Color(0xff362FD9)),
           BottomNavigationBarItem(
               label: 'Panduan',
               icon: Icon(Icons.library_books),
-              backgroundColor: Color(0xff362FD9)
-          ),
-
+              backgroundColor: Color(0xff362FD9)),
           BottomNavigationBarItem(
               label: 'Lainnya',
-              icon: Icon(Icons.menu,),
-              backgroundColor: Color(0xff362FD9)
-          ),
-
+              icon: Icon(
+                Icons.menu,
+              ),
+              backgroundColor: Color(0xff362FD9)),
         ],
         currentIndex: selectPage,
         type: BottomNavigationBarType.shifting,
         fixedColor: Colors.black,
         onTap: onTapNavBar,
       ),
-      backgroundColor: Color(0xff5B8FB9),
+      backgroundColor: const Color(0xff5B8FB9),
     );
   }
 }

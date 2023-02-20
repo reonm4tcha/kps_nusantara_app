@@ -19,10 +19,11 @@ class _BerandaState extends State<Beranda> {
         Container(
           width: double.infinity,
           height: 150,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
               color: Color(0xff362FD9),
-              borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20), bottomRight: Radius.circular(20))
-          ),
+              borderRadius: BorderRadius.only(
+                  bottomLeft: Radius.circular(20),
+                  bottomRight: Radius.circular(20))),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
@@ -39,56 +40,46 @@ class _BerandaState extends State<Beranda> {
             ],
           ),
         ),
-
-        SizedBox(
+        const SizedBox(
           height: 30,
         ),
-
         Container(
             width: double.infinity,
             height: 3,
-            decoration: BoxDecoration(
-                color: Color(0xff362FD9),
-            )
-        ),
-
+            decoration: const BoxDecoration(
+              color: Color(0xff362FD9),
+            )),
         Expanded(
           child: Container(
             width: double.infinity,
             decoration: BoxDecoration(
-              // color: Color(0xff5B8FB9),
-            ),
-            child:
-            ListView(
+                // color: Color(0xff5B8FB9),
+                ),
+            child: ListView(
               children: [
                 //gambar berjalan
                 Container(
-                  margin: EdgeInsets.only(top: 10,bottom: 20),
+                  margin: EdgeInsets.only(top: 10, bottom: 20),
                   width: double.infinity,
                   height: 180,
                   decoration: BoxDecoration(
-                    color: Colors.white,
-                    border: Border.all(
-                      color: Colors.black
-                    )
-                  ),
-                  child:
-                  Center(child: Text('Gambar Berjalan')),
+                      color: Colors.white,
+                      border: Border.all(color: Colors.black)),
+                  child: const Center(child: Text('Gambar Berjalan')),
                 ),
 
                 //Sambutan
                 Container(
-                  margin: EdgeInsets.only(top: 25, left: 15, right: 15, bottom: 20),
+                  margin: const EdgeInsets.only(
+                      top: 25, left: 15, right: 15, bottom: 20),
                   width: double.infinity,
                   height: 940,
-                  decoration: BoxDecoration(
-                    color: Colors.white
-                  ),
+                  decoration: BoxDecoration(color: Colors.white),
                   child: Column(
                     children: [
                       //head Sambutan
                       Container(
-                        padding: EdgeInsets.only(top: 15, bottom: 15),
+                        padding: const EdgeInsets.only(top: 15, bottom: 15),
                         width: double.infinity,
                         height: 80,
                         color: Colors.black,
@@ -97,29 +88,26 @@ class _BerandaState extends State<Beranda> {
                             Text(
                               Sambutan.head_Sambutan1,
                               textAlign: TextAlign.center,
-                              style: TextStyle(
+                              style: const TextStyle(
                                   fontSize: 18,
                                   fontWeight: FontWeight.w600,
-                                  color: Colors.white
-                              ),
+                                  color: Colors.white),
                             ),
                             Text(
                               Sambutan.head_Sambutan2,
                               textAlign: TextAlign.center,
-                              style: TextStyle(
+                              style: const TextStyle(
                                   fontSize: 18,
                                   fontWeight: FontWeight.w600,
-                                  color: Colors.white
-                              ),
+                                  color: Colors.white),
                             ),
                           ],
                         ),
                       ),
                       //Gambar Sambutan
                       Container(
-                        margin: EdgeInsets.only(top: 30, bottom: 20),
-                        child:
-                        Image.asset(
+                        margin: const EdgeInsets.only(top: 30, bottom: 20),
+                        child: Image.asset(
                           Sambutan.fileGambarSambutan,
                           height: 300,
                           width: 300,
@@ -128,26 +116,19 @@ class _BerandaState extends State<Beranda> {
                       //isi Paragraf 1
                       Container(
                         margin: EdgeInsets.only(top: 10, left: 15, right: 15),
-                        child:
-                        Text(
-                          Sambutan.isi_Sambutan1,
-                          textAlign: TextAlign.justify
-                        ),
+                        child: Text(Sambutan.isi_Sambutan1,
+                            textAlign: TextAlign.justify),
                       ),
                       //isi Paragraf 2
                       Container(
                         margin: EdgeInsets.only(top: 20, left: 15, right: 15),
-                        child:
-                        Text(
-                          Sambutan.isi_Sambutan2,
-                          textAlign: TextAlign.justify
-                        ),
+                        child: Text(Sambutan.isi_Sambutan2,
+                            textAlign: TextAlign.justify),
                       ),
                       //isi Paragraf 3
                       Container(
                         margin: EdgeInsets.only(top: 20, left: 15, right: 15),
-                        child:
-                        Text(
+                        child: Text(
                           Sambutan.isi_Sambutan3,
                           textAlign: TextAlign.justify,
                         ),
@@ -155,8 +136,7 @@ class _BerandaState extends State<Beranda> {
                       //isi paragraf 4
                       Container(
                         margin: EdgeInsets.only(top: 20, left: 15, right: 15),
-                        child:
-                        Text(
+                        child: Text(
                           Sambutan.isi_Sambutan4,
                           textAlign: TextAlign.justify,
                         ),
@@ -167,31 +147,24 @@ class _BerandaState extends State<Beranda> {
 
                 //Ikrar Pelatih
                 Container(
-                  margin: EdgeInsets.only(top: 25, left: 15, right: 15, bottom: 20),
+                  margin: const EdgeInsets.only(
+                      top: 25, left: 15, right: 15, bottom: 20),
                   width: double.infinity,
                   height: 410,
-                  decoration: BoxDecoration(
-                    color: Colors.white
-                  ),
-                  child:
-                  Column(
+                  decoration: BoxDecoration(color: Colors.white),
+                  child: Column(
                     children: [
                       Container(
                         width: double.infinity,
                         height: 80,
-                        decoration: BoxDecoration(
-                          color: Colors.black
-                        ),
-                        child:
-                        Center(
+                        decoration: BoxDecoration(color: Colors.black),
+                        child: Center(
                           child: Text(
                             Ikrar_Pelatih.head,
-                            style:
-                            TextStyle(
+                            style: TextStyle(
                                 fontSize: 18,
                                 fontWeight: FontWeight.w600,
-                                color: Colors.white
-                            ),
+                                color: Colors.white),
                           ),
                         ),
                       ),
@@ -199,18 +172,19 @@ class _BerandaState extends State<Beranda> {
                       Row(
                         children: [
                           Container(
-                            margin: EdgeInsets.only(top: 20, left: 20,),
+                            margin: EdgeInsets.only(
+                              top: 20,
+                              left: 20,
+                            ),
                             width: 20,
                             height: 50,
                             // decoration: BoxDecoration(
                             //   color: Colors.cyan
                             // ),
-                            child:
-                            Text(
+                            child: Text(
                               '1.',
                               style: TextStyle(
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.w600),
+                                  fontSize: 16, fontWeight: FontWeight.w600),
                             ),
                           ),
                           Expanded(
@@ -221,13 +195,11 @@ class _BerandaState extends State<Beranda> {
                               // decoration: BoxDecoration(
                               //     color: Colors.cyanAccent
                               // ),
-                              child:
-                              Text(
+                              child: Text(
                                 Ikrar_Pelatih.no_1,
                                 textAlign: TextAlign.justify,
                                 style: TextStyle(
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w600),
+                                    fontSize: 16, fontWeight: FontWeight.w600),
                               ),
                             ),
                           ),
@@ -237,18 +209,18 @@ class _BerandaState extends State<Beranda> {
                       Row(
                         children: [
                           Container(
-                            margin: EdgeInsets.only(left: 20,),
+                            margin: EdgeInsets.only(
+                              left: 20,
+                            ),
                             width: 20,
                             height: 50,
                             // decoration: BoxDecoration(
                             //     color: Colors.cyan
                             // ),
-                            child:
-                            Text(
+                            child: Text(
                               '2.',
                               style: TextStyle(
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.w600),
+                                  fontSize: 16, fontWeight: FontWeight.w600),
                             ),
                           ),
                           Expanded(
@@ -259,13 +231,13 @@ class _BerandaState extends State<Beranda> {
                               // decoration: BoxDecoration(
                               //     color: Colors.cyanAccent
                               // ),
-                              child:
-                              Text(
+                              child: Text(
                                 Ikrar_Pelatih.no_2,
                                 textAlign: TextAlign.justify,
                                 style: TextStyle(
                                   fontSize: 16,
-                                  fontWeight: FontWeight.w600,),
+                                  fontWeight: FontWeight.w600,
+                                ),
                               ),
                             ),
                           ),
@@ -275,18 +247,18 @@ class _BerandaState extends State<Beranda> {
                       Row(
                         children: [
                           Container(
-                            margin: EdgeInsets.only(left: 20,),
+                            margin: EdgeInsets.only(
+                              left: 20,
+                            ),
                             width: 20,
                             height: 50,
                             // decoration: BoxDecoration(
                             //     color: Colors.cyan
                             // ),
-                            child:
-                            Text(
+                            child: Text(
                               '3.',
                               style: TextStyle(
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.w600),
+                                  fontSize: 16, fontWeight: FontWeight.w600),
                             ),
                           ),
                           Expanded(
@@ -297,13 +269,11 @@ class _BerandaState extends State<Beranda> {
                               // decoration: BoxDecoration(
                               //     color: Colors.cyanAccent
                               // ),
-                              child:
-                              Text(
+                              child: Text(
                                 Ikrar_Pelatih.no_3,
                                 textAlign: TextAlign.justify,
                                 style: TextStyle(
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w600),
+                                    fontSize: 16, fontWeight: FontWeight.w600),
                               ),
                             ),
                           ),
@@ -313,18 +283,18 @@ class _BerandaState extends State<Beranda> {
                       Row(
                         children: [
                           Container(
-                            margin: EdgeInsets.only(left: 20,),
+                            margin: EdgeInsets.only(
+                              left: 20,
+                            ),
                             width: 20,
                             height: 90,
                             // decoration: BoxDecoration(
                             //     color: Colors.cyan
                             // ),
-                            child:
-                            Text(
+                            child: Text(
                               '4.',
                               style: TextStyle(
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.w600),
+                                  fontSize: 16, fontWeight: FontWeight.w600),
                             ),
                           ),
                           Expanded(
@@ -335,13 +305,11 @@ class _BerandaState extends State<Beranda> {
                               // decoration: BoxDecoration(
                               //     color: Colors.cyanAccent
                               // ),
-                              child:
-                              Text(
+                              child: Text(
                                 Ikrar_Pelatih.no_4,
                                 textAlign: TextAlign.justify,
                                 style: TextStyle(
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w600),
+                                    fontSize: 16, fontWeight: FontWeight.w600),
                               ),
                             ),
                           ),
@@ -351,18 +319,18 @@ class _BerandaState extends State<Beranda> {
                       Row(
                         children: [
                           Container(
-                            margin: EdgeInsets.only(left: 20,),
+                            margin: EdgeInsets.only(
+                              left: 20,
+                            ),
                             width: 20,
                             height: 50,
                             // decoration: BoxDecoration(
                             //     color: Colors.cyan
                             // ),
-                            child:
-                            Text(
+                            child: Text(
                               '5.',
                               style: TextStyle(
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.w600),
+                                  fontSize: 16, fontWeight: FontWeight.w600),
                             ),
                           ),
                           Expanded(
@@ -373,13 +341,11 @@ class _BerandaState extends State<Beranda> {
                               // decoration: BoxDecoration(
                               //     color: Colors.cyanAccent
                               // ),
-                              child:
-                              Text(
+                              child: Text(
                                 Ikrar_Pelatih.no_5,
                                 textAlign: TextAlign.justify,
                                 style: TextStyle(
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w600),
+                                    fontSize: 16, fontWeight: FontWeight.w600),
                               ),
                             ),
                           ),
@@ -391,40 +357,33 @@ class _BerandaState extends State<Beranda> {
 
                 //Moto Pelatih
                 Container(
-                  margin: EdgeInsets.only(top: 25, left: 15, right: 15, bottom: 20),
+                  margin:
+                      EdgeInsets.only(top: 25, left: 15, right: 15, bottom: 20),
                   width: double.infinity,
                   height: 210,
-                  decoration: BoxDecoration(
-                    color: Colors.white
-                  ),
-                  child:
-                  Column(
+                  decoration: BoxDecoration(color: Colors.white),
+                  child: Column(
                     children: [
                       Container(
                         height: 80,
                         color: Colors.black,
-                        child:
-                        Center(
+                        child: Center(
                           child: Text(
                             Moto_Pelatih.head,
                             style: TextStyle(
                                 fontSize: 18,
                                 fontWeight: FontWeight.w600,
-                                color: Colors.white
-                            ),
+                                color: Colors.white),
                           ),
                         ),
                       ),
                       Container(
                         margin: EdgeInsets.only(top: 20, left: 15, right: 15),
-                        child:
-                        Text(
+                        child: Text(
                           Moto_Pelatih.isi,
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.w600
-                          ),
+                              fontSize: 16, fontWeight: FontWeight.w600),
                         ),
                       )
                     ],
@@ -433,53 +392,49 @@ class _BerandaState extends State<Beranda> {
 
                 //Sejarah Singkat
                 Container(
-                  margin: EdgeInsets.only(top: 25, left: 15, right: 15, bottom: 30),
+                  margin:
+                      EdgeInsets.only(top: 25, left: 15, right: 15, bottom: 30),
                   width: double.infinity,
                   height: 1180,
-                  decoration: BoxDecoration(
-                      color: Colors.white
-                  ),
-                  child:
-                  Column(
+                  decoration: BoxDecoration(color: Colors.white),
+                  child: Column(
                     children: [
                       //head
                       Container(
-                        padding: EdgeInsets.only(top: 15, bottom: 15),
+                        padding: const EdgeInsets.only(top: 15, bottom: 15),
                         width: double.infinity,
                         height: 80,
                         color: Colors.black,
-                        child:
-                        Column(
+                        child: Column(
                           children: [
                             Text(
                               Sejarah_Singkat.headSejarah,
-                              style:
-                              TextStyle(
+                              style: const TextStyle(
                                   fontSize: 18,
                                   fontWeight: FontWeight.w600,
                                   color: Colors.white),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 5,
                             ),
-                            Text(
-                                Sejarah_Singkat.headNomor,
-                                style:
-                                TextStyle(
-                                    fontSize: 16,
-                                    color: Colors.white)
-                            ),
+                            Text(Sejarah_Singkat.headNomor,
+                                style: const TextStyle(
+                                    fontSize: 16, color: Colors.white)),
                           ],
                         ),
                       ),
                       //Pendiri
                       Container(
-                        margin: EdgeInsets.only(top: 15, left: 10, right: 10,),
-                        child:
-                        Text('Perguruan ini didirikan Pada Tanggal 28 Juli 1968 di Jakarta oleh Tiga orang pendiri yaitu :'),
+                        margin: const EdgeInsets.only(
+                          top: 15,
+                          left: 10,
+                          right: 10,
+                        ),
+                        child: const Text(
+                            'Perguruan ini didirikan Pada Tanggal 28 Juli 1968 di Jakarta oleh Tiga orang pendiri yaitu :'),
                       ),
                       Padding(
-                        padding: const EdgeInsets.only( left: 10, right: 10),
+                        padding: const EdgeInsets.only(left: 10, right: 10),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
@@ -494,9 +449,12 @@ class _BerandaState extends State<Beranda> {
                       ),
                       //Sebelumnya
                       Container(
-                        margin: EdgeInsets.only(top: 20, left: 20, right: 20,),
-                        child:
-                        Column(
+                        margin: const EdgeInsets.only(
+                          top: 20,
+                          left: 20,
+                          right: 20,
+                        ),
+                        child: Column(
                           children: [
                             Container(
                               margin: EdgeInsets.only(bottom: 20),
@@ -526,14 +484,16 @@ class _BerandaState extends State<Beranda> {
                       //Maka dari itu
                       Container(
                         margin: EdgeInsets.only(top: 20, left: 20, right: 20),
-                        child:
-                        Text(Sejarah_Singkat.maka_dari_itu, textAlign: TextAlign.justify,),
+                        child: Text(
+                          Sejarah_Singkat.maka_dari_itu,
+                          textAlign: TextAlign.justify,
+                        ),
                       ),
                       //Gambar KPN dan Pelatih Utama
                       Container(
-                        margin: EdgeInsets.only(top: 20, left: 20, right: 20, bottom: 10),
-                        child:
-                        Row(
+                        margin: EdgeInsets.only(
+                            top: 20, left: 20, right: 20, bottom: 10),
+                        child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
                             //gambar KPN
@@ -546,11 +506,9 @@ class _BerandaState extends State<Beranda> {
                                 ),
                                 Text(
                                   'PELATIH UTAMA KPSN',
-                                  style:
-                                  TextStyle(
+                                  style: TextStyle(
                                       fontWeight: FontWeight.w500,
-                                      color: Colors.white
-                                  ),
+                                      color: Colors.white),
                                 )
                               ],
                             ),
@@ -564,11 +522,9 @@ class _BerandaState extends State<Beranda> {
                                 ),
                                 Text(
                                   'PELATIH UTAMA KPSN',
-                                  style:
-                                  TextStyle(
+                                  style: TextStyle(
                                       fontWeight: FontWeight.w500,
-                                      color: Color(0xff002060)
-                                  ),
+                                      color: Color(0xff002060)),
                                 )
                               ],
                             ),
@@ -595,8 +551,7 @@ class _BerandaState extends State<Beranda> {
                       //gambar kpsn dan pelatih utama
                       Container(
                         margin: EdgeInsets.only(top: 30, left: 15, right: 15),
-                        child:
-                        Row(
+                        child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
                             Column(
