@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:ksp_nusantara_app/data/data.dart';
-import 'package:ksp_nusantara_app/models/golongan.dart';
 import 'package:ksp_nusantara_app/screen/final_materi_screen.dart';
 
 import '../data/icons.dart';
+import '../models/sub_tingkat.dart';
+import '../models/tingkat.dart';
 
 class DetailMateriScreen extends StatelessWidget {
   DetailMateriScreen({super.key, required this.tingkat});
