@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-Widget profilPage(){
+Widget AD_dan_ART_Page(){
   return ListView(
     children: [
       Center(
-        child: Text('Profilpage'),
+        child: Text('AD dan ART Page'),
       )
     ],
   );

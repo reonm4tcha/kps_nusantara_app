@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-Widget profilPage(){
+Widget ArsipPage(){
   return ListView(
     children: [
       Center(
-        child: Text('Profilpage'),
+        child: Text('Arsip Page'),
       )
     ],
   );
