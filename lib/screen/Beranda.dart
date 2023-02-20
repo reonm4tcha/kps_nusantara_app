@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:ksp_nusantara_app/data/Ikrar_Pelatih.dart';
 import 'package:ksp_nusantara_app/data/Sambutan.dart';
 import 'package:ksp_nusantara_app/data/Sejarah_Singkat.dart';
+import 'package:ksp_nusantara_app/data/Moto_Pelatih.dart';
 
 class Beranda extends StatefulWidget {
   const Beranda({Key? key}) : super(key: key);
@@ -50,14 +52,14 @@ class _BerandaState extends State<Beranda> {
         Expanded(
           child: Container(
             width: double.infinity,
-            decoration: const BoxDecoration(
-              color: Color(0xff5B8FB9),
-            ),
+            decoration: BoxDecoration(
+                // color: Color(0xff5B8FB9),
+                ),
             child: ListView(
               children: [
+                //gambar berjalan
                 Container(
-                  margin: const EdgeInsets.only(
-                      top: 10, left: 30, right: 30, bottom: 20),
+                  margin: EdgeInsets.only(top: 10, bottom: 20),
                   width: double.infinity,
                   height: 180,
                   decoration: BoxDecoration(
@@ -71,8 +73,8 @@ class _BerandaState extends State<Beranda> {
                   margin: const EdgeInsets.only(
                       top: 25, left: 15, right: 15, bottom: 20),
                   width: double.infinity,
-                  height: 900,
-                  decoration: const BoxDecoration(color: Colors.white),
+                  height: 940,
+                  decoration: BoxDecoration(color: Colors.white),
                   child: Column(
                     children: [
                       //head Sambutan
@@ -113,22 +115,19 @@ class _BerandaState extends State<Beranda> {
                       ),
                       //isi Paragraf 1
                       Container(
-                        margin:
-                            const EdgeInsets.only(top: 10, left: 10, right: 10),
+                        margin: EdgeInsets.only(top: 10, left: 15, right: 15),
                         child: Text(Sambutan.isi_Sambutan1,
                             textAlign: TextAlign.justify),
                       ),
                       //isi Paragraf 2
                       Container(
-                        margin:
-                            const EdgeInsets.only(top: 10, left: 10, right: 10),
+                        margin: EdgeInsets.only(top: 20, left: 15, right: 15),
                         child: Text(Sambutan.isi_Sambutan2,
                             textAlign: TextAlign.justify),
                       ),
                       //isi Paragraf 3
                       Container(
-                        margin:
-                            const EdgeInsets.only(top: 10, left: 10, right: 10),
+                        margin: EdgeInsets.only(top: 20, left: 15, right: 15),
                         child: Text(
                           Sambutan.isi_Sambutan3,
                           textAlign: TextAlign.justify,
@@ -136,8 +135,7 @@ class _BerandaState extends State<Beranda> {
                       ),
                       //isi paragraf 4
                       Container(
-                        margin:
-                            const EdgeInsets.only(top: 10, left: 10, right: 10),
+                        margin: EdgeInsets.only(top: 20, left: 15, right: 15),
                         child: Text(
                           Sambutan.isi_Sambutan4,
                           textAlign: TextAlign.justify,
@@ -147,13 +145,258 @@ class _BerandaState extends State<Beranda> {
                   ),
                 ),
 
-                //Sejarah Singkat
+                //Ikrar Pelatih
                 Container(
                   margin: const EdgeInsets.only(
                       top: 25, left: 15, right: 15, bottom: 20),
                   width: double.infinity,
-                  height: 900,
-                  decoration: const BoxDecoration(color: Colors.white),
+                  height: 410,
+                  decoration: BoxDecoration(color: Colors.white),
+                  child: Column(
+                    children: [
+                      Container(
+                        width: double.infinity,
+                        height: 80,
+                        decoration: BoxDecoration(color: Colors.black),
+                        child: Center(
+                          child: Text(
+                            Ikrar_Pelatih.head,
+                            style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.w600,
+                                color: Colors.white),
+                          ),
+                        ),
+                      ),
+                      //no 1
+                      Row(
+                        children: [
+                          Container(
+                            margin: EdgeInsets.only(
+                              top: 20,
+                              left: 20,
+                            ),
+                            width: 20,
+                            height: 50,
+                            // decoration: BoxDecoration(
+                            //   color: Colors.cyan
+                            // ),
+                            child: Text(
+                              '1.',
+                              style: TextStyle(
+                                  fontSize: 16, fontWeight: FontWeight.w600),
+                            ),
+                          ),
+                          Expanded(
+                            child: Container(
+                              margin: EdgeInsets.only(top: 20, right: 20),
+                              // width: double.infinity,
+                              height: 50,
+                              // decoration: BoxDecoration(
+                              //     color: Colors.cyanAccent
+                              // ),
+                              child: Text(
+                                Ikrar_Pelatih.no_1,
+                                textAlign: TextAlign.justify,
+                                style: TextStyle(
+                                    fontSize: 16, fontWeight: FontWeight.w600),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      //no 2
+                      Row(
+                        children: [
+                          Container(
+                            margin: EdgeInsets.only(
+                              left: 20,
+                            ),
+                            width: 20,
+                            height: 50,
+                            // decoration: BoxDecoration(
+                            //     color: Colors.cyan
+                            // ),
+                            child: Text(
+                              '2.',
+                              style: TextStyle(
+                                  fontSize: 16, fontWeight: FontWeight.w600),
+                            ),
+                          ),
+                          Expanded(
+                            child: Container(
+                              margin: EdgeInsets.only(right: 20),
+                              // width: double.infinity,
+                              height: 50,
+                              // decoration: BoxDecoration(
+                              //     color: Colors.cyanAccent
+                              // ),
+                              child: Text(
+                                Ikrar_Pelatih.no_2,
+                                textAlign: TextAlign.justify,
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      //no 3
+                      Row(
+                        children: [
+                          Container(
+                            margin: EdgeInsets.only(
+                              left: 20,
+                            ),
+                            width: 20,
+                            height: 50,
+                            // decoration: BoxDecoration(
+                            //     color: Colors.cyan
+                            // ),
+                            child: Text(
+                              '3.',
+                              style: TextStyle(
+                                  fontSize: 16, fontWeight: FontWeight.w600),
+                            ),
+                          ),
+                          Expanded(
+                            child: Container(
+                              margin: EdgeInsets.only(right: 20),
+                              // width: double.infinity,
+                              height: 50,
+                              // decoration: BoxDecoration(
+                              //     color: Colors.cyanAccent
+                              // ),
+                              child: Text(
+                                Ikrar_Pelatih.no_3,
+                                textAlign: TextAlign.justify,
+                                style: TextStyle(
+                                    fontSize: 16, fontWeight: FontWeight.w600),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      //no 4
+                      Row(
+                        children: [
+                          Container(
+                            margin: EdgeInsets.only(
+                              left: 20,
+                            ),
+                            width: 20,
+                            height: 90,
+                            // decoration: BoxDecoration(
+                            //     color: Colors.cyan
+                            // ),
+                            child: Text(
+                              '4.',
+                              style: TextStyle(
+                                  fontSize: 16, fontWeight: FontWeight.w600),
+                            ),
+                          ),
+                          Expanded(
+                            child: Container(
+                              margin: EdgeInsets.only(right: 20),
+                              // width: double.infinity,
+                              height: 90,
+                              // decoration: BoxDecoration(
+                              //     color: Colors.cyanAccent
+                              // ),
+                              child: Text(
+                                Ikrar_Pelatih.no_4,
+                                textAlign: TextAlign.justify,
+                                style: TextStyle(
+                                    fontSize: 16, fontWeight: FontWeight.w600),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      //no 5
+                      Row(
+                        children: [
+                          Container(
+                            margin: EdgeInsets.only(
+                              left: 20,
+                            ),
+                            width: 20,
+                            height: 50,
+                            // decoration: BoxDecoration(
+                            //     color: Colors.cyan
+                            // ),
+                            child: Text(
+                              '5.',
+                              style: TextStyle(
+                                  fontSize: 16, fontWeight: FontWeight.w600),
+                            ),
+                          ),
+                          Expanded(
+                            child: Container(
+                              margin: EdgeInsets.only(right: 20),
+                              // width: double.infinity,
+                              height: 50,
+                              // decoration: BoxDecoration(
+                              //     color: Colors.cyanAccent
+                              // ),
+                              child: Text(
+                                Ikrar_Pelatih.no_5,
+                                textAlign: TextAlign.justify,
+                                style: TextStyle(
+                                    fontSize: 16, fontWeight: FontWeight.w600),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+
+                //Moto Pelatih
+                Container(
+                  margin:
+                      EdgeInsets.only(top: 25, left: 15, right: 15, bottom: 20),
+                  width: double.infinity,
+                  height: 210,
+                  decoration: BoxDecoration(color: Colors.white),
+                  child: Column(
+                    children: [
+                      Container(
+                        height: 80,
+                        color: Colors.black,
+                        child: Center(
+                          child: Text(
+                            Moto_Pelatih.head,
+                            style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.w600,
+                                color: Colors.white),
+                          ),
+                        ),
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(top: 20, left: 15, right: 15),
+                        child: Text(
+                          Moto_Pelatih.isi,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.w600),
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+
+                //Sejarah Singkat
+                Container(
+                  margin:
+                      EdgeInsets.only(top: 25, left: 15, right: 15, bottom: 30),
+                  width: double.infinity,
+                  height: 1180,
+                  decoration: BoxDecoration(color: Colors.white),
                   child: Column(
                     children: [
                       //head
@@ -213,22 +456,25 @@ class _BerandaState extends State<Beranda> {
                         ),
                         child: Column(
                           children: [
-                            Text(
-                              Sejarah_Singkat.Dahulu,
-                              textAlign: TextAlign.justify,
+                            Container(
+                              margin: EdgeInsets.only(bottom: 20),
+                              child: Text(
+                                Sejarah_Singkat.Dahulu,
+                                textAlign: TextAlign.justify,
+                              ),
                             ),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
                                 Image.asset(
                                   Sejarah_Singkat.Sebelumnya1,
-                                  height: 70,
-                                  width: 70,
+                                  height: 100,
+                                  width: 100,
                                 ),
                                 Image.asset(
                                   Sejarah_Singkat.Sebelumnya2,
-                                  height: 70,
-                                  width: 70,
+                                  height: 100,
+                                  width: 100,
                                 )
                               ],
                             ),
@@ -236,8 +482,111 @@ class _BerandaState extends State<Beranda> {
                         ),
                       ),
                       //Maka dari itu
-                      Container(),
-                      Container()
+                      Container(
+                        margin: EdgeInsets.only(top: 20, left: 20, right: 20),
+                        child: Text(
+                          Sejarah_Singkat.maka_dari_itu,
+                          textAlign: TextAlign.justify,
+                        ),
+                      ),
+                      //Gambar KPN dan Pelatih Utama
+                      Container(
+                        margin: EdgeInsets.only(
+                            top: 20, left: 20, right: 20, bottom: 10),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            //gambar KPN
+                            Column(
+                              children: [
+                                Image.asset(
+                                  Sejarah_Singkat.KPN_image,
+                                  height: 100,
+                                  width: 100,
+                                ),
+                                Text(
+                                  'PELATIH UTAMA KPSN',
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.w500,
+                                      color: Colors.white),
+                                )
+                              ],
+                            ),
+                            //gambar Pelatih Utama
+                            Column(
+                              children: [
+                                Image.asset(
+                                  Sejarah_Singkat.pelatih_utama_image,
+                                  height: 100,
+                                  width: 100,
+                                ),
+                                Text(
+                                  'PELATIH UTAMA KPSN',
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.w500,
+                                      color: Color(0xff002060)),
+                                )
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      //Seiring dengan telah Wafatnya Para Pendiri 3 Serangkai
+                      //p1
+                      Container(
+                        margin: EdgeInsets.only(top: 20, left: 15, right: 15),
+                        child: Text(
+                          Sejarah_Singkat.p1_seiring_waktu,
+                          textAlign: TextAlign.justify,
+                        ),
+                      ),
+                      //p2
+                      Container(
+                        margin: EdgeInsets.only(top: 20, left: 15, right: 15),
+                        child: Text(
+                          Sejarah_Singkat.p2_seiring_waktu,
+                          textAlign: TextAlign.justify,
+                        ),
+                      ),
+                      //gambar kpsn dan pelatih utama
+                      Container(
+                        margin: EdgeInsets.only(top: 30, left: 15, right: 15),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            Column(
+                              children: [
+                                Image.asset(
+                                  'assets/image/Perguruan.png',
+                                  height: 100,
+                                ),
+                                SizedBox(
+                                  height: 50,
+                                ),
+                              ],
+                            ),
+                            Column(
+                              children: [
+                                Image.asset(
+                                  Sejarah_Singkat.pelatih_utama2_image,
+                                  height: 100,
+                                ),
+                                SizedBox(
+                                  height: 10,
+                                ),
+                                Text(
+                                  'PELATIH UTAMA\nKESATRIA PSN',
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.w500,
+                                    color: Color(0xff362FD9),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ],
+                        ),
+                      )
                     ],
                   ),
                 )

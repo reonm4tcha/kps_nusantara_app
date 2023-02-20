@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:ksp_nusantara_app/screen/Beranda.dart';
 import 'package:ksp_nusantara_app/screen/materi_screen.dart';
+import 'package:ksp_nusantara_app/screen/Panduan.dart';
+import 'package:ksp_nusantara_app/screen/Lainnya.dart';
 
 void main() {
   runApp(const Kesatria_PS_Nusantara());
@@ -33,12 +35,11 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  final pages = [
+  final Pages = [
     const Beranda(),
     const MateriScreen(),
-    // Panduan(),
-    // Lainnya(),
-    // Pelantikan()
+    const Panduan(),
+    const Lainnya(),
   ];
 
   int selectPage = 0;
@@ -71,12 +72,6 @@ class _HomeState extends State<Home> {
               label: 'Lainnya',
               icon: Icon(
                 Icons.menu,
-              ),
-              backgroundColor: Color(0xff362FD9)),
-          BottomNavigationBarItem(
-              label: 'Pelantikan',
-              icon: Icon(
-                Icons.menu_open,
               ),
               backgroundColor: Color(0xff362FD9)),
         ],
