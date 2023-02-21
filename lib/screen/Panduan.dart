@@ -25,14 +25,80 @@ class _PanduanState extends State<Panduan> {
         elevation: 0,
         backgroundColor: Color(0xff362FD9), //Color(0xff5B8FB9)
       ),
-      body: SafeArea(
+      body: Container(
+        height: MediaQuery.of(context).size.height,
+        decoration: BoxDecoration(
+            gradient: LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                stops: [
+              0.0,
+              0.7,
+            ],
+                colors: [
+              Color(0xff362FD9),
+              Colors.white,
+            ])),
         child: SingleChildScrollView(
           child: Column(
             children: [
-              buildpengetahuan(context),
-              buildMaknaKiasan(context),
-              buildPernafasan(context),
-              buildPedoman(context),
+              Container(
+                width: MediaQuery.of(context).size.width,
+                margin: EdgeInsets.only(right: 20, left: 15, bottom: 10),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Container(
+                      width: MediaQuery.of(context).size.width / 1.8,
+                      padding: EdgeInsets.all(4),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Color.fromRGBO(255, 253, 253, 0.911),
+                      ),
+                      child: Text(' Hal-hal dasar yang perlu diketahui!',
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                          style: TextStyle(color: Colors.black, fontSize: 13)),
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        Image.asset(
+                          'assets/image/Yayasan.png',
+                          height: MediaQuery.of(context).size.width / 10,
+                          width: MediaQuery.of(context).size.width / 10,
+                        ),
+                        Image.asset(
+                          'assets/image/Perguruan.png',
+                          height: MediaQuery.of(context).size.width / 11,
+                          width: MediaQuery.of(context).size.width / 11,
+                        )
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                width: MediaQuery.of(context).size.width,
+                height: MediaQuery.of(context).size.height / 1.36, //1.37
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(30),
+                        topRight: Radius.circular(30))),
+                child: SafeArea(
+                  child: SingleChildScrollView(
+                    child: Column(
+                      children: [
+                        buildpengetahuan(context),
+                        buildMaknaKiasan(context),
+                        buildPernafasan(context),
+                        buildPedoman(context),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
             ],
           ),
         ),

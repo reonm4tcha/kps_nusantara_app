@@ -50,7 +50,10 @@ class _PernafasanPageState extends State<PernafasanPage> {
                     height: MediaQuery.of(context).size.height / 1.31,
                     width: MediaQuery.of(context).size.width,
                     child: SfPdfViewer.asset(
-                        widget.panduanData[widget.index].pdfURL))
+                      widget.panduanData[widget.index].pdfURL,
+                      canShowScrollStatus: false,
+                      canShowScrollHead: false,
+                    ))
               ],
             ),
           ),

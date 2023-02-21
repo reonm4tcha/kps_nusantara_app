@@ -1,28 +1,27 @@
 import 'package:ksp_nusantara_app/models/golongan.dart';
 
-final _calonSatria = Golongan(
-  imageUrl: '/assets/image/logo.jpg',
-  name: 'Golongan Calon Satria',
-  tingkat: [
-    'Pelantikan',
-    'Sabuk Hitam',
-  ],
-);
+import '../models/sub_tingkat.dart';
+import '../models/tingkat.dart';
 
-final _satriaMuda = Golongan(
-  imageUrl: '/assets/image/logo.jpg',
-  name: 'Golongan Satria Muda',
-  tingkat: [
-    'Sabuk Biru',
-    'Sabuk Biru Belati 1',
-    'Sabuk Biru Belati 2',
-    'Sabuk Biru Belati 3',
-    'Test Renz',
-    'Test Sandi',
-  ],
-);
+part 'data_tingkat.dart';
+part 'data_golongan.dart';
+part 'data_sub_tingkat.dart';
 
 final List<Golongan> golonganList = [
   _calonSatria,
   _satriaMuda,
+  _satriaMadya,
+  _satriaUtama,
+  _pandegaMuda,
+  _pandegaMadya,
+  _pandegaUtama,
+  _pendekarMuda,
+];
+
+final List<String> _materiDetailHeaders = [
+  'Teknik Dasar',
+  'Latihan Beladiri',
+  'Keindahan Gerak',
+  'Ketangkasan',
+  'Olah Pernafasan',
 ];

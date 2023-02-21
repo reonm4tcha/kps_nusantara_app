@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ksp_nusantara_app/data/data.dart';
 import 'package:ksp_nusantara_app/data/font_style.dart';
 import 'package:ksp_nusantara_app/models/golongan.dart';
+import 'package:ksp_nusantara_app/screen/detail_materi_screen.dart';
 import 'package:ksp_nusantara_app/widgets/materi_card.dart';
 
 class MateriScreen extends StatelessWidget {
@@ -9,27 +10,30 @@ class MateriScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final List golongan = golonganList;
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color(0xff362FD9),
+        backgroundColor: const Color(0xff362FD9),
         title: const Text('TINGKATAN SABUK'),
         centerTitle: true,
-        elevation: 0,
       ),
       body: ListView.builder(
-        itemCount: golonganList.length,
+        itemCount: golongan.length,
         physics: const ScrollPhysics(),
         itemBuilder: (BuildContext context, int index) {
           return Card(
-            margin: const EdgeInsets.all(16),
-            child: Column(
-              children: [
-                Text(
-                  golonganList[index].name,
-                  style: bFont20,
-                ),
-                buildSubData(golonganList[index], index)
-              ],
+            margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(vertical: 8),
+              child: Column(
+                children: [
+                  Text(
+                    golongan[index].name,
+                    style: bFont20,
+                  ),
+                  buildSubData(context, golongan[index], index)
+                ],
+              ),
             ),
           );
         },
@@ -37,13 +41,25 @@ class MateriScreen extends StatelessWidget {
     );
   }
 
-  Widget buildSubData(Golongan golongan, int index) {
+  Widget buildSubData(BuildContext context, Golongan golongan, int index) {
     return Column(
       children: List.generate(
         golongan.tingkat.length,
-        (index) => MateriCard(
-          name: golongan.tingkat[index],
-          imageUrl: 'assets/image/logo.jpg',
+        (index) => GestureDetector(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => DetailMateriScreen(
+                  tingkat: golongan.tingkat[index],
+                ),
+              ),
+            );
+          },
+          child: MateriCard(
+            name: golongan.tingkat[index].name,
+            imageUrl: golongan.imageUrl,
+          ),
         ),
       ),
     );
