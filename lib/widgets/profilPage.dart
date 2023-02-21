@@ -53,6 +53,43 @@ Widget profilPage(){
       SizedBox(
         height: 30,
       ),
+      Container(
+        width: double.infinity,
+        child: Center(
+          child: ListTile(
+            leading: Icon(Icons.contact_mail),
+            title: Text('Sekertariat\t:'),
+          ),
+        ),
+      ),
+      Container(
+        width: double.infinity,
+        child: Center(
+          child: ListTile(
+            leading: Icon(Icons.call),
+            title: Text('Kontak\t:'),
+          ),
+        ),
+      ),
+      Container(
+        width: double.infinity,
+        child: Center(
+          child: ListTile(
+            // leading: Icon(Icons.instagram),
+            title: Text('Instagram\t:'),
+          ),
+        ),
+      ),
+      Container(
+        width: double.infinity,
+        child: Center(
+          child: ListTile(
+            leading: Icon(Icons.email),
+            title: Text('Email\t:'),
+          ),
+        ),
+      ),
+
     ],
   );
 }
