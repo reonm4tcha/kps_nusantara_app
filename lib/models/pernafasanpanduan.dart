@@ -1,10 +1,12 @@
-class MaknaModel {
+class PernafasanModel {
   final String title;
+  final String pdfURL;
   final String judul;
   final String isi;
 
-  MaknaModel({
+  PernafasanModel({
     required this.title,
+    required this.pdfURL,
     required this.judul,
     required this.isi,
   });
