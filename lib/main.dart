@@ -17,6 +17,7 @@ class Kesatria_PS_Nusantara extends StatelessWidget {
       title: 'Kesatria PS Nusantara',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+          // fontFamily: 'Poppins',
           primaryColor: const Color(0xff362FD9),
           appBarTheme: const AppBarTheme(
             color: Color(0xff362FD9),
