@@ -108,60 +108,115 @@ final _sabukCokelat = Tingkat(
   name: 'Sabuk Cokelat',
   form: 'assets/image/FORM C.jpg',
   header: _materiDetailHeaders,
-  subTingkat: [_pTeknikDasar, _pLatihanBeladiri],
+  subTingkat: [
+    _cTeknikDasar,
+    _cLatihanBeladiri,
+    _cKeindahanGerak,
+    _cKetangkasan,
+    _cOlahPernafasan
+  ],
 );
 
 final _sabukCokelat1 = Tingkat(
   name: 'Sabuk Cokelat Belati 1',
   form: 'assets/image/FORM C1.jpg',
   header: _materiDetailHeaders,
-  subTingkat: [_pTeknikDasar, _pLatihanBeladiri],
+  subTingkat: [
+    _c1TeknikDasar,
+    _c1LatihanBeladiri,
+    _c1KeindahanGerak,
+    _c1Ketangkasan,
+    _c1OlahPernafasan
+  ],
 );
 
 final _sabukCokelat2 = Tingkat(
   name: 'Sabuk Cokelat Belati 2',
   form: 'assets/image/FORM C2.jpg',
   header: _materiDetailHeaders,
-  subTingkat: [_pTeknikDasar, _pLatihanBeladiri],
+  subTingkat: [
+    _c2TeknikDasar,
+    _c2LatihanBeladiri,
+    _c2KeindahanGerak,
+    _c2Ketangkasan,
+    _c2OlahPernafasan
+  ],
 );
 
 final _sabukUngu = Tingkat(
   name: 'Sabuk Ungu',
   form: 'assets/image/FORM U.jpg',
   header: _materiDetailHeaders,
-  subTingkat: [_pTeknikDasar, _pLatihanBeladiri],
+  subTingkat: [
+    _uTeknikDasar,
+    _uLatihanBeladiri,
+    _uKeindahanGerak,
+    _uKetangkasan,
+    _uOlahPernafasan
+  ],
 );
 
 final _sabukUngu1 = Tingkat(
   name: 'Sabuk Ungu Belati 1',
   form: 'assets/image/FORM U1.jpg',
   header: _materiDetailHeaders,
-  subTingkat: [_pTeknikDasar, _pLatihanBeladiri],
+  subTingkat: [
+    _u1TeknikDasar,
+    _u1LatihanBeladiri,
+    _u1KeindahanGerak,
+    _u1Ketangkasan,
+    _u1OlahPernafasan
+  ],
 );
 
 final _sabukUngu2 = Tingkat(
   name: 'Sabuk Ungu Belati 2',
   form: 'assets/image/FORM U2.jpg',
   header: _materiDetailHeaders,
-  subTingkat: [_pTeknikDasar, _pLatihanBeladiri],
+  subTingkat: [
+    _u2TeknikDasar,
+    _u2LatihanBeladiri,
+    _u2KeindahanGerak,
+    _u2Ketangkasan,
+    _u2OlahPernafasan
+  ],
 );
 
 final _sabukMerah = Tingkat(
   name: 'Sabuk Merah',
   form: 'assets/image/FORM M.jpg',
   header: _materiDetailHeaders,
-  subTingkat: [_pTeknikDasar, _pLatihanBeladiri],
+  subTingkat: [
+    _mTeknikDasar,
+    _mLatihanBeladiri,
+    _mKeindahanGerak,
+    _mKetangkasan,
+    _mOlahPernafasan
+  ],
 );
 
 final _sabukJingga = Tingkat(
   name: 'Sabuk Jingga',
   form: 'assets/image/FORM J.jpg',
   header: _materiDetailHeaders,
-  subTingkat: [_pTeknikDasar, _pLatihanBeladiri],
+  subTingkat: [
+    _jTeknikDasar,
+    _jLatihanBeladiri,
+    _jKeindahanGerak,
+    _jKetangkasan,
+    _jOlahPernafasan
+  ],
 );
+
 final _sabukKuning = Tingkat(
   name: 'Sabuk Kuning',
   form: 'assets/image/FORM K.jpg',
   header: _materiDetailHeaders,
-  subTingkat: [_pTeknikDasar, _pLatihanBeladiri],
+  subTingkat: [
+    _kTeknikDasar,
+    _kLatihanBeladiri,
+    _kKeindahanGerak,
+    _kKetangkasan,
+    _kOlahPernafasan
+  ],
 );
