@@ -27,7 +27,7 @@ Widget AD_dan_ART_Page(){
             data_AD_DAN_ART.head_Pembukaan,
             style:
             TextStyle(
-                fontSize: 16,
+                fontSize: 18,
                 fontWeight: FontWeight.w600),
           ),
         ),
@@ -88,6 +88,20 @@ Widget AD_dan_ART_Page(){
           textAlign: TextAlign.justify,
         ),
       ),
+      Container(
+        margin: EdgeInsets.only(top: 30),
+        child:
+        Center(
+          child:
+          Text(
+            'data',
+            style: TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.w600
+            ),
+          ),
+        ),
+      )
     ],
   );
 }
