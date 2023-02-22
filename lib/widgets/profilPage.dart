@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ksp_nusantara_app/data/data_Profil.dart';
+import 'package:ksp_nusantara_app/data/Data%20Lainnya/data_Profil.dart';
 
 Widget profilPage(){
   return ListView(

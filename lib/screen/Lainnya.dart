@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ksp_nusantara_app/data/Lainnya_data.dart';
+import 'package:ksp_nusantara_app/data/Data%20Lainnya/Lainnya_data.dart';
 import 'package:ksp_nusantara_app/widgets/isi1.dart';
 
 class Lainnya extends StatefulWidget {
