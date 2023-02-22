@@ -118,28 +118,24 @@ Widget AD_dan_ART_Page(){
         width: double.infinity,
         margin: EdgeInsets.only(top: 20),
         child:
-        Center(
-          child: Text(
-            data_AD_DAN_ART.no_1BABI,
-            style:
-            TextStyle(
-              fontSize: 16
+        Column(
+          children: [
+            Text(
+              data_AD_DAN_ART.no_1BABI,
+              style:
+              TextStyle(
+                  fontSize: 16
+              ),
             ),
-          ),
-        ),
-      ),
-      Container(
-        width: double.infinity,
-        child:
-        Center(
-          child: Text(
-            data_AD_DAN_ART.nama_passal1BABI,
-            style:
-            TextStyle(
-              fontSize: 16,
-              fontWeight: FontWeight.w600
+            Text(
+              data_AD_DAN_ART.nama_passal1BABI,
+              style:
+              TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w600
+              ),
             ),
-          ),
+          ]
         ),
       ),
       Container(
@@ -153,12 +149,67 @@ Widget AD_dan_ART_Page(){
       ),
       Container(
         width: double.infinity,
-        margin: EdgeInsets.only(top: 30),
+        margin: EdgeInsets.only(top: 20),
         child:
-        Center(
-          child: Text(
-'            // data_AD_DAN_ART.'
-          ),
+        Column(
+          children: [
+            Text(
+              data_AD_DAN_ART.no_2BABI,
+              style:
+              TextStyle(
+                fontSize: 16,
+              ),
+            ),
+            Text(
+              data_AD_DAN_ART.nama_passal2BABI,
+              style:
+              TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.w600
+              ),
+            )
+          ],
+        )
+      ),
+      Container(
+        width: double.infinity,
+        margin: EdgeInsets.only(top: 20, left: 20, right: 20),
+        child:
+        Text(
+          data_AD_DAN_ART.isi_passal2BABI
+        ),
+      ),
+      Container(
+        width: double.infinity,
+        margin: EdgeInsets.only(top: 20),
+        child:
+        Column(
+          children: [
+            Text(
+              data_AD_DAN_ART.no_3BABI,
+              style:
+              TextStyle(
+                fontSize: 16,
+              ),
+            ),
+            Text(
+              data_AD_DAN_ART.nama_passal3BABI,
+              style:
+              TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w600
+              ),
+            )
+          ],
+        ),
+      ),
+      Container(
+        width: double.infinity,
+        margin: EdgeInsets.only(top: 20, left: 20, right: 20),
+        child:
+        Text(
+          data_AD_DAN_ART.isi_passal3BABI,
+          textAlign: TextAlign.justify,
         ),
       ),
     ],
