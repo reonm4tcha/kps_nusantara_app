@@ -33,7 +33,7 @@ Widget AD_dan_ART_Page(){
         ),
       ),
       Container(
-        margin: EdgeInsets.only(top: 20, left: 15, right: 15),
+        margin: EdgeInsets.only(top: 20, left: 20, right: 20),
         child:
         Text(
           data_AD_DAN_ART.isi_Pembukaan1,
@@ -41,7 +41,7 @@ Widget AD_dan_ART_Page(){
         ),
       ),
       Container(
-        margin: EdgeInsets.only(top: 10, left: 15, right: 15),
+        margin: EdgeInsets.only(top: 10, left: 20, right: 20),
         child:
         Text(
           data_AD_DAN_ART.isi_Pembukaan2,
@@ -49,7 +49,7 @@ Widget AD_dan_ART_Page(){
         ),
       ),
       Container(
-        margin: EdgeInsets.only(top: 10, left: 15, right: 15),
+        margin: EdgeInsets.only(top: 10, left: 20, right: 20),
         child:
         Text(
           data_AD_DAN_ART.isi_Pembukaan3,
@@ -57,7 +57,7 @@ Widget AD_dan_ART_Page(){
         ),
       ),
       Container(
-        margin: EdgeInsets.only(top: 10, left: 15, right: 15),
+        margin: EdgeInsets.only(top: 10, left: 20, right: 20),
         child:
         Text(
           data_AD_DAN_ART.isi_Pembukaan4,
@@ -65,7 +65,7 @@ Widget AD_dan_ART_Page(){
         ),
       ),
       Container(
-        margin: EdgeInsets.only(top: 10, left: 15, right: 15),
+        margin: EdgeInsets.only(top: 10, left: 20, right: 20),
         child:
         Text(
           data_AD_DAN_ART.isi_Pembukaan5,
@@ -73,7 +73,7 @@ Widget AD_dan_ART_Page(){
         ),
       ),
       Container(
-        margin: EdgeInsets.only(top: 10, left: 15, right: 15),
+        margin: EdgeInsets.only(top: 10, left: 20, right: 20),
         child:
         Text(
           data_AD_DAN_ART.isi_Pembukaan6,
@@ -81,27 +81,61 @@ Widget AD_dan_ART_Page(){
         ),
       ),
       Container(
-        margin: EdgeInsets.only(top: 10, left: 15, right: 15),
+        margin: EdgeInsets.only(top: 10, left: 20, right: 20),
         child:
         Text(
           data_AD_DAN_ART.isi_Pembukaan7,
           textAlign: TextAlign.justify,
         ),
       ),
+
+      //BAB 1
       Container(
+        width: double.infinity,
         margin: EdgeInsets.only(top: 30),
         child:
         Center(
           child:
           Text(
-            'data',
+            data_AD_DAN_ART.BAB_I,
             style: TextStyle(
               fontSize: 18,
               fontWeight: FontWeight.w600
             ),
           ),
         ),
-      )
+      ),
+      Container(
+        width: double.infinity,
+        margin: EdgeInsets.only(top: 20),
+        child:
+        Center(
+          child: Text(
+            data_AD_DAN_ART.no_1BABI,
+            style:
+            TextStyle(
+              fontSize: 16
+            ),
+          ),
+        ),
+      ),
+      Container(
+        width: double.infinity,
+        child:
+        Center(
+          child: Text(
+            data_AD_DAN_ART.nama_passal1BABI,
+            style:
+            TextStyle(
+              fontSize: 16,
+              fontWeight: FontWeight.w600
+            ),
+          ),
+        ),
+      ),
+
+      // BAB 2
+      Container(),
     ],
   );
 }
