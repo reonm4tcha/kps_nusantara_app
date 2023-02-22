@@ -24,5 +24,8 @@ class data_AD_DAN_ART{
   static String nama_passal2BABI = 'Waktu';
   static String isi_passal2BABI =
   '''Kesatria Pewaris Silat Nusantara didirikan untuk waktu yang tidak ditentukan.''';
-
+  static String no_3BABI = 'Pasal 3';
+  static String nama_passal3BABI = 'Tempat';
+  static String isi_passal3BABI =
+  '''Kesatria Pewaris Silat Nusantara adalah suatu  perguruan atau organisasi yang bersifat Nasional dan Internasional yang berkedudukan di Bogor - Indonesia''';
 }
