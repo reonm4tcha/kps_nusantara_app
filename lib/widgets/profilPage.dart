@@ -66,7 +66,7 @@ Widget profilPage(){
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text('Sekertariat\t:'),
+                Text('Sekertariat\t:', style: TextStyle(fontWeight: FontWeight.w600),),
                 Text('Komplek PASPAMPRES Blok G.12 Rt.02/08 Kel.Pasir Gunung Cimanggis Depok')
               ],
             ),
@@ -88,7 +88,7 @@ Widget profilPage(){
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text('Kontak\t:'),
+                Text('Kontak\t:', style: TextStyle(fontWeight: FontWeight.w600),),
                 Text('xxxx-xxxx-xxxx')
               ],
             ),
@@ -110,7 +110,7 @@ Widget profilPage(){
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text('Instagram\t:'),
+                Text('Instagram\t:', style: TextStyle(fontWeight: FontWeight.w600),),
                 Text('@instagram')
               ],
             ),
@@ -132,14 +132,13 @@ Widget profilPage(){
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text('Email\t:'),
+                Text('Email\t:', style: TextStyle(fontWeight: FontWeight.w600),),
                 Text('user@gmail.com')
               ],
             ),
           ),
         ),
       ),
-
     ],
   );
 }

@@ -2,7 +2,7 @@ import 'package:ksp_nusantara_app/models/Lainnya_req.dart';
 import 'package:ksp_nusantara_app/widgets/DokumentasiPage.dart';
 import 'package:ksp_nusantara_app/widgets/TentangPage.dart';
 import 'package:ksp_nusantara_app/widgets/profilPage.dart';
-import 'package:ksp_nusantara_app/widgets/AD DAN ART.dart';
+import 'package:ksp_nusantara_app/widgets/AD DAN ART Page.dart';
 import 'package:ksp_nusantara_app/widgets/RantingPage.dart';
 import 'package:ksp_nusantara_app/widgets/ArsipPage.dart';
 
