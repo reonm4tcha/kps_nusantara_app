@@ -94,15 +94,24 @@ Widget AD_dan_ART_Page(){
         width: double.infinity,
         margin: EdgeInsets.only(top: 30),
         child:
-        Center(
-          child:
-          Text(
-            data_AD_DAN_ART.BAB_I,
-            style: TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.w600
+        Column(
+          children: [
+            Text(
+              data_AD_DAN_ART.BAB_I,
+              style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.w600
+              ),
             ),
-          ),
+            Text(
+              data_AD_DAN_ART.jenis_pasalBABI,
+              style:
+              TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.w600
+              ),
+            )
+          ]
         ),
       ),
       Container(
@@ -133,9 +142,25 @@ Widget AD_dan_ART_Page(){
           ),
         ),
       ),
-
-      // BAB 2
-      Container(),
+      Container(
+        width: double.infinity,
+        margin: EdgeInsets.only(top: 20, left: 20, right: 20),
+        child:
+        Text(
+          data_AD_DAN_ART.isi_passal1BABI,
+          textAlign: TextAlign.justify,
+        ),
+      ),
+      Container(
+        width: double.infinity,
+        margin: EdgeInsets.only(top: 30),
+        child:
+        Center(
+          child: Text(
+'            // data_AD_DAN_ART.'
+          ),
+        ),
+      ),
     ],
   );
 }
