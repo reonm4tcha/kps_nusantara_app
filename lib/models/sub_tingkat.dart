@@ -1,5 +1,7 @@
+part 'sub_tingkat_2.dart';
+
 class SubTingkat {
-  final List<String> subTingkatList;
+  final List<SubTingkat2> subTingkatList;
 
   SubTingkat({
     required this.subTingkatList,

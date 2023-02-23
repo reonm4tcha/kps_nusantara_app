@@ -20,6 +20,7 @@ class Kesatria_PS_Nusantara extends StatelessWidget {
           // fontFamily: 'Poppins',
           primaryColor: const Color(0xff362FD9),
           appBarTheme: const AppBarTheme(
+            centerTitle: true,
             color: Color(0xff362FD9),
             elevation: 0,
           )),

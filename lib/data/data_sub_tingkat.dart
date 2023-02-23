@@ -1,311 +1,297 @@
 part of 'data.dart';
 
-final _pTeknikDasar = SubTingkat(subTingkatList: [
-  'Kuda-kuda',
-  'Sikap Pasang',
-  'Tangkisan',
-  'Pukulan',
-  'Tendangan',
-  'Elakan'
-]);
+final _pTeknikDasar = SubTingkat(
+  subTingkatList: [_pKuda, _pSiPas, _pTangkis, _pPukul, _pTendang, _pElak],
+);
 
-final _pLatihanBeladiri =
-    SubTingkat(subTingkatList: ['Tidak ada latihan beladiri']);
-final _pKeindahanGerak =
-    SubTingkat(subTingkatList: ['Tidak ada keindahan gerak']);
-final _pKetangkasan = SubTingkat(subTingkatList: ['Tidak ada ketangkasan']);
-final _pOlahPernafasan =
-    SubTingkat(subTingkatList: ['Tidak ada olah pernafasan']);
+final _pLatihanBeladiri = SubTingkat(subTingkatList: []);
+final _pKeindahanGerak = SubTingkat(subTingkatList: []);
+final _pKetangkasan = SubTingkat(subTingkatList: []);
+final _pOlahPernafasan = SubTingkat(subTingkatList: []);
 
 final _hitamTeknikDasar = SubTingkat(
   subTingkatList: [
-    'Kuda-kuda',
-    'Sikap Pasang',
-    'Tangkisan',
-    'Pukulan',
-    'Tendangan',
-    'Elakan',
+    _hitamTekDasKuda,
+    _hitamTekDasSiPas,
+    _hitamTekDasTang,
+    _hitamTekDasPuk,
+    _hitamTekDasTen,
+    _hitamTekDasElak
   ],
 );
 
-final _hitamLatihanBeladiri = SubTingkat(subTingkatList: ['Pukul - Sambut']);
+final _hitamLatihanBeladiri = SubTingkat(subTingkatList: [_hitamPuSam]);
 
-final _hitamKeindahanGerak = SubTingkat(subTingkatList: ['Senam Jurus']);
+final _hitamKeindahanGerak = SubTingkat(subTingkatList: [_hitamSenJu]);
 
-final _hitamKetangkasan = SubTingkat(subTingkatList: ['Tidak ada ketangkasan']);
+final _hitamKetangkasan = SubTingkat(subTingkatList: []);
 
 final _hitamOlahPernafasan = SubTingkat(
   subTingkatList: [
-    'Dasar Power',
-    'Dasar Getaran',
+    _hitamDaPow,
+    _hitamDaGer,
   ],
 );
 
 final _bTeknikDasar = SubTingkat(
   subTingkatList: [
-    'Kuda - kuda',
-    'Sikap Pasang',
-    'Langkah',
-    'Tangkisan',
-    'Pukulan',
-    'Tendangan',
-    'Elakan',
-    'Sikuan',
-    'Redaman/jatuhan',
+    _bKuda,
+    _bSiPas,
+    _bLangkah,
+    _bTangkis,
+    _bPukul,
+    _bTendang,
+    _bElak,
+    _bSikuan,
+    _bRedam,
   ],
 );
 
 final _bLatihanBeladiri = SubTingkat(
-  subTingkatList: ['Pukul - Sambut'],
+  subTingkatList: [_bPuSam],
 );
 
 final _bKeindahanGerak = SubTingkat(
-  subTingkatList: ['Senam Jurus'],
+  subTingkatList: [_bSenJu],
 );
 
-final _bKetangkasan = SubTingkat(subTingkatList: ['Tidak ada ketangkasan']);
+final _bKetangkasan = SubTingkat(subTingkatList: []);
 
 final _bOlahPernafasan = SubTingkat(
   subTingkatList: [
-    'Dasar Power',
-    'Dasar Getaran',
+    _bDaPow,
+    _bDaGer,
   ],
 );
 
 final _b1TeknikDasar = SubTingkat(
   subTingkatList: [
-    'Sikap Pasang',
-    'Langkah',
-    'Tangkisan',
-    'Pukulan',
-    'Tendangan',
-    'Elakan',
-    'Sikuan',
-    'Redaman/jatuhan',
-    'Tangkapan Kaki',
+    _b1SiPas,
+    _b1Langkah,
+    _b1Tangkis,
+    _b1Pukul,
+    _b1Tendang,
+    _b1Elak,
+    _b1Sikuan,
+    _b1Redam,
+    _b1TangKa,
   ],
 );
 
 final _b1LatihanBeladiri = SubTingkat(
   subTingkatList: [
-    'Pukul - Sambut',
-    'Jurus Pertandingan',
-    'Tuntun',
+    _b1PuSam,
+    _b1JuPer,
+    _b1Tuntun,
   ],
 );
 
-final _b1KeindahanGerak = SubTingkat(subTingkatList: ['Jurus Tunggal/Solo']);
+final _b1KeindahanGerak = SubTingkat(subTingkatList: [_b1Solo]);
 
-final _b1Ketangkasan =
-    SubTingkat(subTingkatList: ['Sambung Pertandingan Versi IPSI']);
+final _b1Ketangkasan = SubTingkat(subTingkatList: [_samPer]);
 
 final _b1OlahPernafasan = SubTingkat(
   subTingkatList: [
-    'Dasar Power',
-    'Dasar Getaran',
+    _b1DaPow,
+    _b1DaGer,
   ],
 );
 
 final _b2TeknikDasar = SubTingkat(subTingkatList: [
-  'Kuda - kuda',
-  'Langkah',
-  'Tangkisan',
-  'Pukulan',
-  'Tendangan',
-  'Elakan',
-  'Sikuan',
-  'Redaman',
-  'Tengkapan Kaki'
+  _b2Kuda,
+  _b2Langkah,
+  _b2Tangkis,
+  _b2Pukul,
+  _b2Tendang,
+  _b2Elak,
+  _b2Sikuan,
+  _b2Redam,
+  _b2TangKa,
 ]);
 
 final _b2LatihanBeladiri = SubTingkat(
   subTingkatList: [
-    'Jurus Pertandingan',
-    'Tuntun',
+    _b2JuPer,
+    _b2Tuntun,
   ],
 );
 
-final _b2KeindahanGerak =
-    SubTingkat(subTingkatList: ['Tidak ada keindahan gerak']);
+final _b2KeindahanGerak = SubTingkat(subTingkatList: []);
 
-final _b2Ketangkasan =
-    SubTingkat(subTingkatList: ['Sabung Pertandingan Versi IPSI']);
+final _b2Ketangkasan = SubTingkat(subTingkatList: [_samPer]);
 
 final _b2OlahPernafasan = SubTingkat(
   subTingkatList: [
-    'Dasar Power',
-    'Dasar Getaran',
+    _b2DaPow,
+    _b2DaGer,
   ],
 );
 
 final _hTeknikDasar = SubTingkat(
   subTingkatList: [
-    'Kuda - kuda',
-    'Langkah',
-    'Tangkisan',
-    'Pukulan',
-    'Tendangan',
-    'Elakan',
-    'Sikuan',
-    'Jatuhan/Bantingan',
-    'Kuncian',
-    'Redaman',
+    _hKuda,
+    _hLangkah,
+    _hTangkis,
+    _hPukul,
+    _hTendang,
+    _hElak,
+    _hSikuan,
+    _hJatuh,
+    _hKunci,
+    _hRedam,
   ],
 );
 
 final _hLatihanBeladiri = SubTingkat(
   subTingkatList: [
-    'Jurus Pertandingan',
-    'Jurus Pembelaan',
-    'Olah Nafas',
+    _hJuPer,
+    _hJuPem,
+    _hOlah,
   ],
 );
 
 final _hKeindahanGerak = SubTingkat(
   subTingkatList: [
-    'Jurus Tunggal/Solo',
-    'Jurus Tunggal IPSI',
+    _hSolo,
+    _hJuTung,
   ],
 );
 
-final _hKetangkasan =
-    SubTingkat(subTingkatList: ['Sambung Pertandingan Versi IPSI']);
+final _hKetangkasan = SubTingkat(subTingkatList: [_samPer]);
 
 final _hOlahPernafasan = SubTingkat(
   subTingkatList: [
-    'Dasar Power',
-    'Dasar Getaran',
+    _hDaPow,
+    _hDaGer,
   ],
 );
 
 final _h1TeknikDasar = SubTingkat(
   subTingkatList: [
-    'Kuda - kuda',
-    'Langkah',
-    'Tangkisan',
-    'Pukulan',
-    'Tendangan',
-    'Lututan',
-    'Jatuhan',
-    'Kuncian',
-    'Redaman',
+    _h1Kuda,
+    _h1Langkah,
+    _h1Tangkis,
+    _h1Pukul,
+    _h1Tendang,
+    _h1Lutut,
+    _h1Jatuh,
+    _h1Kunci,
+    _h1Redam
   ],
 );
 
 final _h1LatihanBeladiri = SubTingkat(
   subTingkatList: [
-    'Jurusan Pertandingan',
-    'Jurus Pembelaan',
-    'Olah Nafas',
+    _h1JuPer,
+    _h1JuPem,
+    _h1Olah,
   ],
 );
 
 final _h1KeindahanGerak = SubTingkat(
   subTingkatList: [
-    'Kembangan Bebas',
-    'Jurusan Regu Persilat',
+    _h1KemBas,
+    _h1JuReg,
   ],
 );
 
-final _h1Ketangkasan =
-    SubTingkat(subTingkatList: ['Sambung Pertandingan Versi IPSI']);
+final _h1Ketangkasan = SubTingkat(subTingkatList: [_samPer]);
 
 final _h1OlahPernafasan = SubTingkat(
   subTingkatList: [
-    'Dasar Power',
-    'Dasar Getaran',
+    _h1DaPow,
+    _h1DaGer,
   ],
 );
 
 final _h2TeknikDasar = SubTingkat(
   subTingkatList: [
-    'Kuda - kuda',
-    'Langkah',
-    'Tangkisan',
-    'Pukulan',
-    'Tendangan',
-    'Lututan',
-    'Jatuhan',
-    'Kuncian',
-    'Redaman',
+    _h2Kuda,
+    _h2Langkah,
+    _h2Tangkis,
+    _h2Pukul,
+    _h2Tendang,
+    _h2Lutut,
+    _h2Jatuh,
+    _h2Kunci,
+    _h2Redam,
   ],
 );
 
 final _h2LatihanBeladiri = SubTingkat(
   subTingkatList: [
-    'Jurus Pertandingan',
-    'Jurus Pembelaan',
-    'Olah Nafas',
+    _h2JuPer,
+    _h2JuPem,
+    _h2Olah,
   ],
 );
 
 final _h2KeindahanGerak = SubTingkat(
   subTingkatList: [
-    'Kembangan Bebas',
-    'Jurus Regu Persilat',
+    _h2KemBas,
+    _h2JuReg,
   ],
 );
 
-final _h2Ketangkasan =
-    SubTingkat(subTingkatList: ['Sabung Pertandingan Versi IPSI']);
+final _h2Ketangkasan = SubTingkat(subTingkatList: [_samPer]);
 
 final _h2OlahPernafasan = SubTingkat(
   subTingkatList: [
-    'Dasar Power',
-    'Dasar Getaran',
+    _h2DaPow,
+    _h2DaGer,
   ],
 );
 
-final _cTeknikDasar = SubTingkat(subTingkatList: ['Tidak ada data']);
-final _cLatihanBeladiri = SubTingkat(subTingkatList: ['Tidak ada data']);
-final _cKeindahanGerak = SubTingkat(subTingkatList: ['Tidak ada data']);
-final _cKetangkasan = SubTingkat(subTingkatList: ['Tidak ada data']);
-final _cOlahPernafasan = SubTingkat(subTingkatList: ['Tidak ada data']);
+final _cTeknikDasar = SubTingkat(subTingkatList: []);
+final _cLatihanBeladiri = SubTingkat(subTingkatList: []);
+final _cKeindahanGerak = SubTingkat(subTingkatList: []);
+final _cKetangkasan = SubTingkat(subTingkatList: []);
+final _cOlahPernafasan = SubTingkat(subTingkatList: []);
 
-final _c1TeknikDasar = SubTingkat(subTingkatList: ['Tidak ada data']);
-final _c1LatihanBeladiri = SubTingkat(subTingkatList: ['Tidak ada data']);
-final _c1KeindahanGerak = SubTingkat(subTingkatList: ['Tidak ada data']);
-final _c1Ketangkasan = SubTingkat(subTingkatList: ['Tidak ada data']);
-final _c1OlahPernafasan = SubTingkat(subTingkatList: ['Tidak ada data']);
+final _c1TeknikDasar = SubTingkat(subTingkatList: []);
+final _c1LatihanBeladiri = SubTingkat(subTingkatList: []);
+final _c1KeindahanGerak = SubTingkat(subTingkatList: []);
+final _c1Ketangkasan = SubTingkat(subTingkatList: []);
+final _c1OlahPernafasan = SubTingkat(subTingkatList: []);
 
-final _c2TeknikDasar = SubTingkat(subTingkatList: ['Tidak ada data']);
-final _c2LatihanBeladiri = SubTingkat(subTingkatList: ['Tidak ada data']);
-final _c2KeindahanGerak = SubTingkat(subTingkatList: ['Tidak ada data']);
-final _c2Ketangkasan = SubTingkat(subTingkatList: ['Tidak ada data']);
-final _c2OlahPernafasan = SubTingkat(subTingkatList: ['Tidak ada data']);
+final _c2TeknikDasar = SubTingkat(subTingkatList: []);
+final _c2LatihanBeladiri = SubTingkat(subTingkatList: []);
+final _c2KeindahanGerak = SubTingkat(subTingkatList: []);
+final _c2Ketangkasan = SubTingkat(subTingkatList: []);
+final _c2OlahPernafasan = SubTingkat(subTingkatList: []);
 
-final _uTeknikDasar = SubTingkat(subTingkatList: ['Tidak ada data']);
-final _uLatihanBeladiri = SubTingkat(subTingkatList: ['Tidak ada data']);
-final _uKeindahanGerak = SubTingkat(subTingkatList: ['Tidak ada data']);
-final _uKetangkasan = SubTingkat(subTingkatList: ['Tidak ada data']);
-final _uOlahPernafasan = SubTingkat(subTingkatList: ['Tidak ada data']);
+final _uTeknikDasar = SubTingkat(subTingkatList: []);
+final _uLatihanBeladiri = SubTingkat(subTingkatList: []);
+final _uKeindahanGerak = SubTingkat(subTingkatList: []);
+final _uKetangkasan = SubTingkat(subTingkatList: []);
+final _uOlahPernafasan = SubTingkat(subTingkatList: []);
 
-final _u1TeknikDasar = SubTingkat(subTingkatList: ['Tidak ada data']);
-final _u1LatihanBeladiri = SubTingkat(subTingkatList: ['Tidak ada data']);
-final _u1KeindahanGerak = SubTingkat(subTingkatList: ['Tidak ada data']);
-final _u1Ketangkasan = SubTingkat(subTingkatList: ['Tidak ada data']);
-final _u1OlahPernafasan = SubTingkat(subTingkatList: ['Tidak ada data']);
+final _u1TeknikDasar = SubTingkat(subTingkatList: []);
+final _u1LatihanBeladiri = SubTingkat(subTingkatList: []);
+final _u1KeindahanGerak = SubTingkat(subTingkatList: []);
+final _u1Ketangkasan = SubTingkat(subTingkatList: []);
+final _u1OlahPernafasan = SubTingkat(subTingkatList: []);
 
-final _u2TeknikDasar = SubTingkat(subTingkatList: ['Tidak ada data']);
-final _u2LatihanBeladiri = SubTingkat(subTingkatList: ['Tidak ada data']);
-final _u2KeindahanGerak = SubTingkat(subTingkatList: ['Tidak ada data']);
-final _u2Ketangkasan = SubTingkat(subTingkatList: ['Tidak ada data']);
-final _u2OlahPernafasan = SubTingkat(subTingkatList: ['Tidak ada data']);
+final _u2TeknikDasar = SubTingkat(subTingkatList: []);
+final _u2LatihanBeladiri = SubTingkat(subTingkatList: []);
+final _u2KeindahanGerak = SubTingkat(subTingkatList: []);
+final _u2Ketangkasan = SubTingkat(subTingkatList: []);
+final _u2OlahPernafasan = SubTingkat(subTingkatList: []);
 
-final _mTeknikDasar = SubTingkat(subTingkatList: ['Tidak ada data']);
-final _mLatihanBeladiri = SubTingkat(subTingkatList: ['Tidak ada data']);
-final _mKeindahanGerak = SubTingkat(subTingkatList: ['Tidak ada data']);
-final _mKetangkasan = SubTingkat(subTingkatList: ['Tidak ada data']);
-final _mOlahPernafasan = SubTingkat(subTingkatList: ['Tidak ada data']);
+final _mTeknikDasar = SubTingkat(subTingkatList: []);
+final _mLatihanBeladiri = SubTingkat(subTingkatList: []);
+final _mKeindahanGerak = SubTingkat(subTingkatList: []);
+final _mKetangkasan = SubTingkat(subTingkatList: []);
+final _mOlahPernafasan = SubTingkat(subTingkatList: []);
 
-final _jTeknikDasar = SubTingkat(subTingkatList: ['Tidak ada data']);
-final _jLatihanBeladiri = SubTingkat(subTingkatList: ['Tidak ada data']);
-final _jKeindahanGerak = SubTingkat(subTingkatList: ['Tidak ada data']);
-final _jKetangkasan = SubTingkat(subTingkatList: ['Tidak ada data']);
-final _jOlahPernafasan = SubTingkat(subTingkatList: ['Tidak ada data']);
+final _jTeknikDasar = SubTingkat(subTingkatList: []);
+final _jLatihanBeladiri = SubTingkat(subTingkatList: []);
+final _jKeindahanGerak = SubTingkat(subTingkatList: []);
+final _jKetangkasan = SubTingkat(subTingkatList: []);
+final _jOlahPernafasan = SubTingkat(subTingkatList: []);
 
-final _kTeknikDasar = SubTingkat(subTingkatList: ['Tidak ada data']);
-final _kLatihanBeladiri = SubTingkat(subTingkatList: ['Tidak ada data']);
-final _kKeindahanGerak = SubTingkat(subTingkatList: ['Tidak ada data']);
-final _kKetangkasan = SubTingkat(subTingkatList: ['Tidak ada data']);
-final _kOlahPernafasan = SubTingkat(subTingkatList: ['Tidak ada data']);
+final _kTeknikDasar = SubTingkat(subTingkatList: []);
+final _kLatihanBeladiri = SubTingkat(subTingkatList: []);
+final _kKeindahanGerak = SubTingkat(subTingkatList: []);
+final _kKetangkasan = SubTingkat(subTingkatList: []);
+final _kOlahPernafasan = SubTingkat(subTingkatList: []);

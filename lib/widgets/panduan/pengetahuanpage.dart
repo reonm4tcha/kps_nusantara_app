@@ -17,14 +17,12 @@ class _PengetahuanPageState extends State<PengetahuanPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.panduanData[widget.index].title),
-        backgroundColor: Color.fromARGB(255, 0, 171, 233),
-        centerTitle: true,
-        elevation: 0,
+        backgroundColor: const Color.fromARGB(255, 0, 171, 233),
       ),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Container(
-            margin: EdgeInsets.only(top: 20, left: 10, right: 10),
+            margin: const EdgeInsets.only(top: 20, left: 10, right: 10),
             child: Column(
               children: [
                 Image.asset(
@@ -35,7 +33,7 @@ class _PengetahuanPageState extends State<PengetahuanPage> {
                 Text(
                   widget.panduanData[widget.index].judul,
                   textAlign: TextAlign.center,
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 20,
                     color: Colors.black,
                     fontWeight: FontWeight.bold,
@@ -44,7 +42,7 @@ class _PengetahuanPageState extends State<PengetahuanPage> {
                 Text(
                   widget.panduanData[widget.index].isi,
                   textAlign: TextAlign.justify,
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 18,
                     color: Colors.black,
                   ),
@@ -52,7 +50,7 @@ class _PengetahuanPageState extends State<PengetahuanPage> {
                 Text(
                   widget.panduanData[widget.index].subisi,
                   textAlign: TextAlign.left,
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 17,
                     color: Colors.black,
                   ),
@@ -67,7 +65,7 @@ class _PengetahuanPageState extends State<PengetahuanPage> {
       ),
       floatingActionButton: Container(
         alignment: Alignment.bottomCenter,
-        margin: EdgeInsets.only(left: 30),
+        margin: const EdgeInsets.only(left: 30),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -81,7 +79,7 @@ class _PengetahuanPageState extends State<PengetahuanPage> {
                     showDialog(
                       context: context,
                       builder: (context) {
-                        return AlertDialog(
+                        return const AlertDialog(
                           title: Text("Tidak ada Halaman"),
                         );
                       },
@@ -89,7 +87,7 @@ class _PengetahuanPageState extends State<PengetahuanPage> {
                   }
                 });
               },
-              child: Icon(Icons.arrow_back_ios_outlined),
+              child: const Icon(Icons.arrow_back_ios_outlined),
             ),
             FloatingActionButton(
               heroTag: 'b2',
@@ -101,7 +99,7 @@ class _PengetahuanPageState extends State<PengetahuanPage> {
                     showDialog(
                       context: context,
                       builder: (context) {
-                        return AlertDialog(
+                        return const AlertDialog(
                           title: Text("Tidak ada Halaman"),
                         );
                       },
@@ -109,7 +107,7 @@ class _PengetahuanPageState extends State<PengetahuanPage> {
                   }
                 });
               },
-              child: Icon(Icons.arrow_forward_ios_outlined),
+              child: const Icon(Icons.arrow_forward_ios_outlined),
             ),
           ],
         ),
