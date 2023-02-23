@@ -282,6 +282,109 @@ class _BerandaState extends State<Beranda> {
               ),
             ),
           ),
+          Container(
+            width: double.infinity,
+            margin: EdgeInsets.only(top: 20, left: 20, right: 20),
+            child:
+            Text(
+              'Perguruan ini didirikan Pada Tanggal 28 Juli 1968 di Jakarta oleh Tiga orang pendiri yaitu :'
+            ),
+          ),
+          Container(
+            width: double.infinity,
+            margin: EdgeInsets.only(top: 10, left: 20, right: 20),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  Sejarah_Singkat.Pendiri
+                ),
+                Image.asset(
+                  Sejarah_Singkat.Pendiri_Images,
+                  height: 90,
+                  width: 120,
+                )
+              ],
+            ),
+          ),
+          Container(
+            width: double.infinity,
+            margin: EdgeInsets.only(top: 10, left: 20, right: 20),
+            child:
+            Text(
+              Sejarah_Singkat.Dahulu,
+              textAlign: TextAlign.justify,
+            ),
+          ),
+          Container(
+            width: double.infinity,
+            margin: EdgeInsets.only(left: 20, right: 20),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Image.asset(
+                  Sejarah_Singkat.Sebelumnya1,
+                  height: 90,
+                  width: 90,
+                ),
+                Image.asset(
+                  Sejarah_Singkat.Sebelumnya2,
+                  height: 90,
+                  width: 90,
+                )
+              ],
+            ),
+          ),
+          Container(
+            width: double.infinity,
+            margin: EdgeInsets.only(top: 20, left: 20, right: 20),
+            child:
+            Text(
+              Sejarah_Singkat.maka_dari_itu,
+              textAlign: TextAlign.justify,
+            ),
+          ),
+          Container(
+            margin: EdgeInsets.only(top: 10, left: 20, right: 20),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Column(
+                  children: [
+                    Image.asset(
+                      Sejarah_Singkat.KPN_image,
+                      height: 100,
+                      width: 100,
+                    ),
+                    SizedBox(
+                      height: 30,
+                    )
+                  ],
+                ),
+                Column(
+                  children: [
+                    Image.asset(
+                      Sejarah_Singkat.pelatih_utama_image,
+                      height: 100,
+                      width: 100,
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Text(
+                      'PELATIH UTAMA KPSN',
+                      style:
+                      TextStyle(
+                        fontWeight: FontWeight.w500,
+                        color: Color(0xff002060)
+                      ),
+                    )
+                  ],
+                )
+              ],
+            ),
+          ),
+
         ],
       ),
     );
