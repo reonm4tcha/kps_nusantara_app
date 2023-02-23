@@ -35,20 +35,22 @@ class _BerandaState extends State<Beranda> {
           //Sambutan
           Container(
             width: double.infinity,
-            height: 50,
             decoration: BoxDecoration(
               color: Colors.black
             ),
             margin: EdgeInsets.only(top: 50),
             child:
-            Center(
-              child:
-              Text(
-                Sambutan.head_Sambutan,
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.w700,
-                  color: Colors.white
+            Padding(
+              padding: EdgeInsets.only(top: 15, bottom: 15),
+              child: Center(
+                child:
+                Text(
+                  Sambutan.head_Sambutan,
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.w700,
+                    color: Colors.white
+                  ),
                 ),
               ),
             ),
@@ -106,23 +108,25 @@ class _BerandaState extends State<Beranda> {
           //Ikrar Pelatih
           Container(
             width: double.infinity,
-            height: 50,
             margin: EdgeInsets.only(top: 50),
             decoration: BoxDecoration(
               color: Colors.black
             ),
             child:
-            Center(
-              child:
-                Text(
-                  Ikrar_Pelatih.head_IkrarPelatih,
-                  style:
-                  TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w700,
-                    color: Colors.white
-                  ),
-                )
+            Padding(
+              padding: EdgeInsets.only(top: 15, bottom: 15),
+              child: Center(
+                child:
+                  Text(
+                    Ikrar_Pelatih.head_IkrarPelatih,
+                    style:
+                    TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.w700,
+                      color: Colors.white
+                    ),
+                  )
+              ),
             ),
           ),
           Container(
@@ -195,6 +199,89 @@ class _BerandaState extends State<Beranda> {
             color: Colors.black,
           ),
 
+          //Moto pelatih
+          Container(
+            width: double.infinity,
+            margin: EdgeInsets.only(top: 50),
+            decoration: BoxDecoration(
+                color: Colors.black
+            ),
+            child:
+            Padding(
+              padding: EdgeInsets.only(top: 15, bottom: 15),
+              child: Center(
+                  child:
+                  Text(
+                    Moto_Pelatih.head,
+                    style:
+                    TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w700,
+                        color: Colors.white
+                    ),
+                  )
+              ),
+            ),
+          ),
+          Container(
+            width: double.infinity,
+            margin: EdgeInsets.only(top: 20, left: 20, right: 20, bottom: 20),
+            child:
+            Center(
+              child:
+              Text(
+                Moto_Pelatih.isi,
+                textAlign: TextAlign.center,
+                style:
+                TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w600
+                ),
+              ),
+            ),
+          ),
+          Divider(
+            height: 5,
+            color: Colors.black,
+          ),
+
+          //Sejarah Singkat
+          Container(
+            width: double.infinity,
+            margin: EdgeInsets.only(top: 50),
+            decoration: BoxDecoration(
+                color: Colors.black
+            ),
+            child:
+            Padding(
+              padding: EdgeInsets.only(top: 15, bottom: 15),
+              child: Center(
+                  child:
+                  Column(
+                    children: [
+                      Text(
+                        Sejarah_Singkat.headSejarah,
+                        style:
+                        TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.w700,
+                            color: Colors.white
+                        ),
+                      ),
+                      Text(
+                        Sejarah_Singkat.headNomor,
+                        style:
+                        TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w600,
+                          color: Colors.white
+                        ),
+                      )
+                    ],
+                  )
+              ),
+            ),
+          ),
         ],
       ),
     );
