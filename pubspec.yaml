@@ -35,7 +35,6 @@ dependencies:
   flutter:
     sdk: flutter
   google_fonts: ^4.0.3
-  native_video_view: ^1.0.5
   video_player: ^2.5.1
 
 dev_dependencies:
