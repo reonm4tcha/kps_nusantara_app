@@ -384,7 +384,76 @@ class _BerandaState extends State<Beranda> {
               ],
             ),
           ),
-
+          Container(
+            width: double.infinity,
+            margin: EdgeInsets.only(top: 20, left: 20, right: 20),
+            child:
+            Text(
+              Sejarah_Singkat.p1_seiring_waktu,
+              textAlign: TextAlign.justify,
+            ),
+          ),
+          Container(
+            width: double.infinity,
+            margin: EdgeInsets.only(top: 10, left: 20, right: 20),
+            child:
+            Text(
+              Sejarah_Singkat.p2_seiring_waktu,
+              textAlign: TextAlign.justify,
+            ),
+          ),
+          Container(
+            width: double.infinity,
+            margin: EdgeInsets.only(top: 20, left: 20, right: 20, bottom: 20),
+            child:
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Column(
+                  children: [
+                    Column(
+                      children: [
+                        Image.asset(
+                          'assets/image/Perguruan.png',
+                          height: 100,
+                        ),
+                        SizedBox(
+                          height: 40,
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+                Column(
+                  children: [
+                    Image.asset(
+                      Sejarah_Singkat.pelatih_utama2_image,
+                      height: 100,
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Text(
+                      'PELATIH UTAMA\nKESATRIA PSN',
+                      textAlign: TextAlign.center,
+                      style:
+                      TextStyle(
+                        fontWeight: FontWeight.w600,
+                        color: Color(0xff362FD9)
+                      ),
+                    )
+                  ],
+                )
+              ],
+            ),
+          ),
+          Divider(
+            height: 5,
+            color: Colors.black,
+          ),
+          Container(
+            height: 20,
+          )
         ],
       ),
     );
