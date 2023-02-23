@@ -35,7 +35,166 @@ class _BerandaState extends State<Beranda> {
           //Sambutan
           Container(
             width: double.infinity,
-          )
+            height: 50,
+            decoration: BoxDecoration(
+              color: Colors.black
+            ),
+            margin: EdgeInsets.only(top: 50),
+            child:
+            Center(
+              child:
+              Text(
+                Sambutan.head_Sambutan,
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w700,
+                  color: Colors.white
+                ),
+              ),
+            ),
+          ),
+          Container(
+            margin: EdgeInsets.only(top: 20, left: 20, right: 20),
+            child:
+            Image.asset(
+              Sambutan.fileGambarSambutan,
+              height: MediaQuery.of(context).size.height / 2.5,
+              width: MediaQuery.of(context).size.width / 2.5,
+            ),
+          ),
+          Container(
+            width: double.infinity,
+            margin: EdgeInsets.only(top: 20, left: 20, right: 20),
+            child:
+            Text(
+              Sambutan.isi_Sambutan1,
+              textAlign: TextAlign.justify,
+            ),
+          ),
+          Container(
+            width: double.infinity,
+            margin: EdgeInsets.only(top: 10, left: 20, right: 20),
+            child:
+            Text(
+              Sambutan.isi_Sambutan2,
+              textAlign: TextAlign.justify,
+            ),
+          ),
+          Container(
+            width: double.infinity,
+            margin: EdgeInsets.only(top: 10, left: 20, right: 20),
+            child:
+            Text(
+              Sambutan.isi_Sambutan3,
+              textAlign: TextAlign.justify,
+            ),
+          ),
+          Container(
+            width: double.infinity,
+            margin: EdgeInsets.only(top: 10, left: 20, right: 20, bottom: 20),
+            child:
+            Text(
+              Sambutan.isi_Sambutan4,
+              textAlign: TextAlign.justify,
+            ),
+          ),
+          Divider(
+            height: 5,
+            color: Colors.black,
+          ),
+
+          //Ikrar Pelatih
+          Container(
+            width: double.infinity,
+            height: 50,
+            margin: EdgeInsets.only(top: 50),
+            decoration: BoxDecoration(
+              color: Colors.black
+            ),
+            child:
+            Center(
+              child:
+                Text(
+                  Ikrar_Pelatih.head_IkrarPelatih,
+                  style:
+                  TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.w700,
+                    color: Colors.white
+                  ),
+                )
+            ),
+          ),
+          Container(
+            width: double.infinity,
+            margin: EdgeInsets.only(top: 20, left: 20, right: 20),
+            child:
+            Text(
+              Ikrar_Pelatih.no1_IkrarPelatih,
+              style:
+              TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w600
+              ),
+            ),
+          ),
+          Container(
+            width: double.infinity,
+            margin: EdgeInsets.only(top: 10, left: 20, right: 20),
+            child:
+            Text(
+              Ikrar_Pelatih.no2_IkrarPelatih,
+              style:
+              TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w600
+              ),
+            ),
+          ),
+          Container(
+            width: double.infinity,
+            margin: EdgeInsets.only(top: 10, left: 20, right: 20),
+            child:
+            Text(
+              Ikrar_Pelatih.no3_IkrarPelatih,
+              style:
+              TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w600
+              ),
+            ),
+          ),
+          Container(
+            width: double.infinity,
+            margin: EdgeInsets.only(top: 10, left: 20, right: 20),
+            child:
+            Text(
+              Ikrar_Pelatih.no4_IkrarPelatih,
+              style:
+              TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w600
+              ),
+            ),
+          ),
+          Container(
+            width: double.infinity,
+            margin: EdgeInsets.only(top: 10, left: 20, right: 20, bottom: 20),
+            child:
+            Text(
+              Ikrar_Pelatih.no5_IkrarPelatih,
+              style:
+              TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w600
+              ),
+            ),
+          ),
+          Divider(
+            height: 5,
+            color: Colors.black,
+          ),
+
         ],
       ),
     );
