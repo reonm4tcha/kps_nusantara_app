@@ -6,6 +6,7 @@ import '../models/tingkat.dart';
 part 'data_tingkat.dart';
 part 'data_golongan.dart';
 part 'data_sub_tingkat.dart';
+part 'data_sub_tingkat_2.dart';
 
 final List<Golongan> golonganList = [
   _calonSatria,

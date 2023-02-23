@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-Widget RantingPage(){
+Widget RantingPage() {
   return ListView(
-    children: [
+    children: const [
       Center(
         child: Text('Ranting Page'),
       )
