@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import '../../models/pengetahuanpanduan.dart';
-import '../../data/datapanduan.dart';
 
 class PengetahuanPage extends StatefulWidget {
   final List<PengetahuanModel> panduanData;
@@ -76,6 +75,7 @@ class _PengetahuanPageState extends State<PengetahuanPage> {
                   if (widget.index != 0) {
                     widget.index--;
                   } else {
+                    // widget.index = widget.panduanData.length - 1;
                     showDialog(
                       context: context,
                       builder: (context) {
@@ -96,6 +96,7 @@ class _PengetahuanPageState extends State<PengetahuanPage> {
                   if (widget.index != widget.panduanData.length - 1) {
                     widget.index++;
                   } else {
+                    // widget.index = 0;
                     showDialog(
                       context: context,
                       builder: (context) {

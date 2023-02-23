@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ksp_nusantara_app/data/data.dart';
+import 'package:ksp_nusantara_app/screen/form_screen.dart';
 
 import '../data/icons.dart';
 import '../models/sub_tingkat.dart';
@@ -7,16 +7,36 @@ import '../models/tingkat.dart';
 import 'final_materi_screen.dart';
 
 class DetailMateriScreen extends StatelessWidget {
-  DetailMateriScreen({super.key, required this.tingkat});
+  const DetailMateriScreen({super.key, required this.tingkat});
 
   final Tingkat tingkat;
-  final List golongan = golonganList;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(tingkat.name),
+      ),
+      floatingActionButton: SizedBox(
+        height: 70,
+        width: 70,
+        child: FloatingActionButton(
+          backgroundColor: Colors.white,
+          child: Image.asset(
+            iconFormUjian,
+            width: 50.0,
+            height: 50.0,
+            fit: BoxFit.fill,
+          ),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => FormScreen(tingkat: tingkat),
+              ),
+            );
+          },
+        ),
       ),
       body: Column(
         children: [
@@ -60,26 +80,29 @@ class DetailMateriScreen extends StatelessWidget {
               },
             ),
           ),
-          Card(
-            shape:
-                RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
-            child: Theme(
-              data: Theme.of(context).copyWith(
-                dividerColor: Colors.transparent,
-              ),
-              child: Row(
-                children: [
-                  Image.asset(
-                    iconFormUjian,
-                    width: 60.0,
-                    height: 60.0,
-                    fit: BoxFit.fill,
-                  ),
-                  const Text('Form Ujian'),
-                ],
-              ),
-            ),
-          ),
+          // Padding(
+          //   padding: const EdgeInsets.symmetric(horizontal: 16),
+          //   child: Card(
+          //     shape: RoundedRectangleBorder(
+          //         borderRadius: BorderRadius.circular(8)),
+          //     child: Theme(
+          //       data: Theme.of(context).copyWith(
+          //         dividerColor: Colors.transparent,
+          //       ),
+          //       child: Row(
+          //         children: [
+          //           Image.asset(
+          //             iconFormUjian,
+          //             width: 60.0,
+          //             height: 60.0,
+          //             fit: BoxFit.fill,
+          //           ),
+          //           const Text('Form Ujian'),
+          //         ],
+          //       ),
+          //     ),
+          //   ),
+          // ),
         ],
       ),
     );
