@@ -3,6 +3,7 @@ import 'package:ksp_nusantara_app/data/Ikrar_Pelatih.dart';
 import 'package:ksp_nusantara_app/data/Sambutan.dart';
 import 'package:ksp_nusantara_app/data/Sejarah_Singkat.dart';
 import 'package:ksp_nusantara_app/data/Moto_Pelatih.dart';
+import 'package:ksp_nusantara_app/widgets/buildImageCarosel.dart';
 
 class Beranda extends StatefulWidget {
   const Beranda({Key? key}) : super(key: key);
@@ -26,10 +27,7 @@ class _BerandaState extends State<Beranda> {
             width: double.infinity,
             height: MediaQuery.of(context).size.height /3.5,
             child:
-            Center(
-              child: Text('slide!'),
-            ),
-            color: Colors.grey,
+            buildImageCarosel(),
           ),
 
           //Sambutan
