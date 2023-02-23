@@ -1,6 +1,5 @@
 class Sambutan {
-  static String head_Sambutan1 = 'SAMBUTAN PELATIH UTAMA';
-  static String head_Sambutan2 = 'KESATRIA PEWARIS SILAT NUSANTARA';
+  static String head_Sambutan = 'SAMBUTAN PELATIH';
   static String fileGambarSambutan = 'assets/image/Gambar Sambutan.png';
   static String isi_Sambutan1 =
       '''   Dengan mengucap puji syukur atas kehadirat Allah SWT, kita semua diberikan kemampuan untuk dapat melestarikan Budaya Bangsa Indonesia Seni Beladiri Pencak Silat sesuai dalam Catur Prasetya kita “Mempertinggi dan mengembangkan Pencak Silat“.''';
