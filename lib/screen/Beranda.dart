@@ -3,6 +3,7 @@ import 'package:ksp_nusantara_app/data/Ikrar_Pelatih.dart';
 import 'package:ksp_nusantara_app/data/Sambutan.dart';
 import 'package:ksp_nusantara_app/data/Sejarah_Singkat.dart';
 import 'package:ksp_nusantara_app/data/Moto_Pelatih.dart';
+import 'package:ksp_nusantara_app/widgets/buildImageCarosel.dart';
 
 class Beranda extends StatefulWidget {
   const Beranda({Key? key}) : super(key: key);
@@ -15,8 +16,29 @@ class _BerandaState extends State<Beranda> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text(''),
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(130),
+        child: AppBar(
+          backgroundColor: Color(0xff362FD9),
+          flexibleSpace: Padding(
+            padding: EdgeInsets.only(top: 40, left: 30, right: 30),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Image.asset(
+                  'assets/image/Yayasan.png',
+                  height: 100,
+                  width: 100,
+                ),
+                Image.asset(
+                  'assets/image/Perguruan.png',
+                  height: 100,
+                  width: 100,
+                ),
+              ],
+            ),
+          ),
+        ),
       ),
       body: ListView(
         children: [
@@ -24,10 +46,10 @@ class _BerandaState extends State<Beranda> {
           Container(
             width: double.infinity,
             height: MediaQuery.of(context).size.height / 3.5,
-            color: Colors.grey,
-            child: const Center(
+            child: Center(
               child: Text('slide!'),
             ),
+            color: Colors.grey,
           ),
 
           //Sambutan

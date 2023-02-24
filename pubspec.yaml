@@ -36,6 +36,7 @@ dependencies:
     sdk: flutter
   google_fonts: ^4.0.3
   video_player: ^2.5.1
+  carousel_slider: ^4.2.1
 
 dev_dependencies:
   flutter_lints: ^2.0.0
@@ -55,13 +56,6 @@ flutter:
   assets:
     - assets/image/
     - assets/videos/
-    - assets/image/Gambar Sambutan.png
-    - assets/image/Pendiri.png
-    - assets/image/Perguruan.png
-    - assets/image/sebelumnya2.png
-    - assets/image/Yayasan.png
-    - assets/image/KPN.png
-    - assets/image/Pelatih Utama2.png
     - assets/pdf/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
