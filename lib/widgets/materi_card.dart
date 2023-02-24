@@ -24,7 +24,6 @@ class MateriCard extends StatelessWidget {
                 imageUrl,
                 width: 50.0,
                 height: 50.0,
-                fit: BoxFit.fill,
               ),
             ),
           ),

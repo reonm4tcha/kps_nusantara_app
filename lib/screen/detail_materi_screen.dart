@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ksp_nusantara_app/data/font_style.dart';
 import 'package:ksp_nusantara_app/screen/form_screen.dart';
 
 import '../data/icons.dart';
@@ -110,10 +111,14 @@ class DetailMateriScreen extends StatelessWidget {
 
   Widget buildSubWidget(
       BuildContext context, SubTingkat subTingkat, int index) {
-    if (subTingkat.subTingkatList.isEmpty) {
+    final subTingkatList = subTingkat.subTingkatList;
+    if (subTingkatList.isEmpty) {
       return const Padding(
         padding: EdgeInsets.all(5.0),
-        child: Text('Tidak ada data'),
+        child: Text(
+          'Tidak ada data',
+          style: nFont16,
+        ),
       );
     }
 
@@ -122,10 +127,8 @@ class DetailMateriScreen extends StatelessWidget {
         return ExpansionTile(
           textColor: const Color(0xff362FD9),
           iconColor: const Color(0xff362FD9),
-          title: Text(subTingkat.subTingkatList[index].name),
-          children: [
-            buildSubWidget2(context, subTingkat.subTingkatList[index], index)
-          ],
+          title: Text(subTingkatList[index].name),
+          children: [buildSubWidget2(context, subTingkatList[index], index)],
         );
       }),
     );
