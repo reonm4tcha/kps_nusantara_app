@@ -212,6 +212,7 @@ Widget AD_dan_ART_Page(){
           textAlign: TextAlign.justify,
         ),
       ),
+
       //BAB II
       Container(
         width: double.infinity,
@@ -259,16 +260,205 @@ Widget AD_dan_ART_Page(){
                     fontWeight: FontWeight.w600
                 ),
               ),
-              Container(
-                width: double.infinity,
-                margin: EdgeInsets.only(top: 20, left: 20, right: 20),
-                child:
-                Text(
-                  data_AD_DAN_ART.isi_pasal4BABII,
-                  textAlign: TextAlign.justify,
-                ),
-              ),
             ]
+        ),
+      ),
+      Container(
+        width: double.infinity,
+        margin: EdgeInsets.only(top: 20, left: 20, right: 20),
+        child:
+        Text(
+          data_AD_DAN_ART.isi_pasal4BABII,
+          textAlign: TextAlign.justify,
+        ),
+      ),
+      Container(
+        width: double.infinity,
+        margin: EdgeInsets.only(top: 20),
+        child: Column(
+          children: [
+            Text(
+              data_AD_DAN_ART.no_5BABII,
+              style: TextStyle(
+                  fontSize: 16
+              ),
+            ),
+            Text(
+              data_AD_DAN_ART.nama_pasal5BABII,
+              style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w600
+              ),
+            )
+          ],
+        ),
+      ),
+      Container(
+        width: double.infinity,
+        margin: EdgeInsets.only(top: 20, left: 20, right: 20),
+        child: Text(
+          data_AD_DAN_ART.isi_pasal5BABII_a,
+          textAlign: TextAlign.justify,
+        ),
+      ),
+      Container(
+        width: double.infinity,
+        margin: EdgeInsets.only(top: 10, left: 20, right: 20),
+        child: Text(
+          data_AD_DAN_ART.isi_pasal5BABII_b,
+          textAlign: TextAlign.justify,
+        ),
+      ),
+      Container(
+        width: double.infinity,
+        margin: EdgeInsets.only(top: 10, left: 20, right: 20),
+        child: Text(
+          data_AD_DAN_ART.isi_pasal5BABII_c,
+          textAlign: TextAlign.justify,
+        ),
+      ),
+      Container(
+        width: double.infinity,
+        margin: EdgeInsets.only(top: 20),
+        child:
+        Column(
+          children: [
+            Text(
+              data_AD_DAN_ART.no_6BABII,
+              style: TextStyle(
+                fontSize: 16
+              ),
+            ),
+            Text(
+              data_AD_DAN_ART.nama_pasal6BABII,
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.w600
+              ),
+            )
+          ],
+        ),
+      ),
+      Container(
+        width: double.infinity,
+        margin: EdgeInsets.only(top: 20, left: 20, right: 20),
+        child: Text(
+          data_AD_DAN_ART.isi_pasal6BABII_1,
+          textAlign: TextAlign.justify,
+        ),
+      ),
+      Container(
+        width: double.infinity,
+        margin: EdgeInsets.only(top: 10, left: 20, right: 20),
+        child: Text(
+          data_AD_DAN_ART.isi_pasal6BABII_2,
+          textAlign: TextAlign.justify,
+        ),
+      ),
+      Container(
+        width: double.infinity,
+        margin: EdgeInsets.only(top: 20),
+        child: Column(
+          children: [
+            Text(
+              data_AD_DAN_ART.no_7BABII,
+              style: TextStyle(
+                fontSize: 16
+              ),
+            ),
+            Text(
+              data_AD_DAN_ART.nama_pasal7BABII,
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.w600
+              ),
+            )
+          ],
+        ),
+      ),
+      Container(
+        width: double.infinity,
+        margin: EdgeInsets.only(top: 20, left: 20, right: 20),
+        child: Text(
+          data_AD_DAN_ART.isi_pasal7BABII,
+          textAlign: TextAlign.justify,
+        ),
+      ),
+
+      //BAB III
+      Container(
+        width: double.infinity,
+        margin: EdgeInsets.only(top: 30),
+        child: Column(
+          children: [
+            Text(
+              data_AD_DAN_ART.BAB_III,
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.w600
+              ),
+            ),
+            Text(
+              data_AD_DAN_ART.jenis_PasalBABIII,
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.w600
+              ),
+            )
+          ],
+        ),
+      ),
+      Container(
+        width: double.infinity,
+        margin: EdgeInsets.only(top: 20),
+        child: Column(
+          children: [
+            Text(
+              data_AD_DAN_ART.no_8BABIII,
+              style: TextStyle(
+                fontSize: 16
+              ),
+            ),
+            Text(
+              data_AD_DAN_ART.nama_pasal8BABIII,
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.w600
+              ),
+            )
+          ],
+        ),
+      ),
+      Container(
+        width: double.infinity,
+        margin: EdgeInsets.only(top: 20, left: 20, right: 20),
+        child: Text(
+          data_AD_DAN_ART.isi_pasal8BABIII_1,
+          textAlign: TextAlign.justify,
+        ),
+      ),
+      Container(
+        width: double.infinity,
+        margin: EdgeInsets.only(top: 10, left: 20, right: 20),
+        child: Text(
+          data_AD_DAN_ART.isi_pasal8BABIII_2,
+          textAlign: TextAlign.justify,
+        ),
+      ),
+      Container(
+        width: double.infinity,
+        margin: EdgeInsets.only(top: 10, left: 20, right: 20),
+        child: Text(
+          data_AD_DAN_ART.isi_pasal8BABIII_3,
+          textAlign: TextAlign.justify,
+        ),
+      ),
+      Container(
+        width: double.infinity,
+        margin: EdgeInsets.only(top: 10, left: 20, right: 20),
+        child: Text(
+          data_AD_DAN_ART.isi_pasal8BABIII_4,
+          textAlign: TextAlign.justify,
         ),
       ),
     ],

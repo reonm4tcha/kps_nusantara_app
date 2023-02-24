@@ -46,4 +46,28 @@ class data_AD_DAN_ART{
   '''b. Menjadi warga negara yang berjiwa Pancasila, setia dan patuh kepada Negara Kesatuan Republik Indonesia serta menjadi masyarakat yang baik dan berguna, yang dapat membangun dirinya sendiri secara mandiri serta bersama-sama bertanggungjawab atas pembangunan bangsa dan negara, memiliki kepedulian terhadap sesama hidup dan alam lingkungan dan''';
   static String isi_pasal5BABII_c =
   '''c. Membina Manusia Indonesia seutuhnya yang berkepribadian dan berbudaya nasional, Cinta kepada Tanah Air & Bangsa serta berusaha untuk meningkatkan Ketahanan Nasional. Kesatria Pewaris Silat Nusantara menciptakan dan membina Olah raga Rekreasi, Olah raga Pendidikan dan Olah raga Prestasi serta Atlit-atlit budaya seni pencak silat nasional.''';
+  static String no_6BABII = 'Pasal 6';
+  static String nama_pasal6BABII = 'Tugas Pokok';
+  static String isi_pasal6BABII_1 =
+  '''1. Kesatria Pewaris Silat Nusantara mempunyai Tugas Pokok menyelenggarakan pembinaan dan pelatihan dalam wadah Kesatria Pewaris Silat Nusantara bagi kaum muda guna menumbuhkan kesatria-kesatria bangsa agar menjadi generasi yang lebih baik, bertanggungjawab, mampu membina dan mengisi kemerdekaan serta mebangun dunia yang lebih baik.''';
+  static String isi_pasal6BABII_2 =
+  '''2. Ikut serta membina Manusia Indonesia seutuhnya yang berkepribadian dan berbudaya nasional, yang ber¬-Taqwa kepada Tuhan Yang Maha Esa, ber-Budi Luhur, Rendah Hati, Cinta kepada Tanah Air & Bangsa serta berusaha untuk meningkatkan Ketahanan Nasional. Kesatria Pewaris Silat Nusantara menciptakan dan membina Olah raga Rekreasi, Olah raga Pendidikan dan Olah raga Prestasi serta Atlit-atlit budaya seni pencak silat nasional dan Internasional.''';
+  static String no_7BABII = 'Pasal 7';
+  static String nama_pasal7BABII = 'Fungsi';
+  static String isi_pasal7BABII =
+  '''Kesatria Pewaris Silat Nusantara berfungsi sebagai penyelenggara pembinaan dan pelatihan nonformal di luar sekolah dan di luar keluarga sebagai wadah pembinaan serta pengembangan Seni Beladiri Nasional Bangsa Indonesia bagi kaum muda dilandasi Sistem Kekeluargaan, Prinsip Dasar dan Metode Kepelatihan dalam wadah  Kesatria PS Nusantara.''';
+
+  //BAB III
+  static String BAB_III = 'BAB III';
+  static String jenis_PasalBABIII = 'Sifat';
+  static String no_8BABIII = 'Pasal 8';
+  static String nama_pasal8BABIII = 'Sifat';
+  static String isi_pasal8BABIII_1 =
+  '''1. Kesatria PS Nusantara adalah organisasi pembinaan dan pelatihan yang keanggotaannya bersifat sukarela, mandiri, tidak membedakan suku, bangsa, ras, golongan, dan agama;''';
+  static String isi_pasal8BABIII_2 =
+  '''2. Kesatria PS Nusantara bukan organisasi sosial politik, bukan bagian dari salah satu organisasi sosial politik dan tidak menjalankan kegiatan politik praktis;''';
+  static String isi_pasal8BABIII_3 =
+  '''3. Kesatria PS Nusantara menjamin kemerdekaan tiap-tiap anggotannya untuk memeluk agama dan kepercayaan masing-masing serta beribadat menurut agama dan kepercayaannya''';
+  static String isi_pasal8BABIII_4 =
+  '''4. Kesatria PS Nusantara di dalam usaha dan kegiatannya mengutamakan musyawarah kekeluargaan, persaudaraan dan kegotong-royongan.''';
 }
