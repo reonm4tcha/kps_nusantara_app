@@ -28,4 +28,22 @@ class data_AD_DAN_ART{
   static String nama_passal3BABI = 'Tempat';
   static String isi_passal3BABI =
   '''Kesatria Pewaris Silat Nusantara adalah suatu  perguruan atau organisasi yang bersifat Nasional dan Internasional yang berkedudukan di Bogor - Indonesia''';
+
+  //BAB II
+  static String BAB_II = 'BAB II';
+  static String jenis_PasalBABII = 'Azas, Tujuan, Tugas Pokok Dan Fungsi';
+  static String no_4BABII = 'Pasal 4';
+  static String nama_pasal4BABII = 'Azas';
+  static String isi_pasal4BABII =
+  '''Kesatria Pewaris Silat Nusantara berazazkan Pancasila dan Undang Undang Dasar 1945, serta Nasionalisme dalam rangka keutuhan NKRI.''';
+  static String no_5BABII = 'Pasal 5';
+  static String nama_pasal5BABII = 'Tujuan';
+  static String isi_pasal5BABII =
+  '''Kesatria Pewaris Silat Nusantara bertujuan untuk membentuk setiap Anggota Kesatria PS Nusantara :''';
+  static String isi_pasal5BABII_a =
+  '''a. Memiliki Kepribadian yang Beriman, Bertaqwa, Berakhlak mulia, Berjiwa Kesatria, patriotik, taat hukum, disiplin, menjunjung tinggi nilai-nilai luhur bangsa, berkecakapan hidup, sehat jasmani, dan rohani;''';
+  static String isi_pasal5BABII_b =
+  '''b. Menjadi warga negara yang berjiwa Pancasila, setia dan patuh kepada Negara Kesatuan Republik Indonesia serta menjadi masyarakat yang baik dan berguna, yang dapat membangun dirinya sendiri secara mandiri serta bersama-sama bertanggungjawab atas pembangunan bangsa dan negara, memiliki kepedulian terhadap sesama hidup dan alam lingkungan dan''';
+  static String isi_pasal5BABII_c =
+  '''c. Membina Manusia Indonesia seutuhnya yang berkepribadian dan berbudaya nasional, Cinta kepada Tanah Air & Bangsa serta berusaha untuk meningkatkan Ketahanan Nasional. Kesatria Pewaris Silat Nusantara menciptakan dan membina Olah raga Rekreasi, Olah raga Pendidikan dan Olah raga Prestasi serta Atlit-atlit budaya seni pencak silat nasional.''';
 }
