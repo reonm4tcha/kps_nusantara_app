@@ -16,9 +16,30 @@ class _BerandaState extends State<Beranda> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(''),
-        backgroundColor: Color(0xff362FD9),
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(130),
+        child: AppBar(
+          backgroundColor: Color(0xff362FD9),
+          flexibleSpace:
+          Padding(
+            padding: EdgeInsets.only(top: 40, left: 30, right: 30),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Image.asset(
+                  'assets/image/Yayasan.png',
+                  height: 100,
+                  width: 100,
+                ),
+                Image.asset(
+                  'assets/image/Perguruan.png',
+                  height: 100,
+                  width: 100,
+                ),
+              ],
+            ),
+          ),
+        ),
       ),
       body: ListView(
         children: [
