@@ -212,6 +212,65 @@ Widget AD_dan_ART_Page(){
           textAlign: TextAlign.justify,
         ),
       ),
+      //BAB II
+      Container(
+        width: double.infinity,
+        margin: EdgeInsets.only(top: 30),
+        child:
+        Column(
+            children: [
+              Text(
+                data_AD_DAN_ART.BAB_II,
+                style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.w600
+                ),
+              ),
+              Text(
+                data_AD_DAN_ART.jenis_PasalBABII,
+                textAlign: TextAlign.center,
+                style:
+                TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.w600
+                ),
+              )
+            ]
+        ),
+      ),
+      Container(
+        width: double.infinity,
+        margin: EdgeInsets.only(top: 20),
+        child:
+        Column(
+            children: [
+              Text(
+                data_AD_DAN_ART.no_4BABII,
+                style:
+                TextStyle(
+                    fontSize: 16
+                ),
+              ),
+              Text(
+                data_AD_DAN_ART.nama_pasal4BABII,
+                style:
+                TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w600
+                ),
+              ),
+              Container(
+                width: double.infinity,
+                margin: EdgeInsets.only(top: 20, left: 20, right: 20),
+                child:
+                Text(
+                  data_AD_DAN_ART.isi_pasal4BABII,
+                  textAlign: TextAlign.justify,
+                ),
+              ),
+            ]
+        ),
+      ),
     ],
   );
 }
