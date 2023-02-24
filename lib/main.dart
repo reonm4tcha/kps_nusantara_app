@@ -5,11 +5,11 @@ import 'package:ksp_nusantara_app/screen/Panduan.dart';
 import 'package:ksp_nusantara_app/screen/Lainnya.dart';
 
 void main() {
-  runApp(const Kesatria_PS_Nusantara());
+  runApp(const KesatriaPSNusantara());
 }
 
-class Kesatria_PS_Nusantara extends StatelessWidget {
-  const Kesatria_PS_Nusantara({Key? key}) : super(key: key);
+class KesatriaPSNusantara extends StatelessWidget {
+  const KesatriaPSNusantara({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -79,7 +79,7 @@ class _HomeState extends State<Home> {
         ],
         currentIndex: selectPage,
         type: BottomNavigationBarType.shifting,
-        fixedColor: Colors.black,
+        fixedColor: Colors.black54,
         onTap: onTapNavBar,
       ),
       backgroundColor: const Color(0xff5B8FB9),
