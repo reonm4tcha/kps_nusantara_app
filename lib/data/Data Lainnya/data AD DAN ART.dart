@@ -70,4 +70,29 @@ class data_AD_DAN_ART{
   '''3. Kesatria PS Nusantara menjamin kemerdekaan tiap-tiap anggotannya untuk memeluk agama dan kepercayaan masing-masing serta beribadat menurut agama dan kepercayaannya''';
   static String isi_pasal8BABIII_4 =
   '''4. Kesatria PS Nusantara di dalam usaha dan kegiatannya mengutamakan musyawarah kekeluargaan, persaudaraan dan kegotong-royongan.''';
+
+  //BAB IV
+  static String BAB_IV = 'BAB IV';
+  static String Bag_1_BABIV = 'Bagian Kesatu';
+  static String jenisBag_1_BABIV =
+  '''Nilai, Prinsip Dasar Kesatria PS Nusantara, Metode Pelatihan dan Kode Kehormatan Kesatria PS Nusantara''';
+  static String no_9BABIV = 'Pasal 9';
+  static String nama_pasal9BABIV = 'Nilai';
+  static String isi_pasal9BABIV = 'Nilai Kesatria PS Nusantara mencakup :';
+  static String isi_pasal9BABIV_1 = 'a. Keimanan dan ketaqwaan kepada Tuhan Yang Maha Esa.';
+  static String isi_pasal9BABIV_2 = 'b. Kecintaan  pada alam dan sesama manusia.';
+  static String isi_pasal9BABIV_3 = 'c. Kecintaan  pada tanah air dan bangsa.';
+  static String isi_pasal9BABIV_4 = 'd. Kedisiplinan, keberanian, dan kesetiaan.';
+  static String isi_pasal9BABIV_5 = 'e. Tolong menolong dan gotong royong.';
+  static String isi_pasal9BABIV_6 = 'f. Bertanggungjawab dan dapat dipercaya.';
+  static String isi_pasal9BABIV_7 = 'g. Jernih dalam berfikir, bertindak dan berbuat.';
+  static String isi_pasal9BABIV_8 = 'h. Legowo, bersahaja, dan suka bermusyawarah.';
+  static String isi_pasal9BABIV_9 = 'i. Tut turi handayani.';
+  static String no_10BABIV = 'Pasal 10';
+  static String nama_pasal10BABIV = 'Prinsip Dasar Kesatria PS Nusantara';
+  static String isi_pasal10BABIV = 'Prinsip Dasar Kesatria PS Nusantara meliputi :';
+  static String isi_pasal10BABIV_1 = 'a. Iman dan taqwa kepada Tuhan Yang Maha Esa.';
+  static String isi_pasal10BABIV_2 = 'b. Peduli terhadap bangsa dan tanah air, sesama hidup dan alam seisinya.';
+  static String isi_pasal10BABIV_3 = 'c. Peduli terhadap diri pribadinya.';
+  static String isi_pasal10BABIV_4 = 'd. Taat kepada Kode Kehormatan Kesatria PS Nusantara.';
 }
