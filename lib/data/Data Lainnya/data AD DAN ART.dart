@@ -95,4 +95,33 @@ class data_AD_DAN_ART{
   static String isi_pasal10BABIV_2 = 'b. Peduli terhadap bangsa dan tanah air, sesama hidup dan alam seisinya.';
   static String isi_pasal10BABIV_3 = 'c. Peduli terhadap diri pribadinya.';
   static String isi_pasal10BABIV_4 = 'd. Taat kepada Kode Kehormatan Kesatria PS Nusantara.';
+  static String no_11BABIV = 'Pasal 11';
+  static String nama_pasal11BABIV = 'Metode Pelatihan Kesatria PS Nusantara';
+  static String isi_pasal11BABIV_1 =
+  '''1. Metode Pelatihan Kesatria PS Nusantara adalah metode belajar interaktif dan progresif yang dilaksanakan melalui :''';
+  static String isi_pasal11BABIV_1a = 'a. Pengamalan Kode Kehormatan Kesatria PS Nusantara.';
+  static String isi_pasal11BABIV_1b = 'b. Belajar sambil melakukan.';
+  static String isi_pasal11BABIV_1c = 'c. Kegiatan mandiri, berkelompok, bekerjasama, dan berkompetisi.';
+  static String isi_pasal11BABIV_1d = 'd. Kegiatan yang menarik dan menantang.';
+  static String isi_pasal11BABIV_1e = 'e. Kegiatan di alam terbuka.';
+  static String isi_pasal11BABIV_1f = 'f. Kehadiran orang dewasa yang memberikan bimbingan, dorongan, dan dukungan.';
+  static String isi_pasal11BABIV_1g = 'g. Penghargaan berupa tanda kecakapan dan tingkatan.';
+  static String isi_pasal11BABIV_2 =
+  '''2. Dalam menjalankan  Metode Pelatihan Kesatria PS Nusantara sebagaimana dimaksud pada ayat (1) digunakan Sistem Kekeluargaan dan Kiasan Dasar.''';
+  static String no_12BABIV = 'Pasal 12';
+  static String nama_pasal12BABIV = 'Sistem Kekeluargaan';
+  static String isi_pasal12BABIV_1 =
+  '''1. Dalam melaksanakan Pelatihan Kesatria PS Nusantara digunakan Sistem Kekeluargaan yang profesional.''';
+  static String isi_pasal12BABIV_2 =
+  '''2. Sistem Kekeluargaan merupakan proses pelatihan Kesatria PS Nusantara yang membentuk peserta didik agar berjiwa merdeka, disiplin, dan mandiri dalam hubungan timbal balik antar manusia.''';
+  static String isi_pasal12BABIV_3 =
+  '''3. Sistem Kekeluargaan sebagaimana dimaksud pada ayat (1) dan ayat (2) dilaksanakan dengan menempatkan prinsip kepemimpinan :''';
+  static String isi_pasal12BABIV_3a = 'a. Di depan menjadi teladan.';
+  static String isi_pasal12BABIV_3b = 'b. Di tengah membangun kemauan.';
+  static String isi_pasal12BABIV_3c = 'c. Di belakang mendorong dan memberikan motivasi kemandirian.';
+  static String no_13BABIV = 'Pasal 13';
+  static String nama_pasal13BABIV = 'Kiasan Dasar';
+  static String isi_pasal13BABIV =
+  '''Penyelenggaraan Pelatihan Kesatria PS Nusantara dikemas dengan menggunakan Kiasan Dasar yang bersumber dari sejarah perjuangan dan budaya bangsa Indonesia serta 4 (Empat) Pondasi kebangsaan.''';
+
 }
