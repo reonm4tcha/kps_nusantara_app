@@ -33,35 +33,50 @@ Widget buildImageCarosel(){
     CarouselSlider(
       items: [
         // for (int indexImage = 0; indexImage <= ImageCarousel_Beranda.length; indexImage++)
-        Image.asset(
-          ImageCarousel_Beranda[0],
-          height: double.infinity,
+        // Image.asset(
+        //   ImageCarousel_Beranda[0],
+        //   height: double.infinity,
+        //   width: double.infinity,
+        //   fit: BoxFit.cover,
+        // ),
+        // Image.asset(
+        //   ImageCarousel_Beranda[1],
+        //   height: double.infinity,
+        //   width: double.infinity,
+        //   fit: BoxFit.cover,
+        // ),
+        // Image.asset(
+        //   ImageCarousel_Beranda[2],
+        //   height: double.infinity,
+        //   width: double.infinity,
+        //   fit: BoxFit.cover,
+        // ),
+        // Image.asset(
+        //   ImageCarousel_Beranda[3],
+        //   height: double.infinity,
+        //   width: double.infinity,
+        //   fit: BoxFit.cover,
+        // ),
+        // Image.asset(
+        //   ImageCarousel_Beranda[4],
+        //   height: double.infinity,
+        //   width: double.infinity,
+        //   fit: BoxFit.cover,
+        // ),
+        Container(
           width: double.infinity,
-          fit: BoxFit.cover,
+          height: double.infinity,
+          color: Colors.red,
         ),
-        Image.asset(
-          ImageCarousel_Beranda[1],
-          height: double.infinity,
+        Container(
           width: double.infinity,
-          fit: BoxFit.cover,
+          height: double.infinity,
+          color: Colors.green,
         ),
-        Image.asset(
-          ImageCarousel_Beranda[2],
-          height: double.infinity,
+        Container(
           width: double.infinity,
-          fit: BoxFit.cover,
-        ),
-        Image.asset(
-          ImageCarousel_Beranda[3],
           height: double.infinity,
-          width: double.infinity,
-          fit: BoxFit.cover,
-        ),
-        Image.asset(
-          ImageCarousel_Beranda[4],
-          height: double.infinity,
-          width: double.infinity,
-          fit: BoxFit.cover,
+          color: Colors.blue,
         ),
       ],
       options: CarouselOptions(
