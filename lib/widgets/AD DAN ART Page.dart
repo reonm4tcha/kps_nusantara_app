@@ -814,7 +814,7 @@ Widget AD_dan_ART_Page(){
               ),
             ),
             Text(
-              data_AD_DAN_ART.nama_passal3BABI,
+              data_AD_DAN_ART.nama_pasal13BABIV,
               style: TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.w600
