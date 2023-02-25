@@ -75,7 +75,7 @@ class data_AD_DAN_ART{
   static String BAB_IV = 'BAB IV';
   static String Bag_1_BABIV = 'Bagian Kesatu';
   static String jenisBag_1_BABIV =
-  '''Nilai, Prinsip Dasar Kesatria PS Nusantara, Metode Pelatihan dan Kode Kehormatan Kesatria PS Nusantara''';
+  '''Nilai, Prinsip Dasar Kesatria PS Nusantara, Metode Pelatihan, Sistem Kekeluargaan, Kiasan Dasar dan Kode Kehormatan Kesatria PS Nusantara''';
   static String no_9BABIV = 'Pasal 9';
   static String nama_pasal9BABIV = 'Nilai';
   static String isi_pasal9BABIV = 'Nilai Kesatria PS Nusantara mencakup :';
