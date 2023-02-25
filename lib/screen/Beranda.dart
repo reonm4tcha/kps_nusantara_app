@@ -47,7 +47,7 @@ class _BerandaState extends State<Beranda> {
             width: double.infinity,
             height: MediaQuery.of(context).size.height / 3.5,
             child: Center(
-              child: Text('slide!'),
+              child: buildImageCarosel(),
             ),
             color: Colors.grey,
           ),
