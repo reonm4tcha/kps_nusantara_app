@@ -157,4 +157,24 @@ class data_AD_DAN_ART{
   '''3.Jenjang Pembinaan Kesatria PS Nusantara dalam Karier terdiri atas :\na. Ketua Rantng.\nb. Ketua Cabang\nc. Ketua Daerah.\nd. Ketua Pusat.''';
   static String isi_pasal16BABIV_4 =
   '''4. Jenjang Penghargaan khusus Kesatria PS Nusantara terdiri atas :\na. Kepengurusan.\nb. Prestasi.\nc. Hal-hal khusus.''';
+  static String Bag_3_BABIV = 'Bagian Ketiga';
+  static String jenisBag_3_BABIV = 'Peserta Didik, Tenaga Pelatih dan Kurikulum';
+  static String no_17BABIV = 'Pasal 17';
+  static String nama_pasal17BABIV = 'Peserta Didik';
+  static String isi_pasal17BABIV_1 =
+  '''1. Peserta Didik adalah  warga negara Indonesia yang berusia Dini 5 sampai  dengan 35 Tahun  yang mengikuti Pelatihan Kesatria PS Nusantara.''';
+  static String isi_pasal17BABIV_2 =
+  '''2. Peserta Didik terdiri dari :\na. Peserta Didik Usia Dini Usia 5 sampai dengan  10 Tahun.\nb. Peserta Didik Usia Remaja Usia 11 sampai dengan 16 Tahun.\nc. Peserta Didik Usia Dewasa Usia 17 sampai dengan 40 Tahun.\nd. Peserta Usia Wereda dan Manula Usia 45 Tahun  Ke Atas.''';
+  static String no_18BABIV = 'Pasal 18';
+  static String nama_pasal18BABIV = 'Tenaga Pelatih';
+  static String isi_pasal18BABIV_1 =
+  '''1. Tenaga Pelatih dalam Pembinaan Kesatria PS Nusantara terdiri dari :/na. Pelatih Ranting.\nb. Pelatih Cabang.\nc. Pelatih Daerah.\nd. Pelatih Pusat.\ne. Pelatih Utama.''';
+  static String isi_pasal18BABIV_2 =
+  '''2. Tenaga Pelatih harus memenuhi persyaratan standar kepelatihan Kesatria PS Nusantara dan Sekurang-kurangnya telah mendirikan Ranting Kesatria PS Nusantara.''';
+  static String no_19BABIV = 'Pasal 19';
+  static String nama_pasal19BABIV = 'Kurikulum';
+  static String isi_pasal19BABIV_1 =
+  '''1. Pembinaan Kesatria PS Nusantara dilaksanakan berdasarkan pada nilai dan kecakapan dalam upaya membentuk kepribadian peserta Didik.''';
+  static String isi_pasal19BABIV_2 =
+  '''2. Kurikulum Pelatihan Kesatria PS Nusantara di susun sesuai dengan jenjang Pelatihan Kesatria PS Nusantara dan harus memenuhi persyaratan standar 4 (Empat) Aspek Pencak Silat.''';
 }
