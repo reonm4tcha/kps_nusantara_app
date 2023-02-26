@@ -177,4 +177,29 @@ class data_AD_DAN_ART{
   '''1. Pembinaan Kesatria PS Nusantara dilaksanakan berdasarkan pada nilai dan kecakapan dalam upaya membentuk kepribadian peserta Didik.''';
   static String isi_pasal19BABIV_2 =
   '''2. Kurikulum Pelatihan Kesatria PS Nusantara di susun sesuai dengan jenjang Pelatihan Kesatria PS Nusantara dan harus memenuhi persyaratan standar 4 (Empat) Aspek Pencak Silat.''';
+  static String Bag_4_BABIV = 'Bagian Keempat';
+  static String jenisBag_4_BABIV =
+  '''Golongan Pembinaan, Ranting Kesatria PS Nusantara, Pusat Pembinaan dan Pelatihan Kesatria PS Nusantara''';
+  static String no_20BABIV = 'Pasal 20';
+  static String nama_pasal20BABIV = 'Golongan Pembinaan';
+  static String isi_pasal20BABIV =
+  '''Golongan Pembinaan Kesatria PS Nusantara terdiri dari :\na. Golongan Usia Dini di Tingkat Ranting.\nb. Golongan Usia Remaja di Tingkat Ranting dan Cabang.\nc. Golongan Dewasa di Tingkat Ranting , Cabang dan Daerah.\nd. Golongan Usia Wereda dan Manula di Tingkat Daerah dan Pusat.\ne. Golongan Khusus Pendekar di Tingkat Pusat.''';
+  static String no_21BABIV = 'Pasal 21';
+  static String nama_pasal21BABIV = 'Ranting Kesatria PS Nusantara';
+  static String isi_pasal21BABIV_1 =
+  '''1. Ranting Kesatria PS Nusantara adalah Pelatihan dan Pembinaan Organisasi terdepan.''';
+  static String isi_pasal21BABIV_2 =
+  '''2. Ranting Kesatria PS Nusantara meliputi Ranting Berbasis Sekolah , Lembaga Pendidikan, Instansi dan Mandiri.''';
+  static String isi_pasal21BABIV_3 =
+  '''3. Ranting Kesatria PS Nusantara dibagi beberapa Type sebagai berikut :''';
+  static String isi_pasal21BABIV_3abc =
+  '''a. Type Kemandirian (Dapat Memenuhi kebutuhannya sendiri).\nb. Type Pembimbingan (Bergantung dari Lingkungannya ).\nc. Type Subsidi (Mendapat bantuan dari Peng Cab dan Pengda Kesatria PS Nusantara).''';
+  static String no_22BABIV = 'Pasal 22';
+  static String nama_pasal22BABIV = 'Pusat Pembinaan dan Pelatihan Kesatria PS Nusantara';
+  static String isi_pasal22BABIV_1 =
+  '''1. Pusat Pembinaan dan pelatihan Kesatria PS Nusantara adalah Pelatihan untuk mendidik, melatih, membina, dan memberikan Sertifikasi Kompetensi bagi tenaga Pelatih Kesatria PS Nusantara.''';
+  static String isi_pasal22BABIV_2 =
+  '''2. Pusat Pembinaan dan pelatihan Kesatria PS Nusantara merupakan bagian integral dari Ranting Kesatria PS Nusantara.''';
+  static String isi_pasal22BABIV_3 =
+  '''3. Pusat Pembinaan dan pelatihan Kesatria PS Nusantara berada di tingkat Cabang , Daerah, dan Pusat Kesatria PS Nusantara.''';
 }
