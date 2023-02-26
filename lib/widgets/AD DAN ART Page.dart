@@ -89,7 +89,7 @@ Widget AD_dan_ART_Page(){
         ),
       ),
 
-      //BAB 1
+      //BAB I
       Container(
         width: double.infinity,
         margin: EdgeInsets.only(top: 30),
@@ -829,6 +829,192 @@ Widget AD_dan_ART_Page(){
         child: Text(
           data_AD_DAN_ART.isi_pasal13BABIV,
           textAlign: TextAlign.justify,
+        ),
+      ),
+      Container(
+        width: double.infinity,
+        margin: EdgeInsets.only(top: 20),
+        child: Column(
+          children: [
+            Text(
+              data_AD_DAN_ART.no_14BABIV,
+              style: TextStyle(
+                fontSize: 16,
+              ),
+            ),
+            Text(
+              data_AD_DAN_ART.nama_pasal14BABIV,
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.w600
+              ),
+            )
+          ],
+        ),
+      ),
+      Container(
+        width: double.infinity,
+        margin: EdgeInsets.only(top: 20, left: 20, right: 20),
+        child: Text(
+          data_AD_DAN_ART.isi_pasal14BABIV_1,
+          textAlign: TextAlign.justify,
+        ),
+      ),
+      Container(
+        width: double.infinity,
+        margin: EdgeInsets.only(top: 10, left: 20, right: 20),
+        child: Text(
+          data_AD_DAN_ART.isi_pasal14BABIV_2,
+          textAlign: TextAlign.justify,
+        ),
+      ),
+      Container(
+        width: double.infinity,
+        margin: EdgeInsets.only(top: 10, left: 20, right: 20),
+        child: Text(
+          data_AD_DAN_ART.isi_pasal14BABIV_3,
+          textAlign: TextAlign.justify,
+        ),
+      ),
+      Container(
+        width: double.infinity,
+        margin: EdgeInsets.only(top: 10, left: 20, right: 20),
+        child: Text(
+          data_AD_DAN_ART.isi_pasal14BABIV_4,
+          textAlign: TextAlign.justify,
+        ),
+      ),
+      Container(
+        width: double.infinity,
+        margin: EdgeInsets.only(top: 10, left: 20, right: 20),
+        child: Text(
+          data_AD_DAN_ART.isi_pasal14BABIV_5,
+          textAlign: TextAlign.justify,
+        ),
+      ),
+      Container(
+        width: double.infinity,
+        margin: EdgeInsets.only(left: 20, right: 20),
+        child: Text(
+          data_AD_DAN_ART.isi_pasal14BABIV_P,
+          textAlign: TextAlign.justify,
+          style: TextStyle(
+            fontWeight: FontWeight.w600
+          ),
+        ),
+      ),
+      Container(
+        width: double.infinity,
+        margin: EdgeInsets.only(left: 20, right: 20),
+        child: Text(
+          data_AD_DAN_ART.isi_pasal14BABIV_abc,
+          textAlign: TextAlign.justify,
+        ),
+      ),
+      Container(
+        width: double.infinity,
+        margin: EdgeInsets.only(top: 10, left: 20, right: 20),
+        child: Text(
+          data_AD_DAN_ART.isi_pasal14BABIV_6
+        ),
+      ),
+      Container(
+        width: double.infinity,
+        margin: EdgeInsets.only(top: 20, left: 20, right: 20),
+        child: Column(
+          children: [
+            Text(
+              data_AD_DAN_ART.Bag_2_BABIV,
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.w600
+              ),
+            ),
+            Text(
+              data_AD_DAN_ART.jenisBag_2_BABIV,
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.w600
+              ),
+            )
+          ],
+        )
+      ),
+      Container(
+        width: double.infinity,
+        margin: EdgeInsets.only(top: 20),
+        child: Column(
+          children: [
+            Text(
+              data_AD_DAN_ART.no_15BABIV,
+              style: TextStyle(
+                fontSize: 16
+              ),
+            ),
+            Text(
+              data_AD_DAN_ART.nama_pasal15BABIV,
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.w600
+              ),
+            )
+          ],
+        ),
+      ),
+      Container(
+        width: double.infinity,
+        margin: EdgeInsets.only(top: 20, left: 20, right: 20),
+        child: Text(
+          data_AD_DAN_ART.isi_pasal15BABIV
+        ),
+      ),
+      Container(
+        width: double.infinity,
+        margin: EdgeInsets.only(top: 20),
+        child: Column(
+          children: [
+            Text(
+              data_AD_DAN_ART.no_16BABIV,
+              style: TextStyle(
+                fontSize: 16
+              ),
+            ),
+            Text(
+              data_AD_DAN_ART.nama_pasal16BABIV,
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.w600
+              ),
+            ),
+          ],
+        ),
+      ),
+      Container(
+        width: double.infinity,
+        margin: EdgeInsets.only(top: 20, left: 20, right: 20),
+        child: Text(
+          data_AD_DAN_ART.isi_pasal16BABIV_1,
+        ),
+      ),
+      Container(
+        width: double.infinity,
+        margin: EdgeInsets.only(top: 10, left: 20, right: 20),
+        child: Text(
+          data_AD_DAN_ART.isi_pasal16BABIV_2,
+        ),
+      ),
+      Container(
+        width: double.infinity,
+        margin: EdgeInsets.only(top: 10, left: 20, right: 20),
+        child: Text(
+          data_AD_DAN_ART.isi_pasal16BABIV_3,
+        ),
+      ),
+      Container(
+        width: double.infinity,
+        margin: EdgeInsets.only(top: 10, left: 20, right: 20),
+        child: Text(
+          data_AD_DAN_ART.isi_pasal16BABIV_4,
         ),
       )
     ],

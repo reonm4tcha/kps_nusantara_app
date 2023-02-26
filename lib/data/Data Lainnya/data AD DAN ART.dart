@@ -123,5 +123,38 @@ class data_AD_DAN_ART{
   static String nama_pasal13BABIV = 'Kiasan Dasar';
   static String isi_pasal13BABIV =
   '''Penyelenggaraan Pelatihan Kesatria PS Nusantara dikemas dengan menggunakan Kiasan Dasar yang bersumber dari sejarah perjuangan dan budaya bangsa Indonesia serta 4 (Empat) Pondasi kebangsaan.''';
-
+  static String no_14BABIV = 'Pasal 14';
+  static String nama_pasal14BABIV = 'Kode Kemormatan Kesatria PS Nusantara';
+  static String isi_pasal14BABIV_1 =
+  '''1. Kode Kehormatan Kesatria PS Nusantara merupakan Janji dan Komitmen diri serta ketentuan moral Kesatria PS Nusantara dalam  Pembinaan Bela diri Pencak Silat.''';
+  static String isi_pasal14BABIV_2 =
+  '''2. Kehormatan Kesatria PS Nusantara terdiri dari Catur Prasetya Nusantara.''';
+  static String isi_pasal14BABIV_3 =
+  '''3. Kode Kehormatan Kesatria PS Nusantara merupakan kode etik anggota Kesatria PS Nusantara baik dalam kehidupan pribadi maupun bermasyarakat.''';
+  static String isi_pasal14BABIV_4 =
+  '''4. Kode Kehormatan Kesatria PS Nusantara sebagaimana dimaksud pada ayat (2) Kode dilaksanakan baik dalam kehidupan pribadi maupun bermasyarakat secara sukarela dan ditaati demi kehormatan diri''';
+  static String isi_pasal14BABIV_5 =
+  '''5. Catur Prasetya Nusantara sebagaimana dimaksud  pada ayat  (2)  berbunyi :''';
+  static String isi_pasal14BABIV_P =
+  '''Demi kehormatan Iman dan Taqwa Ku Terhadap Tuhan Yang Maha Esa, Aku berjanji :''';
+  static String isi_pasal14BABIV_abc =
+  '''a. Siap mengabdi kepada Nusa dan Bangsa.\nb. Menghormati Orang Tua dan Guru\nc. Berjiwa Ksatria dan Berbudi Luhur.\nd. Mempertinggi dan memperkembangkan Pencak Silat.''';
+  static String isi_pasal14BABIV_6 =
+  '''6. Butiran Catur Prasetya Kesatria Pewaris Silat Nusantara di jelaskan dalam Angaran Rumah Tangga Kesatria PS Nusantara.''';
+  static String Bag_2_BABIV = 'Bagian Kedua';
+  static String jenisBag_2_BABIV = 'Jalur dan Jenjang';
+  static String no_15BABIV = 'Pasal 15';
+  static String nama_pasal15BABIV = 'Jalur';
+  static String isi_pasal15BABIV =
+  '''Pembinaan Kesatria PS Nusantara dalam sistem Pelatihan PB IPSI Nasional dan FORMI termasuk dalam jalur Pelatihan  berjenjang yang diperkaya dengan  pembinaan nilai-nilai Budaya Pencak Silat dalam  membentuk kepribadian yang berakhlak mulia, berjiwa Patriotik, taat hukum, disiplin, menjunjung tinggi nilai-nilai luhur bangsa dan memiliki kecakapan hidup.''';
+  static String no_16BABIV = 'Pasal 16';
+  static String nama_pasal16BABIV = 'Jenjang';
+  static String isi_pasal16BABIV_1 =
+  '''1. Jenjang Pembinaan Kesatria PS Nusantara dalam golongan terdiri atas :\na. Kesatria (Muda, Madya dan Utama).\nb. Pandega (Muda, Madya dan Utama).\nc. Pendekar (Muda dan Pendekar).''';
+  static String isi_pasal16BABIV_2 =
+  '''2. Jenjang Pembinaan Kesatria PS Nusantara dalam Keilmuan terdiri atas :\na. Pelatih Ranting.\nb. Pelatih Cabang.\nc. Pelatih Daerah\nd. Pelatih Nasional.''';
+  static String isi_pasal16BABIV_3 =
+  '''3.Jenjang Pembinaan Kesatria PS Nusantara dalam Karier terdiri atas :\na. Ketua Rantng.\nb. Ketua Cabang\nc. Ketua Daerah.\nd. Ketua Pusat.''';
+  static String isi_pasal16BABIV_4 =
+  '''4. Jenjang Penghargaan khusus Kesatria PS Nusantara terdiri atas :\na. Kepengurusan.\nb. Prestasi.\nc. Hal-hal khusus.''';
 }
