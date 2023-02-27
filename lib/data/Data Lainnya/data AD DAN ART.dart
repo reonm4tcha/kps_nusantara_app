@@ -202,4 +202,33 @@ class data_AD_DAN_ART{
   '''2. Pusat Pembinaan dan pelatihan Kesatria PS Nusantara merupakan bagian integral dari Ranting Kesatria PS Nusantara.''';
   static String isi_pasal22BABIV_3 =
   '''3. Pusat Pembinaan dan pelatihan Kesatria PS Nusantara berada di tingkat Cabang , Daerah, dan Pusat Kesatria PS Nusantara.''';
+  static String Bag_5_BABIV = 'Bagian Kelima';
+  static String jenisBag_5_BABIV = 'Evaluasi, Akreditasi dan Sertifikasi';
+  static String no_23BABIV = 'Pasal 23';
+  static String nama_pasal23BABIV = 'Evaluasi';
+  static String isi_pasal23BABIV_1 =
+  '''1. Evaluasi dilakukan dalam rangka pengendalian mutu pembinaan Kesatria PS Nusantara sebagai bentuk ankuntabilitas penyelenggaraan pelatihan Kesatria PS Nusantara kepada peserta didik Kesatria PS Nusantara.''';
+  static String isi_pasal23BABIV_2 =
+  '''2. Evaluasi dilakukan terhadap peserta didik, Pelatih, Organisasi, dan Kurikulum disetiap jenjang dan golongan pembinaan Kesatria PS Nusantara.''';
+  static String isi_pasal23BABIV_3 =
+  '''3. Evaluasi terhadap peserta didik dilakukan oleh Pelatih.''';
+  static String isi_pasal23BABIV_4 =
+  '''4. Evaluasi terhadap tenaga Pelatih dilakukan oleh Pusat Pembinan dan Pelatihan tingkat Pusat Kesatria PS Nusantara.''';
+  static String isi_pasal23BABIV_5 =
+  '''5. Evaluasi terhadap Pembinaan Organisasi dan kurikulum dilakukan oleh Pusat Pembinan dan Pelatihan tingkat Pusat Kesatria PS Nusantara.''';
+  static String no_24BABIV = 'Pasal 24';
+  static String nama_pasal24BABIV = 'Akreditasi';
+  static String isi_pasal24BABIV_1 =
+  '''1. Akreditasi dilakukan untuk menentukan kelayakan kegiatan dan pelatihan Kesatria PS Nusantara pada setiap jenjang tingkatan dan golongan Pembinaan Kesatria PS Nusantara.''';
+  static String isi_pasal24BABIV_2 =
+  '''2. Akreditasi dilakukan atas dasar kriteria yang bersifat terbuka dan dilakukan oleh Organisasi Kesatria PS Nusantara dengan pendampingan Lembaga Akreditasi.''';
+  static String no_25BABIV = 'Pasal 25';
+  static String nama_pasal25BABIV = 'Sertifikasi';
+  static String isi_pasal25BABIV_1 =
+  '''1. Sertifikasi dilakukan terhadap peserta didik dan tenaga pelatih sebagai pengakuan kompetensi yang dimilikinya.''';
+  static String isi_pasal25BABIV_2 =
+  '''2. Sertifikasi bagi peserta didik berbentuk tingkatan Sabuk dan bagi tenaga pelatih selain tingkatan Sabuk diberikan  Sertifikasi kompetensi yang diatur oleh Kesatria PS Nusantara.''';
+  static String isi_pasal25BABIV_3 =
+  '''3. Sertifikasi Kopetensi diberikan sebagai pengakuan terhadap kopentensi tenaga pelatih melalui penilaian yang dilaksanakan oleh Organisasi dengan melibatkan dewan perwakilan golongan tingkatan Kesatria PS Nusantara secara transfaransi.''';
 }
+
