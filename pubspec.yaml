@@ -40,9 +40,9 @@ dependencies:
 
 dev_dependencies:
   flutter_lints: ^2.0.0
+  syncfusion_flutter_pdfviewer: ^20.4.50
   flutter_test:
     sdk: flutter
-  syncfusion_flutter_pdfviewer: ^20.4.50
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 # The following section is specific to Flutter packages.

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../models/pengetahuanpanduan.dart';
+import '../../models/panduanmodels/pengetahuanpanduan.dart';
+import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
 class PengetahuanPage extends StatefulWidget {
   final List<PengetahuanModel> panduanData;
@@ -11,54 +12,34 @@ class PengetahuanPage extends StatefulWidget {
 }
 
 class _PengetahuanPageState extends State<PengetahuanPage> {
+  late PdfViewerController _pdfViewerController;
+
+  @override
+  void initState() {
+    _pdfViewerController = PdfViewerController();
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.panduanData[widget.index].title),
+        title: Text(widget.panduanData[widget.index].judul),
         backgroundColor: const Color.fromARGB(255, 0, 171, 233),
       ),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Container(
             margin: const EdgeInsets.only(top: 20, left: 10, right: 10),
-            child: Column(
-              children: [
-                Image.asset(
-                  'assets/image/Perguruan.png',
-                  height: 90,
-                  width: 90,
-                ),
-                Text(
-                  widget.panduanData[widget.index].judul,
-                  textAlign: TextAlign.center,
-                  style: const TextStyle(
-                    fontSize: 20,
-                    color: Colors.black,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                Text(
-                  widget.panduanData[widget.index].isi,
-                  textAlign: TextAlign.justify,
-                  style: const TextStyle(
-                    fontSize: 18,
-                    color: Colors.black,
-                  ),
-                ),
-                Text(
-                  widget.panduanData[widget.index].subisi,
-                  textAlign: TextAlign.left,
-                  style: const TextStyle(
-                    fontSize: 17,
-                    color: Colors.black,
-                  ),
-                ),
-                Container(
-                  height: 80,
-                )
-              ],
-            ),
+            child: SizedBox(
+                height: MediaQuery.of(context).size.height / 1.33,
+                width: MediaQuery.of(context).size.width,
+                child: SfPdfViewer.asset(
+                  widget.panduanData[widget.index].pdfURL,
+                  canShowScrollStatus: false,
+                  canShowScrollHead: false,
+                  controller: _pdfViewerController,
+                )),
           ),
         ),
       ),
@@ -91,6 +72,13 @@ class _PengetahuanPageState extends State<PengetahuanPage> {
             ),
             FloatingActionButton(
               heroTag: 'b2',
+              onPressed: () {
+                _pdfViewerController.firstPage();
+              },
+              child: Icon(Icons.keyboard_arrow_up),
+            ),
+            FloatingActionButton(
+              heroTag: 'b3',
               onPressed: () {
                 setState(() {
                   if (widget.index != widget.panduanData.length - 1) {

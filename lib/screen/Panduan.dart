@@ -40,35 +40,18 @@ class _PanduanState extends State<Panduan> {
                 width: MediaQuery.of(context).size.width,
                 margin: const EdgeInsets.only(right: 20, left: 15, bottom: 10),
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  mainAxisAlignment: MainAxisAlignment.end,
                   children: [
-                    Container(
-                      width: MediaQuery.of(context).size.width / 1.8,
-                      padding: const EdgeInsets.all(4),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        color: const Color.fromRGBO(255, 253, 253, 0.911),
-                      ),
-                      child: const Text(' Hal-hal dasar yang perlu diketahui!',
-                          maxLines: 2,
-                          overflow: TextOverflow.ellipsis,
-                          style: TextStyle(color: Colors.black, fontSize: 13)),
+                    Image.asset(
+                      'assets/image/Yayasan.png',
+                      height: MediaQuery.of(context).size.width / 8,
+                      width: MediaQuery.of(context).size.width / 8,
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.end,
-                      children: [
-                        Image.asset(
-                          'assets/image/Yayasan.png',
-                          height: MediaQuery.of(context).size.width / 10,
-                          width: MediaQuery.of(context).size.width / 10,
-                        ),
-                        Image.asset(
-                          'assets/image/Perguruan.png',
-                          height: MediaQuery.of(context).size.width / 11,
-                          width: MediaQuery.of(context).size.width / 11,
-                        )
-                      ],
-                    ),
+                    Image.asset(
+                      'assets/image/Perguruan.png',
+                      height: MediaQuery.of(context).size.width / 9,
+                      width: MediaQuery.of(context).size.width / 9,
+                    )
                   ],
                 ),
               ),
@@ -102,9 +85,9 @@ class _PanduanState extends State<Panduan> {
 
   Widget buildpengetahuan(BuildContext context) => ExpansionTile(
         title: const Text(
-          'Pengetahuan Pencak Silat',
+          'PENGETAHUAN PENCAK SILAT',
           style: TextStyle(
-            fontSize: 18,
+            fontSize: 17,
             fontWeight: FontWeight.w500,
           ),
         ),
@@ -149,7 +132,7 @@ class _PanduanState extends State<Panduan> {
                                         MediaQuery.of(context).size.width / 1.4,
                                     margin: const EdgeInsets.only(left: 10),
                                     child: Text(
-                                      panduanModel.pengetahuan[index].title,
+                                      panduanModel.pengetahuan[index].judul,
                                       maxLines: 1,
                                       overflow: TextOverflow.ellipsis,
                                       style: const TextStyle(fontSize: 13),
@@ -162,9 +145,9 @@ class _PanduanState extends State<Panduan> {
 
   Widget buildMaknaKiasan(BuildContext context) => ExpansionTile(
         title: const Text(
-          'Makna dan Kiasan',
+          'MAKNA DAN KIASAN',
           style: TextStyle(
-            fontSize: 18,
+            fontSize: 17,
             fontWeight: FontWeight.w500,
           ),
         ),
@@ -209,7 +192,7 @@ class _PanduanState extends State<Panduan> {
                                         MediaQuery.of(context).size.width / 1.4,
                                     margin: const EdgeInsets.only(left: 10),
                                     child: Text(
-                                      panduanModel.makna[index].title,
+                                      panduanModel.makna[index].judul,
                                       maxLines: 1,
                                       overflow: TextOverflow.ellipsis,
                                       style: const TextStyle(fontSize: 13),
@@ -222,9 +205,9 @@ class _PanduanState extends State<Panduan> {
 
   Widget buildPernafasan(BuildContext context) => ExpansionTile(
         title: const Text(
-          'Panduan Pernafasan',
+          'PANDUAN PERNAFASAN',
           style: TextStyle(
-            fontSize: 18,
+            fontSize: 17,
             fontWeight: FontWeight.w500,
           ),
         ),
@@ -269,7 +252,7 @@ class _PanduanState extends State<Panduan> {
                                         MediaQuery.of(context).size.width / 1.4,
                                     margin: const EdgeInsets.only(left: 10),
                                     child: Text(
-                                      panduanModel.pernafasan[index].title,
+                                      panduanModel.pernafasan[index].judul,
                                       maxLines: 1,
                                       overflow: TextOverflow.ellipsis,
                                       style: const TextStyle(fontSize: 13),
@@ -282,9 +265,9 @@ class _PanduanState extends State<Panduan> {
 
   Widget buildPedoman(BuildContext context) => ExpansionTile(
         title: const Text(
-          'Pedoman Teknik',
+          'PEDOMAN TEKNIK',
           style: TextStyle(
-            fontSize: 18,
+            fontSize: 17,
             fontWeight: FontWeight.w500,
           ),
         ),
@@ -329,7 +312,7 @@ class _PanduanState extends State<Panduan> {
                                         MediaQuery.of(context).size.width / 1.4,
                                     margin: const EdgeInsets.only(left: 10),
                                     child: Text(
-                                      panduanModel.pedoman[index].title,
+                                      panduanModel.pedoman[index].judul,
                                       maxLines: 1,
                                       overflow: TextOverflow.ellipsis,
                                       style: const TextStyle(fontSize: 13),
