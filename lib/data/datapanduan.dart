@@ -10,31 +10,31 @@ final panduanModel = PanduanModel(
     PengetahuanModel(
       judul:
           'AJARAN BUDI PEKERTI LUHUR SEBAGAI ROH DIMENSI KEJIWAAN KESATRIA PEWARIS SILAT NUSANTARA',
-      pdfURL: '',
+      pdfURL: 'assets/pdf/pengetahuansatu.pdf',
     ),
     PengetahuanModel(
       judul: 'SEJARAH PENCAK SILAT',
-      pdfURL: '',
+      pdfURL: 'assets/pdf/pengetahuandua.pdf',
     ),
     PengetahuanModel(
       judul: 'PENGERTIAN PENCAK SILAT',
-      pdfURL: '',
+      pdfURL: 'assets/pdf/pengetahuantiga.pdf',
     ),
     PengetahuanModel(
       judul: 'HAKEKAT PENCAK SILAT',
-      pdfURL: '',
+      pdfURL: 'assets/pdf/pengetahuanempat.pdf',
     ),
     PengetahuanModel(
       judul: 'CITA-CITA BESAR PENDIDIKAN PENCAK SILAT',
-      pdfURL: '',
+      pdfURL: 'assets/pdf/pengetahuanlima.pdf',
     ),
     PengetahuanModel(
       judul: 'FALSAFAH ETIKA PENCAK SILAT',
-      pdfURL: '',
+      pdfURL: 'assets/pdf/pengetahuanenam.pdf',
     ),
     PengetahuanModel(
       judul: 'NILAI-NILAI LUHUR PENCAK SILAT',
-      pdfURL: '',
+      pdfURL: 'assets/pdf/pengetahuantujuh.pdf',
     ),
   ],
   makna: [
