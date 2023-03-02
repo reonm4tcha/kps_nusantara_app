@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../models/pernafasanpanduan.dart';
+import '../../models/panduanmodels/pernafasanpanduan.dart';
 import '../../data/datapanduan.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 import 'package:flutter/src/rendering/box.dart';
@@ -14,11 +14,17 @@ class PernafasanPage extends StatefulWidget {
 }
 
 class _PernafasanPageState extends State<PernafasanPage> {
+  late PdfViewerController _pdfViewerController;
+  void initState() {
+    _pdfViewerController = PdfViewerController();
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.panduanData[widget.index].title),
+        title: Text(widget.panduanData[widget.index].judul),
         backgroundColor: Color.fromARGB(255, 0, 171, 233),
         centerTitle: true,
         elevation: 0,
@@ -27,35 +33,15 @@ class _PernafasanPageState extends State<PernafasanPage> {
         child: SingleChildScrollView(
           child: Container(
             margin: EdgeInsets.only(top: 20, left: 10, right: 10),
-            child: Column(
-              children: [
-                Text(
-                  widget.panduanData[widget.index].judul,
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.black,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                // Text(
-                //   widget.panduanData[widget.index].isi,
-                //   textAlign: TextAlign.justify,
-                //   style: TextStyle(
-                //     fontSize: 18,
-                //     color: Colors.black,
-                //   ),
-                // ),
-                SizedBox(
-                    height: MediaQuery.of(context).size.height / 1.31,
-                    width: MediaQuery.of(context).size.width,
-                    child: SfPdfViewer.asset(
-                      widget.panduanData[widget.index].pdfURL,
-                      canShowScrollStatus: false,
-                      canShowScrollHead: false,
-                    ))
-              ],
-            ),
+            child: SizedBox(
+                height: MediaQuery.of(context).size.height / 1.33,
+                width: MediaQuery.of(context).size.width,
+                child: SfPdfViewer.asset(
+                  widget.panduanData[widget.index].pdfURL,
+                  canShowScrollStatus: false,
+                  canShowScrollHead: false,
+                  controller: _pdfViewerController,
+                )),
           ),
         ),
       ),
@@ -87,6 +73,13 @@ class _PernafasanPageState extends State<PernafasanPage> {
             ),
             FloatingActionButton(
               heroTag: 'b2',
+              onPressed: () {
+                _pdfViewerController.firstPage();
+              },
+              child: Icon(Icons.keyboard_arrow_up),
+            ),
+            FloatingActionButton(
+              heroTag: 'b3',
               onPressed: () {
                 setState(() {
                   if (widget.index != widget.panduanData.length - 1) {
