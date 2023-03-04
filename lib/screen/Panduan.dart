@@ -40,18 +40,31 @@ class _PanduanState extends State<Panduan> {
                 width: MediaQuery.of(context).size.width,
                 margin: const EdgeInsets.only(right: 20, left: 15, bottom: 10),
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Image.asset(
-                      'assets/image/Yayasan.png',
-                      height: MediaQuery.of(context).size.width / 8,
-                      width: MediaQuery.of(context).size.width / 8,
+                    Text(
+                      'Panduan dasar yang wajib dipahami', 
+                    style: TextStyle(
+                      color: Color.fromARGB(255, 243, 243, 243), 
+                      fontSize: 13, 
+                      fontWeight: FontWeight.w500,
+                      ),
                     ),
-                    Image.asset(
-                      'assets/image/Perguruan.png',
-                      height: MediaQuery.of(context).size.width / 9,
-                      width: MediaQuery.of(context).size.width / 9,
-                    )
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        Image.asset(
+                          'assets/image/Yayasan.png',
+                          height: MediaQuery.of(context).size.width / 8,
+                          width: MediaQuery.of(context).size.width / 8,
+                        ),
+                        Image.asset(
+                          'assets/image/Perguruan.png',
+                          height: MediaQuery.of(context).size.width / 9,
+                          width: MediaQuery.of(context).size.width / 9,
+                        )
+                      ],
+                    ),
                   ],
                 ),
               ),
