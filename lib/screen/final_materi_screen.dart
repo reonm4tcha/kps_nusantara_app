@@ -1,88 +1,65 @@
+import 'package:chewie/chewie.dart';
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 
 class FinalMateriScreen extends StatefulWidget {
-  const FinalMateriScreen({super.key, required this.title});
+  const FinalMateriScreen({
+    super.key,
+    required this.titleAppBar,
+    required this.videoAsset,
+    required this.videoTitle,
+  });
 
-  final String title;
+  final String titleAppBar;
+  final String videoTitle;
+  final String videoAsset;
 
   @override
   State<FinalMateriScreen> createState() => _FinalMateriScreenState();
 }
 
 class _FinalMateriScreenState extends State<FinalMateriScreen> {
-  late VideoPlayerController _controller;
+  late VideoPlayerController videoPlayerController;
+  late ChewieController chewieController;
 
   @override
   void initState() {
-    loadVideoPlayer();
     super.initState();
+    _initPlayer();
   }
 
-  loadVideoPlayer() {
-    _controller = VideoPlayerController.asset('assets/videos/test.mp4');
-    _controller.addListener(() {
-      setState(() {});
-    });
-    _controller.initialize().then((value) {
-      setState(() {});
-    });
+  void _initPlayer() {
+    videoPlayerController = VideoPlayerController.asset(widget.videoAsset);
+    videoPlayerController.initialize();
+
+    chewieController = ChewieController(
+      videoPlayerController: videoPlayerController,
+      autoPlay: true,
+      looping: true,
+    );
+  }
+
+  @override
+  void dispose() {
+    videoPlayerController.dispose();
+    chewieController.dispose();
+    super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text(widget.titleAppBar),
       ),
-      body: Column(
-        children: [
-          AspectRatio(
-            aspectRatio: _controller.value.aspectRatio,
-            child: VideoPlayer(_controller),
-          ),
-          Text('Total Duration : ${_controller.value.duration}'),
-          VideoProgressIndicator(
-            _controller,
-            allowScrubbing: true,
-            colors: const VideoProgressColors(
-              backgroundColor: Colors.redAccent,
-              playedColor: Colors.green,
-              bufferedColor: Colors.purple,
-            ),
-          ),
-          Row(
-            children: [
-              IconButton(
-                onPressed: () {
-                  if (_controller.value.isPlaying) {
-                    _controller.pause();
-                  } else {
-                    _controller.play();
-                  }
-                  setState(() {});
-                },
-                icon: Icon(_controller.value.isPlaying
-                    ? Icons.pause
-                    : Icons.play_arrow),
-              ),
-              IconButton(
-                  onPressed: () {
-                    _controller.seekTo(const Duration(seconds: 0));
-
-                    setState(() {});
-                  },
-                  icon: const Icon(Icons.stop))
-            ],
-          ),
-        ],
-      ),
+      body: Chewie(controller: chewieController),
+      // Padding(
+      //   padding: const EdgeInsets.all(8.0),
+      //   child: Text(
+      //     widget.videoTitle,
+      //     // style: bFont20,
+      //   ),
+      // ),
     );
-  }
-
-  @override
-  void dispose() {
-    _controller.dispose();
-    super.dispose();
   }
 }

@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:ksp_nusantara_app/data/data.dart';
+import 'package:ksp_nusantara_app/data/materi/data.dart';
 import 'package:ksp_nusantara_app/data/font_style.dart';
-import 'package:ksp_nusantara_app/models/golongan.dart';
 import 'package:ksp_nusantara_app/screen/detail_materi_screen.dart';
 import 'package:ksp_nusantara_app/widgets/materi_card.dart';
+
+import '../models/materi/golongan.dart';
 
 class MateriScreen extends StatelessWidget {
   const MateriScreen({super.key});
@@ -17,26 +18,45 @@ class MateriScreen extends StatelessWidget {
         title: const Text('TINGKATAN SABUK'),
         centerTitle: true,
       ),
-      body: ListView.builder(
-        itemCount: golongan.length,
-        physics: const ScrollPhysics(),
-        itemBuilder: (BuildContext context, int index) {
-          return Card(
-            margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
-            child: Padding(
-              padding: const EdgeInsets.symmetric(vertical: 8),
-              child: Column(
-                children: [
-                  Text(
-                    golongan[index].name,
-                    style: bFont20,
-                  ),
-                  buildSubData(context, golongan[index], index)
-                ],
-              ),
+      body: Container(
+        height: MediaQuery.of(context).size.height,
+        decoration: const BoxDecoration(
+          color: Color(0xff362FD9),
+        ),
+        child: Container(
+          decoration: const BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(30),
+              topRight: Radius.circular(30),
             ),
-          );
-        },
+          ),
+          child: Padding(
+            padding: const EdgeInsets.only(top: 4),
+            child: ListView.builder(
+              itemCount: golongan.length,
+              physics: const ScrollPhysics(),
+              itemBuilder: (BuildContext context, int index) {
+                return Card(
+                  margin:
+                      const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    child: Column(
+                      children: [
+                        Text(
+                          golongan[index].name,
+                          style: bFont20,
+                        ),
+                        buildSubData(context, golongan[index], index)
+                      ],
+                    ),
+                  ),
+                );
+              },
+            ),
+          ),
+        ),
       ),
     );
   }
