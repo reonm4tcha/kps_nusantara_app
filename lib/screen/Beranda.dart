@@ -17,23 +17,23 @@ class _BerandaState extends State<Beranda> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: PreferredSize(
-        preferredSize: Size.fromHeight(130),
+        preferredSize: Size.fromHeight(80),
         child: AppBar(
           backgroundColor: Color(0xff362FD9),
           flexibleSpace: Padding(
-            padding: EdgeInsets.only(top: 40, left: 30, right: 30),
+            padding: EdgeInsets.only(top: 30, left: 40, right: 40, bottom: 10),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Image.asset(
                   'assets/image/Yayasan.png',
-                  height: 100,
-                  width: 100,
+                  height: 70,
+                  width: 70,
                 ),
                 Image.asset(
                   'assets/image/Perguruan.png',
-                  height: 100,
-                  width: 100,
+                  height: 60,
+                  width: 60,
                 ),
               ],
             ),
@@ -55,7 +55,10 @@ class _BerandaState extends State<Beranda> {
           //Sambutan
           Container(
             width: double.infinity,
-            decoration: const BoxDecoration(color: Colors.black),
+            decoration: const BoxDecoration(
+              color: Colors.black,
+              borderRadius: BorderRadius.all(Radius.circular(15))
+            ),
             margin: const EdgeInsets.only(top: 50),
             child: Padding(
               padding: const EdgeInsets.only(top: 15, bottom: 15),
@@ -120,7 +123,10 @@ class _BerandaState extends State<Beranda> {
           Container(
             width: double.infinity,
             margin: const EdgeInsets.only(top: 50),
-            decoration: const BoxDecoration(color: Colors.black),
+            decoration: const BoxDecoration(
+              color: Colors.black,
+              borderRadius: BorderRadius.all(Radius.circular(15))
+            ),
             child: Padding(
               padding: const EdgeInsets.only(top: 15, bottom: 15),
               child: Center(
@@ -183,7 +189,10 @@ class _BerandaState extends State<Beranda> {
           Container(
             width: double.infinity,
             margin: const EdgeInsets.only(top: 50),
-            decoration: const BoxDecoration(color: Colors.black),
+            decoration: const BoxDecoration(
+              color: Colors.black,
+              borderRadius: BorderRadius.all(Radius.circular(15))
+            ),
             child: Padding(
               padding: const EdgeInsets.only(top: 15, bottom: 15),
               child: Center(
@@ -218,8 +227,10 @@ class _BerandaState extends State<Beranda> {
           Container(
             width: double.infinity,
             margin: const EdgeInsets.only(top: 50),
-            decoration: const BoxDecoration(color: Colors.black),
-            child: Padding(
+            decoration: const BoxDecoration(
+              color: Colors.black,
+              borderRadius: BorderRadius.all(Radius.circular(15))
+            ),            child: Padding(
               padding: const EdgeInsets.only(top: 15, bottom: 15),
               child: Center(
                   child: Column(
