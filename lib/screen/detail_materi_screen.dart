@@ -2,9 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:ksp_nusantara_app/data/font_style.dart';
 import 'package:ksp_nusantara_app/screen/form_screen.dart';
 
-import '../data/icons.dart';
-import '../models/sub_tingkat.dart';
-import '../models/tingkat.dart';
+import '../icons/icons.dart';
+import '../models/materi/golongan.dart';
 import 'final_materi_screen.dart';
 
 class DetailMateriScreen extends StatelessWidget {
@@ -81,29 +80,6 @@ class DetailMateriScreen extends StatelessWidget {
               },
             ),
           ),
-          // Padding(
-          //   padding: const EdgeInsets.symmetric(horizontal: 16),
-          //   child: Card(
-          //     shape: RoundedRectangleBorder(
-          //         borderRadius: BorderRadius.circular(8)),
-          //     child: Theme(
-          //       data: Theme.of(context).copyWith(
-          //         dividerColor: Colors.transparent,
-          //       ),
-          //       child: Row(
-          //         children: [
-          //           Image.asset(
-          //             iconFormUjian,
-          //             width: 60.0,
-          //             height: 60.0,
-          //             fit: BoxFit.fill,
-          //           ),
-          //           const Text('Form Ujian'),
-          //         ],
-          //       ),
-          //     ),
-          //   ),
-          // ),
         ],
       ),
     );
@@ -141,13 +117,18 @@ class DetailMateriScreen extends StatelessWidget {
       subTingkat2.list.length,
       (index) => GestureDetector(
         onTap: () {
-          final title = subTingkat2.name;
+          final titleAppBar = subTingkat2.list[index];
+          final videoTitle = subTingkat2.list[index];
+          final videoAsset = subTingkat2.vidAssets[index];
           Navigator.push(
             context,
             MaterialPageRoute(
-                builder: (context) => FinalMateriScreen(
-                      title: title,
-                    )),
+              builder: (context) => FinalMateriScreen(
+                titleAppBar: titleAppBar,
+                videoTitle: videoTitle,
+                videoAsset: videoAsset,
+              ),
+            ),
           );
         },
         child: Padding(
