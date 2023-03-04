@@ -42,13 +42,29 @@ class _PanduanState extends State<Panduan> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
-                      'Panduan dasar yang wajib dipahami', 
-                    style: TextStyle(
-                      color: Color.fromARGB(255, 243, 243, 243), 
-                      fontSize: 13, 
-                      fontWeight: FontWeight.w500,
-                      ),
+                    // Container(
+                    //   width: MediaQuery.of(context).size.width/1.65,
+                    //   padding: EdgeInsets.all(5),
+                    //   decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), border: Border.all(width: 1, color: Colors.white), color: Colors.white,),
+                    //   child: Text(
+                    //     'Panduan dasar yang wajib dipahami',
+                    //   style: TextStyle(
+                    //     color: Colors.black, 
+                    //     fontSize: 13, 
+                    //     fontWeight: FontWeight.w500,
+                    //     ),
+                    //   ),
+                    // ),
+                    Container(
+                        width: MediaQuery.of(context).size.width/1.6,
+                      child: Text(
+                          'Panduan dasar yang wajib dipahami',
+                        style: TextStyle(
+                          color: Color.fromARGB(255, 243, 243, 243), 
+                          fontSize: 13, 
+                          fontWeight: FontWeight.w500,
+                          ),
+                        ),
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.end,
