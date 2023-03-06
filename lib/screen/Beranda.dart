@@ -17,29 +17,35 @@ class _BerandaState extends State<Beranda> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: PreferredSize(
-        preferredSize: Size.fromHeight(80),
+        preferredSize: Size.fromHeight(100),
         child: AppBar(
-          backgroundColor: Color(0xff362FD9),
-          flexibleSpace: Padding(
-            padding: EdgeInsets.only(top: 30, left: 40, right: 40, bottom: 10),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Image.asset(
-                  'assets/image/Yayasan.png',
-                  height: 70,
-                  width: 70,
+            backgroundColor: Color(0xff362FD9),
+            flexibleSpace: Padding(
+              padding: EdgeInsets.only(top: 30, left: 40, right: 40,),
+              child: Center(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Image.asset(
+                      'assets/image/Yayasan.png',
+                      height: 90,
+                      width: 90,
+                    ),
+                    Container(
+                      width: 20,
+                    ),
+                    Image.asset(
+                      'assets/image/Perguruan.png',
+                      height: 80,
+                      width: 80,
+                    ),
+                  ],
                 ),
-                Image.asset(
-                  'assets/image/Perguruan.png',
-                  height: 60,
-                  width: 60,
-                ),
-              ],
+              ),
             ),
           ),
-        ),
       ),
+
       body: ListView(
         children: [
           //geser gambar
@@ -114,10 +120,6 @@ class _BerandaState extends State<Beranda> {
               textAlign: TextAlign.justify,
             ),
           ),
-          const Divider(
-            height: 5,
-            color: Colors.black,
-          ),
 
           //Ikrar Pelatih
           Container(
@@ -180,10 +182,6 @@ class _BerandaState extends State<Beranda> {
               style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
             ),
           ),
-          const Divider(
-            height: 5,
-            color: Colors.black,
-          ),
 
           //Moto pelatih
           Container(
@@ -217,10 +215,6 @@ class _BerandaState extends State<Beranda> {
                     const TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
               ),
             ),
-          ),
-          const Divider(
-            height: 5,
-            color: Colors.black,
           ),
 
           //Sejarah Singkat
@@ -406,13 +400,6 @@ class _BerandaState extends State<Beranda> {
               ],
             ),
           ),
-          const Divider(
-            height: 5,
-            color: Colors.black,
-          ),
-          Container(
-            height: 20,
-          )
         ],
       ),
     );

@@ -41,7 +41,11 @@ class _LainnyaState extends State<Lainnya> {
                         ),
                         child: Center(
                           child: ListTile(
-                            leading: Icon(Icons.square, size: 60,),
+                            leading: Image.asset(
+                              data.image,
+                              width: 40,
+                              height: 40,
+                            ),
                             title: Text(
                               data.name,
                               style: TextStyle(
