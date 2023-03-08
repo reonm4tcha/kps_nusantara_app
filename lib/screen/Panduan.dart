@@ -18,6 +18,7 @@ class _PanduanState extends State<Panduan> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('PANDUAN'),
+        backgroundColor: Color(0xff0597F2),
       ),
       body: Container(
         height: MediaQuery.of(context).size.height,
@@ -30,7 +31,7 @@ class _PanduanState extends State<Panduan> {
               0.7,
             ],
                 colors: [
-              Color(0xff362FD9),
+              Color(0xff0597F2),
               Colors.white,
             ])),
         child: SingleChildScrollView(
