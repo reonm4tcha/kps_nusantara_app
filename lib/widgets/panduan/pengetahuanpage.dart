@@ -28,19 +28,17 @@ class _PengetahuanPageState extends State<PengetahuanPage> {
         backgroundColor: Color(0xff0597F2),
       ),
       body: SafeArea(
-        child: SingleChildScrollView(
-          child: Container(
-            margin: const EdgeInsets.only(top: 20, left: 10, right: 10),
-            child: SizedBox(
-                height: MediaQuery.of(context).size.height / 1.33,
-                width: MediaQuery.of(context).size.width,
-                child: SfPdfViewer.asset(
-                  widget.panduanData[widget.index].pdfURL,
-                  canShowScrollStatus: false,
-                  canShowScrollHead: false,
-                  controller: _pdfViewerController,
-                )),
-          ),
+        child: Container(
+          margin: const EdgeInsets.only(top: 20, left: 10, right: 10),
+          child: SizedBox(
+              height: MediaQuery.of(context).size.height / 1.33,
+              width: MediaQuery.of(context).size.width,
+              child: SfPdfViewer.asset(
+                widget.panduanData[widget.index].pdfURL,
+                canShowScrollStatus: false,
+                canShowScrollHead: false,
+                controller: _pdfViewerController,
+              )),
         ),
       ),
       floatingActionButton: Container(

@@ -10,8 +10,8 @@ Widget TentangPage(){
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Image.asset(
-            'assets/image/acsllogo.png',
-            height: 60,
+            'assets/image/ACSLlogo2.jpeg',
+            height: 65,
           ),
           Text('   '),
           Image.asset(
