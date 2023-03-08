@@ -61,28 +61,27 @@ class _HomeState extends State<Home> {
           BottomNavigationBarItem(
               label: 'Beranda',
               icon: Icon(Icons.home),
-              backgroundColor: Color(0xff362FD9)),
+              backgroundColor: Color(0xff0597F2)),
           BottomNavigationBarItem(
               label: 'Materi',
               icon: Icon(Icons.menu_book),
-              backgroundColor: Color(0xff362FD9)),
+              backgroundColor: Color(0xff0597F2)),
           BottomNavigationBarItem(
               label: 'Panduan',
               icon: Icon(Icons.library_books),
-              backgroundColor: Color(0xff362FD9)),
+              backgroundColor: Color(0xff0597F2)),
           BottomNavigationBarItem(
               label: 'Lainnya',
               icon: Icon(
                 Icons.menu,
               ),
-              backgroundColor: Color(0xff362FD9)),
+              backgroundColor: Color(0xff0597F2)),
         ],
         currentIndex: selectPage,
         type: BottomNavigationBarType.shifting,
         fixedColor: Colors.black54,
         onTap: onTapNavBar,
       ),
-      backgroundColor: const Color(0xff5B8FB9),
     );
   }
 }

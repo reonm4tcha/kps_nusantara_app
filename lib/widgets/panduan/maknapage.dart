@@ -26,7 +26,7 @@ class _MaknaPageState extends State<MaknaPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.panduanData[widget.index].judul),
-        backgroundColor: Color(0xff362FD9),
+        backgroundColor: Color(0xff0597F2),
         centerTitle: true,
         elevation: 0,
       ),

@@ -18,6 +18,7 @@ class _PanduanState extends State<Panduan> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('PANDUAN'),
+        backgroundColor: Color(0xff0597F2),
       ),
       body: Column(
         children: [
@@ -33,7 +34,7 @@ class _PanduanState extends State<Panduan> {
                     0.7,
                   ],
                       colors: [
-                    Color(0xff362FD9),
+                    Color(0xff0597F2),
                     Colors.white,
                   ])),
                 child: Column(
@@ -131,6 +132,8 @@ class _PanduanState extends State<Panduan> {
               height: 250,
               width: MediaQuery.of(context).size.width,
               child: ListView.builder(
+                physics: ScrollPhysics(parent: null),
+                shrinkWrap: true,
                   padding: const EdgeInsets.only(top: 5),
                   itemCount: panduanModel.pengetahuan.length,
                   itemBuilder: (context, index) {
@@ -191,6 +194,8 @@ class _PanduanState extends State<Panduan> {
               height: 180,
               width: MediaQuery.of(context).size.width,
               child: ListView.builder(
+                physics: ScrollPhysics(parent: null),
+                shrinkWrap: true,
                   padding: const EdgeInsets.only(top: 5),
                   itemCount: panduanModel.makna.length,
                   itemBuilder: (context, index) {
@@ -251,6 +256,8 @@ class _PanduanState extends State<Panduan> {
               width: MediaQuery.of(context).size.width,
               height: 180,
               child: ListView.builder(
+                physics: ScrollPhysics(parent: null),
+                shrinkWrap: true,
                   padding: const EdgeInsets.only(top: 5),
                   itemCount: panduanModel.pernafasan.length,
                   itemBuilder: (context, index) {
@@ -311,6 +318,8 @@ class _PanduanState extends State<Panduan> {
               height: 120,
               width: MediaQuery.of(context).size.width,
               child: ListView.builder(
+                physics: ScrollPhysics(parent: null),
+                shrinkWrap: true,
                   padding: const EdgeInsets.only(top: 5),
                   itemCount: panduanModel.pedoman.length,
                   itemBuilder: (context, index) {
