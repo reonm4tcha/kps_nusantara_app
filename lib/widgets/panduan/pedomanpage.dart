@@ -24,7 +24,7 @@ class _PedomanPageState extends State<PedomanPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.panduanData[widget.index].judul),
-        backgroundColor: Color.fromARGB(255, 0, 171, 233),
+        backgroundColor: Color(0xff362FD9),
         centerTitle: true,
         elevation: 0,
       ),

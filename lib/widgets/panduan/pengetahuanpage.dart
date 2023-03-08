@@ -25,7 +25,7 @@ class _PengetahuanPageState extends State<PengetahuanPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.panduanData[widget.index].judul),
-        backgroundColor: const Color.fromARGB(255, 0, 171, 233),
+        backgroundColor: Color(0xff362FD9),
       ),
       body: SafeArea(
         child: SingleChildScrollView(
