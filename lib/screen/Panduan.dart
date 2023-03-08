@@ -42,7 +42,7 @@ class _PanduanState extends State<Panduan> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    // Container(
+                    // Container(alignment: Alignment.center,
                     //   width: MediaQuery.of(context).size.width/1.65,
                     //   padding: EdgeInsets.all(5),
                     //   decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), border: Border.all(width: 1, color: Colors.white), color: Colors.white,),
@@ -71,13 +71,13 @@ class _PanduanState extends State<Panduan> {
                       children: [
                         Image.asset(
                           'assets/image/Yayasan.png',
-                          height: MediaQuery.of(context).size.width / 8,
-                          width: MediaQuery.of(context).size.width / 8,
+                          height: MediaQuery.of(context).size.width / 10,
+                          width: MediaQuery.of(context).size.width / 10,
                         ),
                         Image.asset(
                           'assets/image/Perguruan.png',
-                          height: MediaQuery.of(context).size.width / 9,
-                          width: MediaQuery.of(context).size.width / 9,
+                          height: MediaQuery.of(context).size.width / 11,
+                          width: MediaQuery.of(context).size.width / 11,
                         )
                       ],
                     ),
