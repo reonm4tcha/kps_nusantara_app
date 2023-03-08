@@ -19,95 +19,101 @@ class _PanduanState extends State<Panduan> {
       appBar: AppBar(
         title: const Text('PANDUAN'),
       ),
-      body: Container(
-        height: MediaQuery.of(context).size.height,
-        decoration: const BoxDecoration(
-            gradient: LinearGradient(
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-                stops: [
-              0.0,
-              0.7,
-            ],
-                colors: [
-              Color(0xff362FD9),
-              Colors.white,
-            ])),
-        child: SingleChildScrollView(
-          child: Column(
-            children: [
-              Container(
-                width: MediaQuery.of(context).size.width,
-                margin: const EdgeInsets.only(right: 20, left: 15, bottom: 10),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      body: Column(
+        children: [
+          Flexible(
+            child: Container(
+              height: MediaQuery.of(context).size.height,
+              decoration: const BoxDecoration(
+                  gradient: LinearGradient(
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter,
+                      stops: [
+                    0.0,
+                    0.7,
+                  ],
+                      colors: [
+                    Color(0xff362FD9),
+                    Colors.white,
+                  ])),
+                child: Column(
                   children: [
-                    // Container(alignment: Alignment.center,
-                    //   width: MediaQuery.of(context).size.width/1.65,
-                    //   padding: EdgeInsets.all(5),
-                    //   decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), border: Border.all(width: 1, color: Colors.white), color: Colors.white,),
-                    //   child: Text(
-                    //     'Panduan dasar yang wajib dipahami',
-                    //   style: TextStyle(
-                    //     color: Colors.black, 
-                    //     fontSize: 13, 
-                    //     fontWeight: FontWeight.w500,
-                    //     ),
-                    //   ),
-                    // ),
-                    Container(
-                        width: MediaQuery.of(context).size.width/1.6,
-                      child: Text(
-                          'Panduan dasar yang wajib dipahami',
-                        style: TextStyle(
-                          color: Color.fromARGB(255, 243, 243, 243), 
-                          fontSize: 13, 
-                          fontWeight: FontWeight.w500,
-                          ),
+                    FittedBox(
+                      child: Container(
+                        width: MediaQuery.of(context).size.width,
+                        margin: const EdgeInsets.only(right: 20, left: 15, bottom: 10),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            // Container(alignment: Alignment.center,
+                            //   width: MediaQuery.of(context).size.width/1.65,
+                            //   padding: EdgeInsets.all(5),
+                            //   decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), border: Border.all(width: 1, color: Colors.white), color: Colors.white,),
+                            //   child: Text(
+                            //     'Panduan dasar yang wajib dipahami',
+                            //   style: TextStyle(
+                            //     color: Colors.black, 
+                            //     fontSize: 13, 
+                            //     fontWeight: FontWeight.w500,
+                            //     ),
+                            //   ),
+                            // ),
+                            Container(
+                                width: MediaQuery.of(context).size.width/1.6,
+                              child: Text(
+                                  'Panduan dasar yang wajib dipahami',
+                                style: TextStyle(
+                                  color: Color.fromARGB(255, 243, 243, 243), 
+                                  fontSize: 13, 
+                                  fontWeight: FontWeight.w500,
+                                  ),
+                                ),
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.end,
+                              children: [
+                                Image.asset(
+                                  'assets/image/Yayasan.png',
+                                  height: MediaQuery.of(context).size.height / 20,
+                                  width: MediaQuery.of(context).size.height / 20,
+                                ),
+                                Image.asset(
+                                  'assets/image/Perguruan.png',
+                                  height: MediaQuery.of(context).size.height / 22,
+                                  width: MediaQuery.of(context).size.height / 22,
+                                )
+                              ],
+                            ),
+                          ],
                         ),
+                      ),
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.end,
-                      children: [
-                        Image.asset(
-                          'assets/image/Yayasan.png',
-                          height: MediaQuery.of(context).size.width / 10,
-                          width: MediaQuery.of(context).size.width / 10,
+                     Expanded(
+                       child: Container(
+                          width: MediaQuery.of(context).size.width,
+                          // height: MediaQuery.of(context).size.height / 1.36, //1.37
+                          decoration: const BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.only(
+                                  topLeft: Radius.circular(30),
+                                  topRight: Radius.circular(30))),
+                            child: SingleChildScrollView(
+                              child: Column(
+                                children: [
+                                  buildpengetahuan(context),
+                                  buildMaknaKiasan(context),
+                                  buildPernafasan(context),
+                                  buildPedoman(context),
+                                ],
+                              ),
+                            ),
                         ),
-                        Image.asset(
-                          'assets/image/Perguruan.png',
-                          height: MediaQuery.of(context).size.width / 11,
-                          width: MediaQuery.of(context).size.width / 11,
-                        )
-                      ],
-                    ),
+                     ),
                   ],
                 ),
-              ),
-              Container(
-                width: MediaQuery.of(context).size.width,
-                height: MediaQuery.of(context).size.height / 1.36, //1.37
-                decoration: const BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(30),
-                        topRight: Radius.circular(30))),
-                child: SafeArea(
-                  child: SingleChildScrollView(
-                    child: Column(
-                      children: [
-                        buildpengetahuan(context),
-                        buildMaknaKiasan(context),
-                        buildPernafasan(context),
-                        buildPedoman(context),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-            ],
+            ),
           ),
-        ),
+        ],
       ),
     );
   }
