@@ -133,7 +133,6 @@ class _PanduanState extends State<Panduan> {
               width: MediaQuery.of(context).size.width,
               child: ListView.builder(
                 physics: ScrollPhysics(parent: null),
-                shrinkWrap: true,
                   padding: const EdgeInsets.only(top: 5),
                   itemCount: panduanModel.pengetahuan.length,
                   itemBuilder: (context, index) {
@@ -195,7 +194,6 @@ class _PanduanState extends State<Panduan> {
               width: MediaQuery.of(context).size.width,
               child: ListView.builder(
                 physics: ScrollPhysics(parent: null),
-                shrinkWrap: true,
                   padding: const EdgeInsets.only(top: 5),
                   itemCount: panduanModel.makna.length,
                   itemBuilder: (context, index) {
@@ -257,7 +255,6 @@ class _PanduanState extends State<Panduan> {
               height: 180,
               child: ListView.builder(
                 physics: ScrollPhysics(parent: null),
-                shrinkWrap: true,
                   padding: const EdgeInsets.only(top: 5),
                   itemCount: panduanModel.pernafasan.length,
                   itemBuilder: (context, index) {
@@ -319,7 +316,6 @@ class _PanduanState extends State<Panduan> {
               width: MediaQuery.of(context).size.width,
               child: ListView.builder(
                 physics: ScrollPhysics(parent: null),
-                shrinkWrap: true,
                   padding: const EdgeInsets.only(top: 5),
                   itemCount: panduanModel.pedoman.length,
                   itemBuilder: (context, index) {
