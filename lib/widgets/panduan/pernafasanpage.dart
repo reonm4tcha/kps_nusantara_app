@@ -25,7 +25,7 @@ class _PernafasanPageState extends State<PernafasanPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.panduanData[widget.index].judul),
-        backgroundColor: Color(0xff362FD9),
+        backgroundColor: Color(0xff0597F2),
         // backgroundColor: Color.fromARGB(255, 0, 171, 233),
         centerTitle: true,
         elevation: 0,

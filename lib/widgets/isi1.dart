@@ -19,7 +19,7 @@ class isi1State extends State<isi1> {
       Scaffold(
       appBar: AppBar(
         title: Text(lainnya_req.name,),
-        backgroundColor: Color(0xff362FD9),
+        backgroundColor: Color(0xff0597F2),
       ),
       body:
           lainnya_req.isi1
