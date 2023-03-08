@@ -26,7 +26,7 @@ class _MaknaPageState extends State<MaknaPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.panduanData[widget.index].judul),
-        backgroundColor: Color.fromARGB(255, 0, 171, 233),
+        backgroundColor: Color(0xff362FD9),
         centerTitle: true,
         elevation: 0,
       ),
@@ -70,17 +70,46 @@ class _MaknaPageState extends State<MaknaPage> {
                   }
                 });
               },
-              child: Icon(Icons.arrow_back_ios_outlined),
+              child: Icon(Icons.keyboard_double_arrow_left_outlined),
+            ),
+            Container(
+              height: 40,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  FloatingActionButton(
+                    heroTag: 'b2',
+                    onPressed: () {
+                      _pdfViewerController.firstPage();
+                    },
+                    child: Icon(Icons.first_page_outlined),
+                  ),
+                  FloatingActionButton(
+                    heroTag: 'b3',
+                    onPressed: () {
+                      _pdfViewerController.previousPage();
+                    },
+                    child: Icon(Icons.navigate_before),
+                  ),
+                  FloatingActionButton(
+                    heroTag: 'b4',
+                    onPressed: () {
+                      _pdfViewerController.nextPage();
+                    },
+                    child: Icon(Icons.navigate_next),
+                  ),
+                  FloatingActionButton(
+                    heroTag: 'b5',
+                    onPressed: () {
+                      _pdfViewerController.lastPage();
+                    },
+                    child: Icon(Icons.last_page_outlined),
+                  ),
+                ],
+              ),
             ),
             FloatingActionButton(
-              heroTag: 'b2',
-              onPressed: () {
-                _pdfViewerController.firstPage();
-              },
-              child: Icon(Icons.keyboard_arrow_up),
-            ),
-            FloatingActionButton(
-              heroTag: 'b3',
+              heroTag: 'b6',
               onPressed: () {
                 setState(() {
                   if (widget.index != widget.panduanData.length - 1) {
@@ -97,7 +126,7 @@ class _MaknaPageState extends State<MaknaPage> {
                   }
                 });
               },
-              child: Icon(Icons.arrow_forward_ios_outlined),
+              child: Icon(Icons.keyboard_double_arrow_right_outlined),
             ),
           ],
         ),
