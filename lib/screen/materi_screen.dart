@@ -14,14 +14,14 @@ class MateriScreen extends StatelessWidget {
     final List golongan = golonganList;
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color(0xff362FD9),
+        backgroundColor: const Color(0xff0597F2),
         title: const Text('TINGKATAN SABUK'),
         centerTitle: true,
       ),
       body: Container(
         height: MediaQuery.of(context).size.height,
         decoration: const BoxDecoration(
-          color: Color(0xff362FD9),
+          color: Color(0xff0597F2),
         ),
         child: Container(
           decoration: const BoxDecoration(

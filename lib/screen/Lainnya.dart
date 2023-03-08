@@ -17,16 +17,16 @@ class _LainnyaState extends State<Lainnya> {
       appBar: AppBar(
         title: Text('LAINNYA'),
         centerTitle: true,
-        backgroundColor: Color(0xff362FD9),
+        backgroundColor: Color(0xff0597F2),
       ),
       body:
-      Column(
+      ListView(
         children: [
           Container(
             width: double.infinity,
-            height: 550,
-            child:
-            ListView.builder(
+            child: ListView.builder(
+              physics: NeverScrollableScrollPhysics(),
+              shrinkWrap: true,
               itemCount: Lainnya_data.length,
               itemBuilder: (context, index){
                 final data = Lainnya_data[index];
@@ -34,27 +34,27 @@ class _LainnyaState extends State<Lainnya> {
                   child: Column(
                     children: [
                       Container(
-                        width: double.infinity,
-                        height: 90,
-                        decoration: BoxDecoration(
+                          width: double.infinity,
+                          height: 90,
+                          decoration: BoxDecoration(
                             color: Colors.white,
-                        ),
-                        child: Center(
-                          child: ListTile(
-                            leading: Image.asset(
-                              data.image,
-                              width: 40,
-                              height: 40,
-                            ),
-                            title: Text(
-                              data.name,
-                              style: TextStyle(
-                                fontSize: 18,
-                                fontWeight: FontWeight.w600
+                          ),
+                          child: Center(
+                            child: ListTile(
+                              leading: Image.asset(
+                                data.image,
+                                width: 40,
+                                height: 40,
+                              ),
+                              title: Text(
+                                data.name,
+                                style: TextStyle(
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.w600
+                                ),
                               ),
                             ),
-                          ),
-                        )
+                          )
                       ),
                       Divider(
                         color: Colors.black,
@@ -63,24 +63,20 @@ class _LainnyaState extends State<Lainnya> {
                     ],
                   ),
                   onTap: (){
-                    final route =
-                    MaterialPageRoute(builder: (context){
+                    final route = MaterialPageRoute(builder: (context){
                       return isi1(lainnya_req: data);
                     });
                     Navigator.push(context, route);
-                  },
-                );},
+                    },
+                );
+                },
             ),
           ),
-          Expanded(
-            child: Container(
-              alignment: Alignment.bottomCenter,
-              child: Padding(
-                padding: const EdgeInsets.only(bottom: 10),
-                child: Text(version),
-              ),
-            ),
-          )
+          Container(
+            width: double.infinity,
+            margin: EdgeInsets.only(top: 20),
+            child: Center(child: Text(version)),
+          ),
         ],
       ),
     );
