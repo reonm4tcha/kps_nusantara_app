@@ -118,14 +118,12 @@ class DetailMateriScreen extends StatelessWidget {
       (index) => GestureDetector(
         onTap: () {
           final titleAppBar = subTingkat2.list[index];
-          final videoTitle = subTingkat2.list[index];
           final videoAsset = subTingkat2.vidAssets[index];
           Navigator.push(
             context,
             MaterialPageRoute(
               builder: (context) => FinalMateriScreen(
                 titleAppBar: titleAppBar,
-                videoTitle: videoTitle,
                 videoAsset: videoAsset,
               ),
             ),
