@@ -119,12 +119,14 @@ class DetailMateriScreen extends StatelessWidget {
         onTap: () {
           final titleAppBar = subTingkat2.list[index];
           final videoAsset = subTingkat2.vidAssets[index];
+
           Navigator.push(
             context,
             MaterialPageRoute(
               builder: (context) => FinalMateriScreen(
                 titleAppBar: titleAppBar,
                 videoAsset: videoAsset,
+                indexedSelected: index,
               ),
             ),
           );
