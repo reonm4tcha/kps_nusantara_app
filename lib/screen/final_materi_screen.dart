@@ -7,11 +7,12 @@ class FinalMateriScreen extends StatefulWidget {
     super.key,
     required this.titleAppBar,
     required this.videoAsset,
+    required this.indexedSelected,
   });
 
   final String titleAppBar;
-
   final String videoAsset;
+  final int indexedSelected;
 
   @override
   State<FinalMateriScreen> createState() => _FinalMateriScreenState();
@@ -35,7 +36,8 @@ class _FinalMateriScreenState extends State<FinalMateriScreen> {
   ];
 
   Future<void> _initPlayer() async {
-    videoPlayerController = VideoPlayerController.asset(widget.videoAsset);
+    videoPlayerController =
+        VideoPlayerController.network(srcs[widget.indexedSelected]);
     // videoPlayerController2 = VideoPlayerController.network(srcs[currPlayIndex]);
 
     await Future.wait([
