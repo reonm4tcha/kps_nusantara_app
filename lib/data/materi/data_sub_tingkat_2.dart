@@ -28,7 +28,7 @@ final _pPukul = SubTingkat2(
 final _pTendang = SubTingkat2(
   name: 'Tendangan',
   list: ['Lurus', 'Sabit', 'T', 'Belakang'],
-  vidAssets: [_vidBjorka, _vidTest],
+  vidAssets: [_vidBjorka, _vidTest, _vidBlueming],
 );
 
 final _pElak = SubTingkat2(
