@@ -19,7 +19,7 @@ class _BerandaState extends State<Beranda> {
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(100),
         child: AppBar(
-            backgroundColor: Color(0xff362FD9),
+            backgroundColor: Color(0xff0597F2),
             flexibleSpace: Padding(
               padding: EdgeInsets.only(top: 30, left: 40, right: 40,),
               child: Center(
