@@ -120,6 +120,7 @@ class _PanduanState extends State<Panduan> {
   }
 
   Widget buildpengetahuan(BuildContext context) => ExpansionTile(
+    initiallyExpanded: true,
         title: const Text(
           'PENGETAHUAN PENCAK SILAT',
           style: TextStyle(
@@ -181,6 +182,7 @@ class _PanduanState extends State<Panduan> {
       );
 
   Widget buildMaknaKiasan(BuildContext context) => ExpansionTile(
+    initiallyExpanded: false,
         title: const Text(
           'MAKNA DAN KIASAN',
           style: TextStyle(
